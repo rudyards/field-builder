@@ -1,0 +1,1343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cockatrice_carddatabase version="4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://raw.githubusercontent.com/Cockatrice/Cockatrice/master/doc/carddatabase_v4/cards.xsd">
+	<sets>
+		<set>
+			<name>WTM</name>
+			<longname></longname>
+			<settype>Custom</settype>
+			<releasedate></releasedate>
+		</set>
+	</sets>
+	<cards>		<card>
+			<name>Admirable Admiral</name>
+			<text>When Admirable Admiral enters the battlefield, create a 1/1 white Soldier creature token for each card type among permanents you control.</text>
+			<prop>
+				<side>front</side>
+				<manacost>3WW</manacost>
+				<cmc>5</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+				<layout>normal</layout>
+				<type>Creature — Human Noble Soldier</type>
+				<maintype>Creature</maintype>
+				<pt>4/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<set num="3" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Advanced Intelligence</name>
+			<text>Whenever Advanced Intelligence enters the battlefield or attacks, proliferate. Then if you or a permanent you control has four or more counters on it, draw a card.</text>
+			<prop>
+				<side>front</side>
+				<manacost>2U</manacost>
+				<cmc>3</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+				<layout>normal</layout>
+				<type>Artifact Creature — Advisor</type>
+				<maintype>Creature</maintype>
+				<pt>1/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<set num="8" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Aiko, Bearer of Sorrows</name>
+			<text>Whenever you lose life or Aiko is dealt damage, each opponent loses that much life. This ability only triggers once each turn.
+[+1]: Aiko deals 2 damage to up to one target permanent, and you gain 2 life.
+[-3]: You draw 3 cards and you lose 3 life.
+[-8]: Until end of turn, you may cast spells without paying their mana costs. Whenever you cast a spell this way, you lose life equal to its mana value.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>2RWB</manacost>
+				<cmc>5</cmc>
+				<colors>RWB</colors>
+				<coloridentity>RWB</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Aiko</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>4</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="28" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Antipathy</name>
+			<text>Whenever you cast a spell, Antipathy deals 1 damage to each opponent. If that spell was red, it deals 2 damage instead.
+Whenever you attack, up to two target creatures get +X/+0 until end of turn, where X is the amount of damage opponents have been dealt this turn.</text>
+			<prop>
+				<side>front</side>
+				<manacost>RRR</manacost>
+				<cmc>3</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+				<layout>normal</layout>
+				<type>Enchantment</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="18" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Arcane Mastery</name>
+			<text>Choose one. If you control a planeswalker, choose any number instead.
+• Counter target noncreature spell.
+• Target player draws two cards.
+• Arcane Mastery deals 3 damage to any target.</text>
+			<prop>
+				<side>front</side>
+				<manacost>1UR</manacost>
+				<cmc>3</cmc>
+				<colors>UR</colors>
+				<coloridentity>UR</coloridentity>
+				<layout>normal</layout>
+				<type>Instant</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="29" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Archmage Jessica Turin</name>
+			<text>Instant and sorcery spells you cast cost {1} less to cast. You can't cast other types of spells.
+[+1]: Scry 2, then draw a card.
+[-2]: Archmage Jessica Turin deals 3 damage to any target.
+[-7]: You get an emblem with “At the beginning of each step, copy each instant or sorcery spell you cast this turn. You may cast the copies without paying their mana costs.”
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>2UR</manacost>
+				<cmc>4</cmc>
+				<colors>UR</colors>
+				<coloridentity>UR</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Turin</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>4</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="30" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Azamir the Storyteller</name>
+			<text>At the beginning of your upkeep, choose three cards at random, and conjure a copy of each of those cards into your hand.
+[+2]: You may exile a card from your hand or graveyard. If you do, cast a copy of that card without paying its mana cost.
+[-4]: Each opponent chooses a creature, an artifact, an enchantment, and a planeswalker from among nonland permanents they control, and exiles the rest.
+[-9]: You get an emblem with “If you would lose the game, instead you may exile a permanent you control. If you do, your life total becomes 1.”
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>9</manacost>
+				<cmc>9</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Azamir</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>6</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<related persistent="persistent">copy of each of those cards</related>
+			<set num="1" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Bloodstained Armund</name>
+			<text>You may activate an additional loyalty ability of Bloodstained Armund during your turn if a creature died this turn.
+[+1]: You may discard a card. If you do, each opponent discards a card and loses 1 life.
+[0]: Bloodstained Armund deals 1 damage to any target.
+[-7]: Target player mills half their library, then each opponent loses life equal to the number of creature cards in their graveyard.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>1BR</manacost>
+				<cmc>3</cmc>
+				<colors>BR</colors>
+				<coloridentity>BR</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Armund</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>2</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="31" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Caydin, Himbo Heroine</name>
+			<text>[+2]: You gain 5 life.
+[0]: Caydin, Himbo Heroine fights another target creature or planeswalker (Planeswalkers fight using their loyalty).
+[-4]: Distribute four +1/+1 counters among creatures you control. If you don't control a creature, instead create two 2/2 green Wolf creature tokens.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>3GW</manacost>
+				<cmc>5</cmc>
+				<colors>GW</colors>
+				<coloridentity>GW</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Caydin</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>6</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="32" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Chicanery</name>
+			<text>Whenever you cast a black spell, exile the top card of each opponent's library. You may play those cards as long as they remain exiled, and you may spend mana as though it was mana of any color to do so.
+At the beginning of your end step, each opponent loses life equal to the number of permanents you control that you don't own.</text>
+			<prop>
+				<side>front</side>
+				<manacost>BBB</manacost>
+				<cmc>3</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<layout>normal</layout>
+				<type>Enchantment</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="13" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Chiresian Consort Throne</name>
+			<text>If you would draw a card, instead search your library for a card and put it into your hand, then shuffle.
+Your opponents can't cast more than one spell each turn.</text>
+			<prop>
+				<side>front</side>
+				<manacost>7</manacost>
+				<cmc>7</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Artifact</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="59" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Chronology</name>
+			<text>You may cast blue spells as though they had flash. They can't be countered.
+Whenever you cast a spell, untap target permanent if its your turn. Otherwise, tap target permanent.</text>
+			<prop>
+				<side>front</side>
+				<manacost>UUU</manacost>
+				<cmc>3</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+				<layout>normal</layout>
+				<type>Enchantment</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="9" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Defy Fate</name>
+			<text>Choose one—
+• Target permanent or player gains hexproof until end of turn.
+• The next spell you cast this turn can't be countered.
+• Draw a card.</text>
+			<prop>
+				<side>front</side>
+				<manacost>G</manacost>
+				<cmc>1</cmc>
+				<colors>G</colors>
+				<coloridentity>G</coloridentity>
+				<layout>normal</layout>
+				<type>Instant</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="23" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Dynamic Carmella Clarke</name>
+			<text>[+1]: Tap or untap up to one target permanent. You may put a stun counter on it.
+[-2]: Tap up to two artifacts you control. Whenever you tap an artifact this way, Carmella deals 2 damage to any target and you gain 2 life.
+[-7]: You get an emblem with “Whenever you cast a noncreature spell, mill until you mill a noncreature, nonland card. Put that card into your hand, and the rest on the bottom of your library in a random order.”
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>1URW</manacost>
+				<cmc>4</cmc>
+				<colors>URW</colors>
+				<coloridentity>URW</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — C.C</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>4</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="33" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Elanor, Somber Savior</name>
+			<text>[+1]: Draw a card, then discard a card unless you own a card in exile.
+[-2]: Exile up to two target permanents, then return them to the battlefield under their controller's control.
+[-5]: Return target creature, artifact, or enchantment card from your graveyard to the battlefield phased out. (It doesn't trigger enter the battlefield abilities.)
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>2WU</manacost>
+				<cmc>4</cmc>
+				<colors>WG</colors>
+				<coloridentity>WU</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Elanor</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>4</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="34" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Engage the Omnidrive</name>
+			<text>Add three mana of different colors.</text>
+			<prop>
+				<side>front</side>
+				<manacost>1R</manacost>
+				<cmc>2</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+				<layout>normal</layout>
+				<type>Sorcery</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="19" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Flooded Morass</name>
+			<text>({T}: Add {U} or {B})
+Flooded Morass enters the battlefield tapped unless you control a basic Island and a basic Swamp.</text>
+			<prop>
+				<side>front</side>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity>UB</coloridentity>
+				<layout>normal</layout>
+				<type>Land — Island Swamp</type>
+				<maintype>Land</maintype>
+			</prop>
+			<tablerow>0</tablerow>
+			<cipt>1</cipt>
+			<set num="61" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Flourishing Crevasse</name>
+			<text>({T}: Add {R} or {G})
+Flourishing Crevasse enters the battlefield tapped unless you control a basic Mountain or a basic Forest.</text>
+			<prop>
+				<side>front</side>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity>RG</coloridentity>
+				<layout>normal</layout>
+				<type>Land — Mountain Forest</type>
+				<maintype>Land</maintype>
+			</prop>
+			<tablerow>0</tablerow>
+			<cipt>1</cipt>
+			<set num="62" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Frostfire Geyser</name>
+			<text>({T}: Add {U} or {R})
+Frostfire Geyser enters the battlefield tapped unless you control a basic Island or a basic Mountain.</text>
+			<prop>
+				<side>front</side>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity>UR</coloridentity>
+				<layout>normal</layout>
+				<type>Land — Island Mountain</type>
+				<maintype>Land</maintype>
+			</prop>
+			<tablerow>0</tablerow>
+			<cipt>1</cipt>
+			<set num="63" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Fungal Mire</name>
+			<text>({T}: Add {B} or {G})
+Fungal Mire enters the battlefield tapped unless you control a basic Swamp or a basic Forest.</text>
+			<prop>
+				<side>front</side>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity>BG</coloridentity>
+				<layout>normal</layout>
+				<type>Land — Swamp Forest</type>
+				<maintype>Land</maintype>
+			</prop>
+			<tablerow>0</tablerow>
+			<cipt>1</cipt>
+			<set num="64" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Gerrit Dior, History's Voice</name>
+			<text>[+1]: Mill two cards, then return a nonland card of an opponent's choice from your graveyard to your hand.
+[-2]: Choose target nonland permanent or card in a graveyard. It's owner puts it on the top or bottom of their library.
+[-4]: Create a X/X Avatar creature token that is all colors, where X is the number of card types among cards in graveyards.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>GWU</manacost>
+				<cmc>3</cmc>
+				<colors>GWU</colors>
+				<coloridentity>GWU</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Gerrit</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>2</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="36" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Glitch, Mind of a Beast</name>
+			<text>You may pay {W}{U}{B}{R}{G} rather than pay the mana cost for spells that you cast.
+[+1]: Scry 2. Create a tapped Treasure token.
+[-3]: Target opponent sacrifices a creature. Destroy up to one target artifact or enchantment that player controls.
+[-7]: Draw seven cards, then untap all lands you control. They gain all basic types until end of turn.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>1WUB</manacost>
+				<cmc>4</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUBRG</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Glitch</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>4</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="37" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Gloomcover Steppe</name>
+			<text>({T}: Add {W} or {B})
+Gloomcover Steppe enters the battlefield tapped unless you control a basic Plains or a basic Swamp.</text>
+			<prop>
+				<side>front</side>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity>WB</coloridentity>
+				<layout>normal</layout>
+				<type>Land — Plains Swamp</type>
+				<maintype>Land</maintype>
+			</prop>
+			<tablerow>0</tablerow>
+			<cipt>1</cipt>
+			<set num="65" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Grim Mastery</name>
+			<text>Choose one. If you control a planeswalker, choose any number instead.
+• Target player discards two cards.
+• Destroy target creature or planeswalker.
+• Put each land card in target player's graveyard onto the battlefield tapped.</text>
+			<prop>
+				<side>front</side>
+				<manacost>2BG</manacost>
+				<cmc>4</cmc>
+				<colors>BG</colors>
+				<coloridentity>BG</coloridentity>
+				<layout>normal</layout>
+				<type>Sorcery</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="38" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Han Ahxing, Ascendant</name>
+			<text>{1}{U}: You may activate one of Han Ahxing, Ascendant's loyalty abilities. Activate only during an opponent's turn and only once each turn.
+[+1]: Return up to one target nonland permanent to its controller's hand.
+[+1]: Look at the top three cards of your library. Put one of those cards into your hand, one on top of your library, and one on the bottom of your library.
+[-6]: Take an extra turn after this one.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>3UU</manacost>
+				<cmc>5</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Ahxing</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>3</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="10" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Hardened Hero</name>
+			<text>Sacrifice another creature: Tap Hardened Hero and put a +1/+1 counter on it. It gains indestructible until end of turn.</text>
+			<prop>
+				<side>front</side>
+				<manacost>1B</manacost>
+				<cmc>2</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<layout>normal</layout>
+				<type>Creature — Human Soldier</type>
+				<maintype>Creature</maintype>
+				<pt>2/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<set num="14" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Heart of the Glade</name>
+			<text>({T}: Add {G} or {W})
+Heart of the Glade enters the battlefield tapped unless you control a basic Forest or a basic Plains.</text>
+			<prop>
+				<side>front</side>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity>GW</coloridentity>
+				<layout>normal</layout>
+				<type>Land — Forest Plains</type>
+				<maintype>Land</maintype>
+			</prop>
+			<tablerow>0</tablerow>
+			<cipt>1</cipt>
+			<set num="66" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Holly, Fauna Expert</name>
+			<text>Lands you control have “{T}: Add two mana of any combination of colors. Spend this only to cast creature spells.”
+[+2]: Create a 3/3 red Lizard creature token with haste. Mill three cards.
+[-3]: Return any number of target creature cards with different names from your graveyard to your hand.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>3RGW</manacost>
+				<cmc>6</cmc>
+				<colors>RGW</colors>
+				<coloridentity>RGW</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Holly</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>3</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="39" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Imperial Herald</name>
+			<text>{2}{W}, Exile Imperial Herald from your graveyard: Search your library for a legendary card, reveal it, then put it into your hand and shuffle.</text>
+			<prop>
+				<side>front</side>
+				<manacost>W</manacost>
+				<cmc>1</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+				<layout>normal</layout>
+				<type>Creature — Human Knight</type>
+				<maintype>Creature</maintype>
+				<pt>2/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<set num="4" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Isamu, Evergnawing</name>
+			<text>Whenever a creature enters the battlefield under your control, put  a +1/+1 counter on each other creature you control with lesser power or lesser toughness than it.
+[+1]: Create a 1/1 green Rat creature token.
+[-2]: You may sacrifice a creature. If you do, search your library for a creature card with mana value less than or equal to the sacrificed creature's mana value plus 1, put it onto the battlefield, then shuffle.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>1BGU</manacost>
+				<cmc>4</cmc>
+				<colors>BGU</colors>
+				<coloridentity>BGU</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Isamu</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>3</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="40" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Jack, Harvester</name>
+			<text>[+1]: Surveil 1. Then, you may sacrifice a permanent and draw a card.
+[-2]: Choose up to two land cards in your graveyard. You may put up to one of them onto the battlefield. Return the rest to your hand. You gain 2 life.
+[-8]: For each card in your graveyard, each opponent loses 3 life unless they sacrifice a permanent.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>2BG</manacost>
+				<cmc>4</cmc>
+				<colors>BG</colors>
+				<coloridentity>BG</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Jack</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>4</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="41" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Jay Volkan</name>
+			<text>[+1]: Up to one target creature gets -3/-1 until your next turn.
+[-2]: You may exchange a card in your hand with a card you own from outside the game.
+[-7]: For each player, search that player's library for a planeswalker card and put it onto the battlefield under your control, then that player shuffles.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>UBR</manacost>
+				<cmc>3</cmc>
+				<colors>UBR</colors>
+				<coloridentity>UBR</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Jay</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>3</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="42" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Kel, Tocaiba's Might</name>
+			<text>Whenever you cast a spell for an alternative cost, put a loyalty counter on Kel.
+[+1]: Draw a card, then discard a card. You may play an additional land this turn.
+[-3]: When you cast your next spell with mana value 3 or less this turn, copy it. You may choose new targets for the copy.
+[-6]: Exile target card in your graveyard. You may play that card as long as it remains exiled and you may pay {G}{U} rather than pay its mana cost.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>1GU</manacost>
+				<cmc>3</cmc>
+				<colors>GU</colors>
+				<coloridentity>GU</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Kel</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>3</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="43" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Lavatorn Fields</name>
+			<text>({T}: Add {B} or {R})
+Lavatorn Fields enters the battlefield tapped unless you control a basic Swamp or a basic Mountain.</text>
+			<prop>
+				<side>front</side>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity>BR</coloridentity>
+				<layout>normal</layout>
+				<type>Land — Swamp Mountain</type>
+				<maintype>Land</maintype>
+			</prop>
+			<tablerow>0</tablerow>
+			<cipt>1</cipt>
+			<set num="67" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Lawrel, Favored Son</name>
+			<text>[+1]: Put a +1/+1 counter on up to two target creatures that share creature types.
+[0]: Until end of turn, creatures and planeswalkers you control gain “{T}: Add one mana of any color. Spend this mana only to cast permanent spells.”
+[-6]: Choose a creature type. Search your library for any number of creature cards of that type, reveal them, then put them into your hand and shuffle.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>2G</manacost>
+				<cmc>3</cmc>
+				<colors>G</colors>
+				<coloridentity>G</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Lawrel</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>2</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="24" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Lead Researcher Sadie Dal</name>
+			<text>Whenever you activate one of Sadie's loyalty abilities, you get an emblem with “Eureka!” (It has “At the beginning of each end step, you get a research counter if you cast a spell this turn. Then if you have eight or more research counters, remove them and create a Masterpiece token of your choice.”)
+[+1]: Draw two cards, then discard a card.
+[-3]: Return two target cards that don't share a type from your graveyard to your hand.
+[-5]: You may put any number of land cards from your hand and/or graveyard onto the battlefield.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>2GUR</manacost>
+				<cmc>5</cmc>
+				<colors>GUR</colors>
+				<coloridentity>GUR</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Sadie</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>4</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="44" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Loyalty</name>
+			<text>Whenever you cast a green spell, proliferate.
+Whenever you attack with a creature or activate an ability of a planeswalker, put a +1/+1 counter or a loyalty counter on it.</text>
+			<prop>
+				<side>front</side>
+				<manacost>GGG</manacost>
+				<cmc>3</cmc>
+				<colors>G</colors>
+				<coloridentity>G</coloridentity>
+				<layout>normal</layout>
+				<type>Enchantment</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="25" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Lush Oasis</name>
+			<text>({T}: Add {G} or {U})
+Lush Oasis enters the battlefield tapped unless you control a basic Forest or a basic Island.</text>
+			<prop>
+				<side>front</side>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity>GU</coloridentity>
+				<layout>normal</layout>
+				<type>Land — Forest Island</type>
+				<maintype>Land</maintype>
+			</prop>
+			<tablerow>0</tablerow>
+			<cipt>1</cipt>
+			<set num="68" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Make a Mess</name>
+			<text>If there are four or more creatures on the battlefield, you lose 4 life.
+Destroy all creatures.</text>
+			<prop>
+				<side>front</side>
+				<manacost>2BB</manacost>
+				<cmc>4</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<layout>normal</layout>
+				<type>Sorcery</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="15" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Mari, Goddess Emeritus</name>
+			<text>[+1]: Create a white enchantment token with “At the beginning of your upkeep, create a 1/1 white Spirit creature token with flying.”
+[-2]: Exile another target nonland permanent. Its controller gains 4 life.
+[-4]: Your life total becomes equal to your starting life total. Create a 4/4 white Angel creature token with flying.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>4WW</manacost>
+				<cmc>6</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Mari</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>4</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="5" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Marston, Grand Artificer</name>
+			<text>[+1]: Untap up to three target lands and/or artifacts.
+[-X]: Sacrifice an artifact. If you do, search your library for an artifact card with mana value less than or equal to the sacrificed artifact's mana value plus {X}, put it onto the battlefield, then shuffle.
+[-7]: Each player shuffles their hand and graveyard into their library. You draw seven cards, then each other player draws two cards.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>3UB</manacost>
+				<cmc>5</cmc>
+				<colors>UB</colors>
+				<coloridentity>UB</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Marston</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>5</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="45" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Max, Faithless Healer</name>
+			<text>[+2]: Untap another target permanent. It gains indestructible until your next turn. You gain 2 life.
+[-2]: Return target non-Maxomon permanent card with mana value 5 or less from your graveyard to the battlefield.
+[-10]: You get an emblem with “Permanents you control can't leave the battlefield unless sacrificed to pay a cost.”
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>2WBG</manacost>
+				<cmc>5</cmc>
+				<colors>WBG</colors>
+				<coloridentity>WBG</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Maxomon</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>4</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="46" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Monstrous Mastery</name>
+			<text>Choose one. If you control a planeswalker, choose any number instead.
+• Target opponent sacrifices a planeswalker.
+• Exile target artifact or enchantment.
+• Target opponent loses 3 life and you gain 3 life.</text>
+			<prop>
+				<side>front</side>
+				<manacost>WB</manacost>
+				<cmc>2</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+				<layout>normal</layout>
+				<type>Instant</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="47" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Muse of Cold Winter Nights</name>
+			<text>This spell costs {1} less to cast for each blue card in your graveyard.
+When Muse of Cold Winter Nights enters the battlefield, draw a card.</text>
+			<prop>
+				<side>front</side>
+				<manacost>5UU</manacost>
+				<cmc>7</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+				<layout>normal</layout>
+				<type>Creature — Faerie God</type>
+				<maintype>Creature</maintype>
+				<pt>4/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<set num="11" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Naeva, Syndicate Muscle</name>
+			<text>Menace
+Whenever you cast a spell, each opponent loses 2 life if it is black. Otherwise, you lose 2 life. This ability only triggers twice each turn.</text>
+			<prop>
+				<side>front</side>
+				<manacost>BB</manacost>
+				<cmc>2</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Creature — Human Demon</type>
+				<maintype>Creature</maintype>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<set num="16" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Okalae, Gloryseeker</name>
+			<text>Okalae, Gloryseeker is a 5/5 Berserker creature with haste and indestructible as long as it is your turn. (They don't lose loyalty while they're not a planeswalker.)
+[+1]: Until end of turn, whenever a creature you control deals combat damage to an opponent, exile the top card of your library. During your next turn, you may play that card.
+[-2]: Okalae deals 3 damage to any target. If a creature or planeswalker died this turn, they deal 5 damage to that target instead.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>3RW</manacost>
+				<cmc>5</cmc>
+				<colors>RW</colors>
+				<coloridentity>RW</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Okalae</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>4</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="48" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Open-Path Fox</name>
+			<text>{3}{G}{G}, Exile Open-Path Fox: Reveal the top eight cards of your library. You may put a creature card from among them onto the battlefield and the rest on the bottom of your library in any order.</text>
+			<prop>
+				<side>front</side>
+				<manacost>1G</manacost>
+				<cmc>2</cmc>
+				<colors>G</colors>
+				<coloridentity>G</coloridentity>
+				<layout>normal</layout>
+				<type>Creature — Fox</type>
+				<maintype>Creature</maintype>
+				<pt>3/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<set num="26" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Piety</name>
+			<text>Whenever you cast a white spell, you gain X life, where X is 1 plus the number of times you've gained life this turn.
+At the beginning of each end step, if you have at least 20 life more than your starting life total, create a 4/4 white Angel creature token with flying.</text>
+			<prop>
+				<side>front</side>
+				<manacost>WWW</manacost>
+				<cmc>3</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+				<layout>normal</layout>
+				<type>Enchantment</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="6" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Pool of Light</name>
+			<text>({T}: Add {W} or {U})
+Pool of Light enters the battlefield tapped unless you control a basic Plains or a basic Island.</text>
+			<prop>
+				<side>front</side>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity>WU</coloridentity>
+				<layout>normal</layout>
+				<type>Land — Plains Island</type>
+				<maintype>Land</maintype>
+			</prop>
+			<tablerow>0</tablerow>
+			<cipt>1</cipt>
+			<set num="69" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Quxfin, Multiversal Conqueror</name>
+			<text>Spend only mana of different types to cast Quxfin. ({W}{U}{B}{R}{G}{C} Are the types of mana.)
+[+1]: Look at the top two cards of your library. Put one of them into your hand and the other into your graveyard.
+[-3]: Create X 1/1 colorless Elemental creature tokens, where X is the number of colors or the number of types among cards in your graveyard, whichever is greater.
+[-9]: Take an extra turn after this one. Then take another unless an opponent has you draw five cards.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>5</manacost>
+				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity>WUBRG</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Quxfin</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>6</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="2" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Rozalia, Lichbane</name>
+			<text>When Rozalia dies, you may discard a card. If you do, exile her, then you may cast Sapphire, Aspiring Lich as long as she remains exiled.
+[+1]: Until end of turn, Rozalia becomes a 4/4 Elf Warrior creature with indestructible and haste. (She doesn't lose loyalty while not a planeswalker.)
+[-2]: Exile target artifact, enchantment, or card in a graveyard.
+---
+Transforms into Sapphire, Aspiring Lich</text>
+			<prop>
+				<side>front</side>
+				<manacost>2RG</manacost>
+				<cmc>4</cmc>
+				<colors>RG</colors>
+				<coloridentity>RGB</coloridentity>
+				<layout>transform</layout>
+				<type>Legendary Planeswalker — Rozalia</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>4</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<related attach="transform">Sapphire, Aspiring Lich</related>
+			<set num="49a" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Sapphire, Aspiring Lich</name>
+			<text>When Sapphire dies, you may discard a card. If you do, exile her, then you may cast Rozalia, Lichbane as long as she remains exiled.
+[+1]: You may return a creature card from your graveyard to your hand, then each player discards a card.
+[-5]: You get an emblem with “Whenever an opponent loses life, you gain that much life.” You may have each opponent's life total become 10.
+---
+Transforms from Rozalia, Lichbane</text>
+			<prop>
+				<side>back</side>
+				<manacost>2BR</manacost>
+				<cmc>4</cmc>
+				<colors>BR</colors>
+				<coloridentity>RGB</coloridentity>
+				<layout>transform</layout>
+				<type>Legendary Planeswalker — Maria</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>2</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<related attach="transform">Rozalia, Lichbane</related>
+			<set num="49b" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Scratch's Tithetaker</name>
+			<text>Flying, haste
+Whenever Scratch's Tithetaker attacks, an opponent may have it deal 2 damage to them. If no one does, create a Treasure token.</text>
+			<prop>
+				<side>front</side>
+				<manacost>3R</manacost>
+				<cmc>4</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+				<layout>normal</layout>
+				<type>Creature — Demon</type>
+				<maintype>Creature</maintype>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<set num="20" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Sesilius, Banished Messiah</name>
+			<text>If one or more counters would be put on another permanent, you may instead put that many loyalty counters on Sesilius.
+[+2]: Each opponent loses 3 life unless they sacrifice a nonland permanent or discard a card. Repeat this process once.
+[-X]: Exile target nonland permanent with mana value X or less.
+[-12]: Reveal any number of permanent cards you own from outside the game. Put each of them onto the battlefield.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>4WB</manacost>
+				<cmc>6</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Sesilius</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>5</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="50" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Skyline Protector</name>
+			<text>Skyline Protector gets +1/+0 for each artifact you control.
+Whenever you become the target of a spell or ability an opponent controls, Skyline Protector deals 3 damage to that opponent.</text>
+			<prop>
+				<side>front</side>
+				<manacost>1R</manacost>
+				<cmc>2</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+				<layout>normal</layout>
+				<type>Creature — Human Artificer Warrior</type>
+				<maintype>Creature</maintype>
+				<pt>1/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<set num="21" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Sparkrender Flechettes</name>
+			<text>Ward—Pay 5 life. (Whenever this permanent becomes the target of a spell or ability an opponent controls, counter it unless that player pays 5 life.)
+Whenever a player activates an ability of a planeswalker, Sparkrender Flechettes deals 5 damage to that planeswalker.</text>
+			<prop>
+				<side>front</side>
+				<manacost>2</manacost>
+				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
+				<layout>normal</layout>
+				<type>Artifact</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="60" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Spiraling Canyon</name>
+			<text>({T}: Add {R} or {W})
+Spiraling Canyon enters the battlefield tapped unless you control a basic Mountain or a basic Plains.</text>
+			<prop>
+				<side>front</side>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity>RW</coloridentity>
+				<layout>normal</layout>
+				<type>Land — Mountain Plains</type>
+				<maintype>Land</maintype>
+			</prop>
+			<tablerow>0</tablerow>
+			<cipt>1</cipt>
+			<set num="70" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Suppose</name>
+			<text>Look at the top three cards of your library, then put them all on the top or the bottom of your library in any order.
+Draw a card.</text>
+			<prop>
+				<side>front</side>
+				<manacost>U</manacost>
+				<cmc>1</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+				<layout>normal</layout>
+				<type>Sorcery</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="12" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Suppression Field</name>
+			<text>Activated abilities cost {2} more to activate unless they're mana abilities.</text>
+			<prop>
+				<side>front</side>
+				<manacost>1W</manacost>
+				<cmc>2</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+				<layout>normal</layout>
+				<type>Enchantment</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="7" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>The Fate Engine</name>
+			<text>Whenever you cast a spell, create a 0/0 colorless Army creature token, then put a +1/+1 counter on each Army you control.
+Once each turn, you may cast a spell with mana value 3 or less without paying its mana cost.</text>
+			<prop>
+				<side>front</side>
+				<manacost>WUBRG</manacost>
+				<cmc>5</cmc>
+				<colors>WUBRG</colors>
+				<coloridentity>WUBRG</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Artifact</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="35" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Tove Valdulfdatter</name>
+			<text>[+1]: You may discard a card or sacrifice a permanent. If you do, draw a card.
+[-2]: Search your library for a land card that doesn't share a name with a land you control, reveal it, put it into your hand, then shuffle.
+[-3]: Put a paradise counter on target land. It gains indestructible and “{T}: Add two mana of any combination of colors.”
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>1RG</manacost>
+				<cmc>3</cmc>
+				<colors>RG</colors>
+				<coloridentity>RG</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Tove</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>3</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="51" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Towering Herdleader</name>
+			<text>Trample
+Whenever Towering Herdleader enters the battlefield or dies, create two 3/3 green Beast creature tokens.</text>
+			<prop>
+				<side>front</side>
+				<manacost>5GGG</manacost>
+				<cmc>8</cmc>
+				<colors>G</colors>
+				<coloridentity>G</coloridentity>
+				<layout>normal</layout>
+				<type>Creature — Beast</type>
+				<maintype>Creature</maintype>
+				<pt>7/7</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<set num="27" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Turbulent Mastery</name>
+			<text>Choose one. If you control a planeswalker, choose any number instead.
+• Return target nonland permanent to its owner's hand.
+• Put two +1/+1 counters on target creature.
+• Target player may scry 2, then draws a card.</text>
+			<prop>
+				<side>front</side>
+				<manacost>GU</manacost>
+				<cmc>2</cmc>
+				<colors>GU</colors>
+				<coloridentity>GU</coloridentity>
+				<layout>normal</layout>
+				<type>Instant</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="52" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Urge to Engineer</name>
+			<text>You may remove six counters from a black planeswalker you control rather than pay this spell's mana cost.
+Gain control of target opponent during that player's next turn. After that turn, that player takes an extra turn. Exile Urge to Engineer.</text>
+			<prop>
+				<side>front</side>
+				<manacost>5UB</manacost>
+				<cmc>7</cmc>
+				<colors>UB</colors>
+				<coloridentity>UB</coloridentity>
+				<layout>normal</layout>
+				<type>Sorcery</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="53" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Urge to Explore</name>
+			<text>You may remove X counters from a green planeswalker you control rather than pay this spell's mana cost.
+Exile the top X cards of your library. You may play permanent cards from among them until the end of your next turn. You may play an additional land this turn.</text>
+			<prop>
+				<side>front</side>
+				<manacost>XRG</manacost>
+				<cmc>2</cmc>
+				<colors>RG</colors>
+				<coloridentity>RG</coloridentity>
+				<layout>normal</layout>
+				<type>Sorcery</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="54" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Urge to Imagine</name>
+			<text>You may remove four counters from a blue planeswalker you control rather than pay this spell's mana cost.
+Create a token that's a copy of target permanent.</text>
+			<prop>
+				<side>front</side>
+				<manacost>3WU</manacost>
+				<cmc>5</cmc>
+				<colors>WG</colors>
+				<coloridentity>WU</coloridentity>
+				<layout>normal</layout>
+				<type>Sorcery</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="55" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Urge to Kill</name>
+			<text>You may remove three counters from a red planeswalker you control rather than pay this spell's mana cost.
+Urge to Kill deals 5 damage to target creature or planeswalker.</text>
+			<prop>
+				<side>front</side>
+				<manacost>BR</manacost>
+				<cmc>2</cmc>
+				<colors>BR</colors>
+				<coloridentity>BR</coloridentity>
+				<layout>normal</layout>
+				<type>Sorcery</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="56" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Urge to Lift</name>
+			<text>You may remove two counters from a white planeswalker you control rather than pay this spell's mana cost.
+Target creature gets +3/+3 and gains indestructible until end of turn.</text>
+			<prop>
+				<side>front</side>
+				<manacost>GW</manacost>
+				<cmc>2</cmc>
+				<colors>GW</colors>
+				<coloridentity>GW</coloridentity>
+				<layout>normal</layout>
+				<type>Instant</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="57" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Vikalden, Blackheart</name>
+			<text>[+2]: Each player loses 3 life unless they sacrifice a nonland permanent or discard a card.
+[-1]: Vikalden becomes a 3/3 black Assassin creature with deathtouch and indestructible until your next turn. (She doesn't lose loyalty when not a planeswalker)
+[-7]: You get an emblem with “Swamps you control have ‘{T}: Add {B}{B}.'” and “{B}{B}{B}{B}{B}: You draw five cards and lose 5 life.”
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>1BB</manacost>
+				<cmc>3</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Vikalden</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>2</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="17" rarity="mythic rare">WTM</set>
+		</card>
+		<card>
+			<name>Violent Mastery</name>
+			<text>Choose one. If you control a planeswalker, choose any number instead.
+• Violent Mastery deals 3 damage to target player.
+• Violent Mastery deals 3 damage to target planeswalker.
+• Violent Mastery deals 3 damage to target creature.</text>
+			<prop>
+				<side>front</side>
+				<manacost>RW</manacost>
+				<cmc>2</cmc>
+				<colors>RW</colors>
+				<coloridentity>RW</coloridentity>
+				<layout>normal</layout>
+				<type>Instant</type>
+				<maintype>undefined</maintype>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="58" rarity="rare">WTM</set>
+		</card>
+		<card>
+			<name>Xepa, Unleashed Inmate</name>
+			<text>[+2]: Exile the top two cards of your library. An opponent may pay life equal to their total mana value. If they do, you may play those cards until end of turn. If they don't, you may play those cards without paying their mana costs.
+[-X]: Xepa deals X damage divided as you choose among any number of target creatures and/or planeswalkers, and X damage to each opponent.
+[-6]: Destroy all artifacts and nonbasic lands.
+</text>
+			<prop>
+				<side>front</side>
+				<manacost>5RR</manacost>
+				<cmc>7</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+				<layout>normal</layout>
+				<type>Legendary Planeswalker — Xepa</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>6</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<set num="22" rarity="mythic rare">WTM</set>
+		</card>
+	</cards>
+</cockatrice_carddatabase>

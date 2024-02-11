@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cockatrice_carddatabase version="3">
+<cards>
+<card>
+ <name>white Soldier 11WTM</name>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Soldier</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="WTM4" rarity="token">tokens</set>
+ <reverse-related>Admirable Admiral</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>green Wolf 22WTM</name>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/2</pt>
+ <type>Token Creature — Wolf</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="WTM9" rarity="token">tokens</set>
+ <reverse-related count="2">Caydin, Himbo Heroine</reverse-related>
+ <reverse-related count="2"></reverse-related>
+</card>
+<card>
+ <name>all colors Avatar WTM</name>
+ <color>W</color>
+ <color>U</color>
+ <color>B</color>
+ <color>R</color>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>X/X</pt>
+ <type>Token Creature — Avatar</type>
+ <tablerow>2</tablerow>
+ <text>This token is all colors.</text>
+ <token>1</token>
+ <set num="WTM10" rarity="token">tokens</set>
+ <reverse-related>Gerrit Dior, History's Voice</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Treasure</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Treasure</type>
+ <tablerow>1</tablerow>
+ <text>{T}, Sacrifice this artifact: Add one mana of any color.</text>
+ <token>1</token>
+ <set num="WTM11" rarity="token">tokens</set>
+ <reverse-related>Glitch, Mind of a Beast</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Scratch's Tithetaker</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>red Lizard 33WTM</name>
+ <color>R</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>3/3</pt>
+ <type>Token Creature — Lizard</type>
+ <tablerow>2</tablerow>
+ <text>Haste</text>
+ <token>1</token>
+ <set num="WTM6" rarity="token">tokens</set>
+ <reverse-related>Holly, Fauna Expert</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>green Rat 11WTM</name>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Rat</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="WTM8" rarity="token">tokens</set>
+ <reverse-related>Isamu, Evergnawing</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>white Angel 44WTM</name>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>4/4</pt>
+ <type>Token Creature — Angel</type>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+ <set num="WTM3" rarity="token">tokens</set>
+ <reverse-related>Mari, Goddess Emeritus</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Piety</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>colorless Army 00WTM</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>0/0</pt>
+ <type>Token Creature — Army</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="WTM1" rarity="token">tokens</set>
+ <reverse-related>The Fate Engine</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>green Beast 33WTM</name>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>3/3</pt>
+ <type>Token Creature — Beast</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="WTM7" rarity="token">tokens</set>
+ <reverse-related count="2">Towering Herdleader</reverse-related>
+ <reverse-related count="2"></reverse-related>
+</card>
+<card>
+ <name>Sadie Dal Emblem WTM</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Emblem</type>
+ <tablerow>1</tablerow>
+ <text>Eureka! *(At the beginning of each end step, you get a research counter if you cast a spell this turn. Then if you have eight or more research counters, remove them and create a Masterpiece token of your choice.)*</text>
+ <token>1</token>
+ <set num="WTM12" rarity="token">tokens</set>
+</card>
+<card>
+ <name>white Spirit 11WTM</name>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Spirit</type>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+ <set num="WTM5" rarity="token">tokens</set>
+</card>
+<card>
+ <name>colorless Spirit 11WTM</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Spirit</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="WTM2" rarity="token">tokens</set>
+</card>
+</cards>
+</cockatrice_carddatabase>
