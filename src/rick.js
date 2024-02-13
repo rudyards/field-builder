@@ -547,8 +547,7 @@ function tokenBuilding(flags) {
 		if(library.cards[c].setID != "tokens")
 			continue;
 		// grab setID
-		let idsplit = library.cards[c].cardID.match(cidMatch);
-		let originSet = idsplit[1] || "BOT";
+		let originSet = library.cards[c].parentSet || "BOT";
 		let altSet = "";
 		let sltag = library.cards[c].fullName.match((/[(](SL[0-9]+)[)]/));
 		if(sltag) {
@@ -713,7 +712,7 @@ function cardBuilding(flags) {
 	}
 	str += "\t</sets>\r\n";
 	
-	str += "\t<cards>";
+	str += "\t<cards>\r\n";
 	for(let c in library.cards) {
 		let card = library.cards[c];
 		if(card.setID == "tokens")
@@ -837,7 +836,11 @@ function writeCardBlock(key) {
 	for(let s in card.spellbook) {
 		contents += `\t\t\t<related persistent="persistent">${card.spellbook[s]}</related>\r\n`;
 	}
-	contents += `\t\t\t<set num="${card.cardID}${(card.shape == "doubleface" ? "a" : "")}" rarity="${card.rarity}">${card.setID}</set>\r\n`;
+	contents += `\t\t\t<set num="${card.cardID}${(card.shape == "doubleface" ? "a" : "")}"`;
+	contents +=	` rarity="${card.rarity}"`;
+	if(card.scryID)
+		contents += ` uuid="${card.scryID}"`;
+	contents += `>${card.setID}</set>\r\n`;
 	contents += "\t\t</card>\r\n";
 	if(cardNames[2])
 		contents = contents + contents.replace(cardNames[0], cardNames[2]).replace(cardNames[1], cardNames[3]);
@@ -881,7 +884,10 @@ function writeCardBlock(key) {
 		for(let s in card.spellbook) {
 			contents2 += `\t\t\t<related persistent="persistent">${card.spellbook[s]}</related>\r\n`;
 		}
-		contents2 += `\t\t\t<set num="${card.cardID}b" rarity="${card.rarity}">${card.setID}</set>\r\n`;
+		contents2 += `\t\t\t<set num="${card.cardID}b" rarity="${card.rarity}"`;
+		if(card.scryID)
+			contents2 += ` uuid="${card.scryID}"`;
+		contents2 += `>${card.setID}</set>\r\n`;
 		contents2 += "\t\t</card>\r\n";
 		if(cardNames[3])
 			contents2 = contents2 + contents2.replace(cardNames[0], cardNames[2]).replace(cardNames[1], cardNames[3]);

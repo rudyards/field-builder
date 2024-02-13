@@ -56,6 +56,9 @@ const CROP_VALS = {
 
 let new_sets = {};
 let run_images = true;
+let msem_sets = [];
+let rev_sets = [];
+let mtg_sets = [];
 let error_count = 0;
 let stage = 0;
 
@@ -177,7 +180,7 @@ function prepareFiles() {
 	})
 }
 // combine the files into a single library
-function combineFiles() {
+async function combineFiles() {
 	let cards = {}
 	for(let s in new_sets) {
 		for(let c in new_sets[s]) {
@@ -191,7 +194,27 @@ function combineFiles() {
 		console.log("No set data provided, using provisional data.");
 	}
 	
-	let library = stitch.stitchBlank({cards:cards, setData:setData});
+	let library = {
+		cards: {},
+		setData: {},
+		legal: {}
+	};
+	for(let k in format_args) {
+		if(format_args[k].length) {
+			let partialLib = await apiPartialLibrary(k);
+			if(!partialLib.cards)
+				continue;
+			for(let s in partialLib.setData) {
+				library.setData[s] = partialLib.setData[s];
+			}
+			for(let c in partialLib.cards) {
+				library.cards[c] = partialLib.cards[c];
+				library.cards[c].from_lackey = true;
+			}
+		}
+	}
+	
+	stitch.stitchLibraries(library, {cards:cards, setData:setData});
 	
 	fs.writeFile('./lbfiles/cards.json', toolbox.JSONfriendly(library.cards), (err) => {
 		if(err) {
@@ -235,6 +258,8 @@ function processImages(library, trice_names) {
 		let si = card.setID;
 		if(si == "tokens")
 			si = card.parentSet;
+		if(card.from_lackey)
+			continue;
 		let current = `./files/${si}/${card.cardID}.${FILE_TYPE}`;
 		fs.exists(current, (exists) => {
 			if(!exists)
@@ -299,6 +324,49 @@ function forkImage(fn, dir, names) {
 		}
 	})
 }
+async function apiPartialLibrary(k) {
+	let format = k.replace(/^--/, "");
+	let body = JSON.stringify({format:format, sets:format_args[k]});
+	
+	let resp = await fetch('https://lackeybot.herokuapp.com/api/library', {
+		method: "POST",
+		headers: {
+		  'Accept': 'application/json',
+		  'Content-Type': 'application/json'
+		},
+		body: body
+	})
+	
+	let s = await streamToString(resp.body);
+	let j = {};
+	try {
+		j = JSON.parse(s);
+		j = j.body;
+	}catch(e){
+		console.log(e);
+	}
+	
+	return j;
+}
+async function streamToString(stream) {
+  const reader = stream.getReader();
+  const textDecoder = new TextDecoder();
+  let result = '';
+
+  async function read() {
+    const { done, value } = await reader.read();
+
+    if (done) {
+      return result;
+    }
+
+    result += textDecoder.decode(value, { stream: true });
+    return read();
+  }
+
+  return read();
+}
+
 process.on('beforeExit', () => {
 	stage++;
 	switch(stage) {
@@ -319,5 +387,27 @@ process.on('beforeExit', () => {
 if(process.argv.includes("--noimages")) {
 	run_images = false;
 }
+
+// grab sets from command line
+let format_args = {
+	"--msem": msem_sets,
+	"--rev": rev_sets,
+	"--revolution": rev_sets,
+	"--magic": mtg_sets,
+	"--canon": mtg_sets
+}
+for(let k in format_args) {
+	let ind = process.argv.indexOf(k);
+	if(ind >= 0) {
+		for(let i=ind+1; i<process.argv.length; i++) {
+			if(process.argv[i].match(/^-/))
+				break;
+			format_args[k].push(process.argv[i]);
+		}
+	}
+}
+
+delete format_args["--rev"];
+delete format_args["--canon"];
 
 prepareFiles();

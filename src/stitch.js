@@ -466,7 +466,7 @@ function stitchLibraries(lib, newlib) {
 	}
 	if(cli)
 		console.log("Stitching complete!");
-	return finalCards;
+	lib.cards = finalCards;
 }
 function locateConjuredCard(cname, thisCard, cards) {
 	if(thisCard.lair) {
@@ -846,6 +846,7 @@ if(require.main === module && process.argv[2] != undefined) {
 }
 
 exports.stitchBlank = stitchBlank;
+exports.stitchLibraries = stitchLibraries;
 exports.arrayStitch = arrayStitch;
 exports.arrayExpand = arrayExpand;
 exports.conjureRegex = conjureRegex;
