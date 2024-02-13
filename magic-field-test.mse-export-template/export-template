@@ -221,6 +221,7 @@ script:
 		+ "\"shape\": \"" + (if contains(card.shape, match: "adventure") then "adventure" else if contains(card.shape, match: "aftermath") or contains(card.shape, match: "split") then "split" else if contains(card.shape, match:"double") then "doubleface" else "normal") + "\", "
 		+ "\"setID\": \"" + (if token_export() then "tokens" else fixed_set_code()) + "\", "
 		+ "\"cardID\": \"" + (if token_export() then fixed_set_code() else "") + position(of:card, in:set) + "\", "
+		+ (if token_export() then "\"parentSet\": \"" + fixed_set_code() + "\", " else "")
 		+ "\"notes\": " + card_note_array() + ", "
 		+ token_scripts()
 		+ "\"artist\": \"" + break_cleaner(quote_replace(card.illustrator))
