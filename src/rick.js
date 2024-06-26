@@ -10,7 +10,7 @@ var predef = [
 	"Keystone", "Jelly", "Key", "Influence"
 ];
 var fake_tokens = [
-	// whenever you create a ...
+	// whenever you create ...
 	"a token",
 	"an artifact token",
 	"an Aura token",
@@ -446,6 +446,7 @@ function tokenPuller(c, shout) {
 	if(cleanoracle.match(/^Compose/m))
 		tokens.push(["colorless Saga enchantment with some other stuff", 1, "Keyword: Compose"]);
 	
+	// field test
 	if(cleanoracle.match(/Embrace/i)) {
 		tokens.push(["Embraced Cards", 1, "Keyword: Embrace"]);
 		tokens.push(["Embraced Representative", 1, "Keyword: Embrace"]);
@@ -454,6 +455,9 @@ function tokenPuller(c, shout) {
 		tokens.push(["Equalised Dragon", "X", "Keyword: Equalise"]);
 	}else if(cleanoracle.match(/equalise/i)) {
 		tokens.push(["Equalised Dragon", 1, "Keyword: Equalise"]);
+	}
+	if(cleanoracle.match(/^Aurora/)) {
+		tokens.push(["Aurora Reminder", 1, "Keyword: Aurora"]);
 	}
 
 	// apply tokenscripts overrides
@@ -542,7 +546,22 @@ function tokenBuilding(flags) {
 	let broken_tokens = [];
 	let broken_conjure = [];
 	let with_spellbooks = [];
-	// first loop tokens
+	// first look for new predefined tokens
+	for(let c in library.cards) {
+		if(library.cards[c].setID == "tokens")
+			continue;
+		let card = library.cards[c];
+		let prede_check = card.rulesText.match(/[Cc]reate (?:an|a|X|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty) ([A-Z][a-z]+([- ][A-Z][a-z]+)?) tokens?/);
+		if(prede_check) {
+			let prede = prede_check[1];
+			if(!predef.includes(prede)) {
+				console.log(`Found predefined token "${prede}"`);
+				predef.push(prede);
+			}
+			
+		}
+	}
+	// then loop tokens
 	for(let c in library.cards) {
 		if(library.cards[c].setID != "tokens")
 			continue;
@@ -798,6 +817,7 @@ function writeCardBlock(key) {
 		tracker[cardNames[1]] = key;
 		
 	let mt = mainType(card.typeLine);
+
 	let contents = "";
 	contents += "\t\t<card>\r\n";
 	contents += "\t\t\t<name>" + cardNames[0] + "</name>\r\n";
@@ -830,6 +850,8 @@ function writeCardBlock(key) {
 	}
 	contents += "</tablerow>\r\n";
 	if(card.rulesText.match(card.cardName + " enters the battlefield tapped"))
+		contents += "\t\t\t<cipt>1</cipt>\r\n";
+	if(card.rulesText.match(card.cardName + " enters tapped"))
 		contents += "\t\t\t<cipt>1</cipt>\r\n";
 	if(cardNames[1])
 		contents += `\t\t\t<related attach="transform">${cardNames[1]}</related>\r\n`;
@@ -880,6 +902,8 @@ function writeCardBlock(key) {
 		contents2 += "</tablerow>\r\n";
 		if(card.rulesText2.match(card.cardName2 + " enters the battlefield tapped"))
 			contents2 += "\t\t\t<cipt>1</cipt>\r\n";
+		if(card.rulesText2.match(card.cardName2 + " enters tapped"))
+			contents2 += "\t\t\t<cipt>1</cipt>\r\n";
 		contents2 += `\t\t\t<related attach="transform">${cardNames[0]}</related>\r\n`;
 		for(let s in card.spellbook) {
 			contents2 += `\t\t\t<related persistent="persistent">${card.spellbook[s]}</related>\r\n`;
@@ -916,7 +940,7 @@ function formatTriceText(card, just_back) {
 	}
 	return str.replace(/[*]/g, "");
 }
-function mainType(str) {
+function mainType(str, sh) {
 	if(str.match(/Land/))
 		return "Land";
 	if(str.match(/Creature/))
@@ -925,7 +949,7 @@ function mainType(str) {
 		return "Planeswalker";
 	let types = str.match(/(Artifact|Enchantment|Instant|Sorcery|Battle|Dungeon|Conspiracy|Plane|Vanguard)/g);
 	if(types)
-		return types[1];
+		return types[0];
 	return "";
 }
 function convertLayout(str) {
@@ -994,7 +1018,7 @@ function writeTokenBlock(key) {
 	contents += " <text>"+card.rulesText.replace(/\n/g," ")+"</text>\r\n";
 	contents += " <token>1</token>\r\n";
 	contents += " <set num=\"" + card.cardID + "\" rarity=\"" + card.rarity + "\">" + card.setID + "</set>\r\n"
-	if(card.rulesText.match(/enters the battlefield tapped./))
+	if(card.rulesText.match(/enters (the battlefield )?tapped./))
 		contents += " <cipt>1</cipt>\r\n";
 	
 	for(let c in card_sources) {
@@ -1411,7 +1435,7 @@ function cardDebugger(c) {
 }
 
 function testTokens(data) {
-	let stitch = require('./stitch2.js');
+	let stitch = require('./stitch.js');
 	let ar;
 	try{
 		ar = JSON.parse(data);

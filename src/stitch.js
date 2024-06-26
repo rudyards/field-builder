@@ -467,6 +467,7 @@ function stitchLibraries(lib, newlib) {
 	if(cli)
 		console.log("Stitching complete!");
 	lib.cards = finalCards;
+	return lib;
 }
 function locateConjuredCard(cname, thisCard, cards) {
 	if(thisCard.lair) {
@@ -778,8 +779,7 @@ function stitchBlank(newlib, mainlib) {
 			mainlib.legal = {};
 	}
 	
-	mainlib.cards = stitchLibraries(mainlib, newlib);	
-	return mainlib;
+	return stitchLibraries(mainlib, newlib);
 }
 function arrayStitch(ar) {
 	let cards = arrayExpand(ar);
@@ -838,7 +838,7 @@ if(require.main === module && process.argv[2] != undefined) {
 		legal: {}
 	}
 	backupCards(format, function() {
-		let finalCards = stitchLibraries(library, newlibrary);
+		let finalCards = stitchLibraries(library, newlibrary).cards;
 		fs.writeFile(`${format}/cards.json`, toolbox.JSONfriendly(finalCards), function(){
 			console.log("cards.json written");
 		})
