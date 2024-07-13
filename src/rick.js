@@ -336,7 +336,7 @@ function tokenPuller(c, shout) {
 			let subtype = thisCard.typeLine.replace(/[^—]+ — /, "").replace(/ +$/, "");
 			if(subtype == "Legendary Planeswalker")
 				subtype = "Forgotten";
-			tokens.push([subtype + " Emblem", 1, "an emblem"])
+			tokens.push([subtype + " Emblem", 1, "an emblem"]);
 		}else{
 			tokens.push([thisCard.cardName + " Emblem", 1, "an emblem"]);
 		}
@@ -505,6 +505,13 @@ function tokenPuller(c, shout) {
 			let test = tn.replace(/[0-9X]+\/[0-9X]+/, "X/X");
 			if(token_map[test])
 				tn = test;
+		}
+		// see if this is an alternate emblem name
+		if(!token_map[tn] && tm == "an emblem") {
+			let test = thisCard.cardName + " Emblem";
+			if(token_map[test]) {
+				tn = test;
+			}
 		}
 		if(!token_map[tn]) {
 			if(tm != "MSEMAR") {
@@ -1334,6 +1341,15 @@ function tokenAliases(card) {
 	}
 	// the token without its colors, for reminder text
 	names.push(tokenNamer(card, {color:true}));
+	// various names for EMBLEMS
+	if(card.typeLine.match(/Emblem/)) {
+		let subtype = card.typeLine.match(/— (.+) */);
+		if(subtype) {
+			names.push(`${subtype[1]} Emblem`);
+		}
+		if(card.cardName != "Emblem")
+			names.push(`${card.cardName} Emblem`);
+	}
 	return names;
 }
 function tokenNamer(card, skips) {
