@@ -149,7 +149,7 @@ function prepareFiles() {
 					}
 					new_sets[sc] = cards;
 					
-					let folder_name = fn.replace(/.txt/, "");
+					let folder_name = fn.replace(/(-field-test)?.txt/, "");
 					if(!fns.includes(folder_name))
 						folder_name += "-files";
 					if(!fns.includes(folder_name))
