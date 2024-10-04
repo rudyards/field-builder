@@ -13,6 +13,9 @@ const conjureRegex = new RegExp(conjstr, 'i');
 const conjureRegexG = new RegExp(conjstr, 'ig');
 const cli = (require.main === module);
 
+function escapeRegex(string) {
+    return string.replace(/[/\-\\^$*+?.()|[\]{}]/g, '\\$&');
+}
 function backupCards(format) {
 	fs.copyFile(`${format}/cards.json`, `${format}/cards_backup.json`, (err) => {
 		if(err) {
@@ -645,7 +648,7 @@ function colorFixer(card) {						//adds colors to 3+c cards since MSE has troubl
 	if(card.rulesText.match(/^This ?(creature|card|artifact|enchantment|permanent|token) is all colors./)) {
 		card.color = "{White/Blue/Black/Red/Green} ";
 	}else if(card.rulesText.match(/is all colors./)) {
-		let newmatch = card.cardName + " is all colors.";
+		let newmatch = escapeRegex(card.cardName) + " is all colors.";
 		if(card.rulesText.match(new RegExp(newmatch)))
 			card.color = "{White/Blue/Black/Red/Green} ";
 	}

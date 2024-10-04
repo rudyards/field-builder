@@ -49,6 +49,9 @@ var tracker = {};
 
 var library, sets, tknr, globalMatch, captureMatch, slimCapture, splitMatch, cidMatch
 
+function escapeRegex(string) {
+    return string.replace(/[/\-\\^$*+?.()|[\]{}]/g, '\\$&');
+}
 // initialize regex and stuff
 function initialize(lib) {
 	library = lib;
@@ -123,9 +126,9 @@ function tokenPuller(c, shout) {
 	if(thisCard.rulesText2)
 		oracle += "\n" + thisCard.rulesText2;
 	oracle = longformTokenization(oracle);
-	let cleanoracle = oracle.replace(new RegExp(thisCard.cardName, 'i'), "~")
+	let cleanoracle = oracle.replace(new RegExp(escapeRegex(thisCard.cardName), 'i'), "~")
 	if(thisCard.cardName2)
-		cleanoracle = cleanoracle.replace(new RegExp(thisCard.cardName2, 'i'), "~")
+		cleanoracle = cleanoracle.replace(new RegExp(escapeRegex(thisCard.cardName2), 'i'), "~")
 
 	let bigMatch = oracle.match(/creates? [^.]+/ig);
 	let tokens = [];
@@ -1329,7 +1332,7 @@ function pullTokenSet(card, setbase) { //determines what set a token belongs to
 	if(setbase[test])
 		return test;
 	for(let set in setbase) {
-		if(card.cardID.match(new RegExp("^" + set + "\\d+s?$", "")))
+		if(card.cardID.match(new RegExp("^" + escapeRegex(set) + "\\d+s?$", "")))
 			return set;
 		if(card.setID == set)
 			return set;
