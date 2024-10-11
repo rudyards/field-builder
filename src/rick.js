@@ -1209,7 +1209,7 @@ function colorTranslate(str, kind) {
 		case "{White/Blue} ":
 		case "{Blue/White} ":
 			tokenColor = "white and blue";
-			tokenInit = "WG";
+			tokenInit = "WU";
 			break;
 		case "{Blue/Black} ":
 		case "{Black/Blue} ":
