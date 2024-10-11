@@ -123,9 +123,19 @@ function prepareFiles() {
 					fs.readFile('./files/'+fn1+'/'+fn, 'utf8', (err, data) => {
 						try {
 							let exported = JSON.parse(data);
-							let cards = stitch.arrayExpand(exported.cards);
-							let meta = exported.meta;
-							let sc = exported.meta.setID;
+							let cards = {};
+							let meta = {title:""};
+							let sc = "";
+							if(exported.meta) {
+								cards = stitch.arrayExpand(exported.cards);
+								meta = exported.meta;
+								sc = exported.meta.setID;
+							}else{
+								cards = stitch.arrayExpand(exported);
+								sc = exported[0].setID;
+								if(sc == "tokens")
+									sc = exported[0].parentSet;
+							}
 
 							if(!sc)
 								throw `File ${fn} does not have a set code.`;

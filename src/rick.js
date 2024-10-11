@@ -849,7 +849,7 @@ function writeCardBlock(key) {
 		contents += "\t\t\t\t<defense>" + card.defense + "</defense>\r\n";
 	if(library.setData[card.setID] && library.setData[card.setID].pool) {
 		let trimmed = library.setData[card.setID].pool.replace(/ Pool/i, "").toLowerCase()
-		contents += "\t\t\t\t<format-" + trimmed + ">legal</format>\r\n";
+		contents += "\t\t\t\t<format-" + trimmed + ">legal</format-" + trimmed + ">\r\n";
 	}
 	contents += "\t\t\t</prop>\r\n";
 	contents += "\t\t\t<tablerow>"
