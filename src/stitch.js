@@ -483,7 +483,8 @@ function locateConjuredCard(cname, thisCard, cards) {
 			cname += " LAIR";
 		}
 	}else if(cards.hasOwnProperty(cname+"_"+thisCard.setID)) {
-		cname += "_" + thisCard.setID;
+		if(thisCard.notes.includes("reprint"))
+			cname += "_" + thisCard.setID;
 	}else if(cards.hasOwnProperty(cname+"_TKN_"+thisCard.setID)) {
 		cname += " " + thisCard.setID;
 	}
