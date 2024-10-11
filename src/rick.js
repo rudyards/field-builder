@@ -863,9 +863,9 @@ function writeCardBlock(key) {
 		contents += "1";
 	}
 	contents += "</tablerow>\r\n";
-	if(card.rulesText.match(card.cardName + " enters the battlefield tapped"))
+	if(card.rulesText.match(escapeRegex(card.cardName) + " enters the battlefield tapped"))
 		contents += "\t\t\t<cipt>1</cipt>\r\n";
-	if(card.rulesText.match(card.cardName + " enters tapped"))
+	if(card.rulesText.match(escapeRegex(card.cardName) + " enters tapped"))
 		contents += "\t\t\t<cipt>1</cipt>\r\n";
 	if(cardNames[1])
 		contents += `\t\t\t<related attach="transform">${cardNames[1]}</related>\r\n`;
@@ -914,9 +914,9 @@ function writeCardBlock(key) {
 			contents2 += "1";
 		}
 		contents2 += "</tablerow>\r\n";
-		if(card.rulesText2.match(card.cardName2 + " enters the battlefield tapped"))
+		if(card.rulesText2.match(escapeRegex(card.cardName2) + " enters the battlefield tapped"))
 			contents2 += "\t\t\t<cipt>1</cipt>\r\n";
-		if(card.rulesText2.match(card.cardName2 + " enters tapped"))
+		if(card.rulesText2.match(escapeRegex(card.cardName2) + " enters tapped"))
 			contents2 += "\t\t\t<cipt>1</cipt>\r\n";
 		contents2 += `\t\t\t<related attach="transform">${cardNames[0]}</related>\r\n`;
 		for(let s in card.spellbook) {
@@ -1146,7 +1146,7 @@ function tokenNamerSimple(card) {
 	let card_name = card.cardName;
 	if(card.hidden)
 		card_name = card.hidden;
-	if(!card.typeLine.match(card_name.replace(/\*/g,"")))
+	if(!card.typeLine.match(escapeRegex(card_name.replace(/\*/g,""))))
 		return card_name + " " + tokenSetCode;
 	let waydualsarray = ["Plains Island","Island Swamp","Swamp Mountain","Mountain Forest","Forest Plains","Plains Swamp","Island Mountain","Swamp Forest","Mountain Plains","Forest Island"];
 	if(waydualsarray.includes(card_name)) {
