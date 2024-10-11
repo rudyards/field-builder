@@ -1,12 +1,25 @@
 {
- "WTM": {
-  "longname": "",
+ "CCR": {
+  "longname": "Chikyu: Chaos Rains",
   "Design": "",
   "Link": "",
   "releaseNo": 1,
   "releaseDate": "",
   "Draft": 0,
   "basics": 0,
+  "pool": "Brain Pool",
+  "masterpiece": false,
+  "packSlots": []
+ },
+ "2HU": {
+  "longname": "Universes Beyond: Touhou",
+  "Design": "",
+  "Link": "",
+  "releaseNo": 2,
+  "releaseDate": "",
+  "Draft": 0,
+  "basics": 0,
+  "pool": "Heart Pool",
   "masterpiece": false,
   "packSlots": []
  }

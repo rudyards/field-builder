@@ -64,14 +64,6 @@ let stage = 0;
 
 // format files
 function prepareFiles() {
-	// make sure we have a tokens folder
-	fs.mkdir(__dirname + "/files/tokens", (err) => {
-		if(err) {
-			console.log("tokens folder found");
-		}else{
-			console.log("tokens folder created");
-		}
-	});
 	// make sure we have an lbfiles folder
 	fs.mkdir(__dirname + "/lbfiles", (err) => {
 		if(err) {
@@ -87,111 +79,133 @@ function prepareFiles() {
 		}else{
 			console.log("final_xmls folder created");
 		}
+		// make sure we have our image folders
+		fs.mkdir(__dirname + "/final_xmls/pics", (err) => {
+			if(err) {
+				console.log("pics folder found");
+			}else{
+				console.log("pics folder created");
+			}
+			// make sure we have our tokens folder
+			fs.mkdir(__dirname + "/final_xmls/pics/downloadedPics", (err) => {
+				if(err) {
+					console.log("downloadedPics folder found");
+				}else{
+					console.log("downloadedPics folder created");
+				}
+				// make sure we have our tokens folder
+				fs.mkdir(__dirname + "/final_xmls/pics/downloadedPics/tokens", (err) => {
+					if(err) {
+						console.log("tokens folder found");
+					}else{
+						console.log("tokens folder created");
+					}
+				});
+
+			});
+
+		});
+
 	});
 	
 	// rename folders to their set code
-	fs.readdir("./files", (err, fns) => {
-		for(let f in fns) {
-			let fn = fns[f];
-			if(!fn.match(/.txt$/))
+	fs.readdir("./files", (err1, fns1) => {
+		for(let f1 in fns1) {
+			let fn1 = fns1[f1];
+			if(!fn1.match(/pool/i))
 				continue;
-			
-			fs.readFile('./files/'+fn, 'utf8', (err, data) => {
-				try {
-					let sc, cards;
-					let exported = JSON.parse(data);
-					if(exported.hasOwnProperty("meta")) {
-						sc = exported.meta.setID;
-						cards = stitch.arrayExpand(exported.cards);
-					}else{
-						cards = stitch.arrayExpand(JSON.parse(data));
-						let hasParent = false, backSwing = [];
-						for(let c in cards) {
-							if(cards[c].parentSet) {
-								sc = cards[c].parentSet;
-								hasParent = true;
-							}
-							else if(cards[c].setID == "tokens") {
-								if(sc) {
-									cards[c].parentSet = sc;
-								}else{
-									backSwing.push(c);
-								}
-							}
-							else if(cards[c].setID != "tokens") {
-								sc = cards[c].setID;
-							}
-							if(sc && hasParent)
-								break;
-						}
-						for(let c in backSwing)
-							cards[backSwing[c]].parentSet = sc;
-					}
-					if(!sc)
-						throw `File ${fn} does not have a set code.`;
-					if(new_sets.hasOwnProperty(sc)) {
-						let ticker = 1;
-						let test_sc = sc + ticker;
-						while(new_sets.hasOwnProperty(test_sc)) {
-							ticker++;
-							test_sc = sc + ticker;
-						}
-						console.log(`${fn}: Set code ${sc} is taken, reassigned to ${test_sc}.`)
-						for(let c in cards) {
-							if(cards[c].setID == sc) {
-								cards[c].setID = test_sc;
-							}
-							if(cards[c].parentSet == sc) {
-								cards[c].parentSet = test_sc;
-							}
-						}
-						sc = test_sc;
-					}
-					new_sets[sc] = cards;
+			fs.readdir("./files/"+fn1, (err, fns) => {
+				for(let f in fns) {
+					let fn = fns[f];
+					if(!fn.match(/.txt$/))
+						continue;
 					
-					let folder_name = fn.replace(/(-field-test)?.txt/, "");
-					if(!fns.includes(folder_name))
-						folder_name += "-files";
-					if(!fns.includes(folder_name))
-						throw `File ${fn} does not have a matching image folder.`;
-					
-					if(fn != sc+".txt") {
-						fs.rename(`./files/${fn}`, `./files/${sc}.txt`, (err) => {
-							if(err)
-								throw err;
-							console.log(`Renamed ${fn} to ${sc}.txt`);
-						});
-					}
-					if(folder_name != sc) {
-						fs.rename(`./files/${folder_name}`, `./files/${sc}`, (err) => {
-							if(err)
-								throw err;
-							console.log(`Renamed ${folder_name} to ${sc}`);
-						});
-					}
-				}catch(e) {
-					error_count++;
-					console.log(e);
-				}
-				
-			})
+					fs.readFile('./files/'+fn1+'/'+fn, 'utf8', (err, data) => {
+						try {
+							let exported = JSON.parse(data);
+							let cards = stitch.arrayExpand(exported.cards);
+							let meta = exported.meta;
+							let sc = exported.meta.setID;
 
+							if(!sc)
+								throw `File ${fn} does not have a set code.`;
+							if(new_sets.hasOwnProperty(sc)) {
+								let ticker = 1;
+								let test_sc = sc + ticker;
+								while(new_sets.hasOwnProperty(test_sc)) {
+									ticker++;
+									test_sc = sc + ticker;
+								}
+								console.log(`${fn}: Set code ${sc} is taken, reassigned to ${test_sc}.`)
+								for(let c in cards) {
+									if(cards[c].setID == sc) {
+										cards[c].setID = test_sc;
+									}
+									if(cards[c].parentSet == sc) {
+										cards[c].parentSet = test_sc;
+									}
+								}
+								sc = test_sc;
+							}
+							new_sets[sc] = {
+								cards: cards,
+								longname: meta.title,
+								pool: fn1
+							};
+							let folder_name = fn.replace(/(-field-test)?.txt/, "");
+							if(!fns.includes(folder_name))
+								folder_name += "-files";
+							if(!fns.includes(folder_name))
+								throw `File ${fn} does not have a matching image folder.`;
+							
+							if(fn != sc+".txt") {
+							fs.rename(`./files/${fn1}/${fn}`, `./files/${fn1}/${sc}.txt`, (err) => {
+									if(err)
+										throw err;
+									console.log(`Renamed ${fn} to ${sc}.txt`);
+								});
+							}
+							if(folder_name != sc) {
+								fs.rename(`./files/${fn1}/${folder_name}`, `./files/${fn1}/${sc}`, (err) => {
+									if(err)
+										throw err;
+									console.log(`Renamed ${folder_name} to ${sc}`);
+								});
+							}
+						}catch(e) {
+							error_count++;
+							console.log(e);
+						}
+						
+					})
+					
+				}
+			})
 		}
 	})
 }
 // combine the files into a single library
 async function combineFiles() {
-	let cards = {}
-	for(let s in new_sets) {
-		for(let c in new_sets[s]) {
-			cards[c] = new_sets[s][c];
-		}
-	}
+	let cards = {};
 	let setData = {};
-	try {
-		setData = require('./lbfiles/setData.json');
-	}catch(e){
-		console.log("No set data provided, using provisional data.");
+	let nextNo = 1;
+	for(let s in new_sets) {
+		for(let c in new_sets[s].cards) {
+			cards[c] = new_sets[s].cards[c];
+		}
+		setData[s] = {
+			longname: new_sets[s].longname,
+			Design: "",
+			Link: "",
+			releaseNo: nextNo,
+			releaseDate: "",
+			Draft: 0,
+			basics: 0,
+			pool: new_sets[s].pool,
+			masterpiece: false,
+			packSlots: []
+		}
+		nextNo++;
 	}
 	
 	let library = {
@@ -230,6 +244,23 @@ async function combineFiles() {
 			console.log("LackeyBot setData file written.");
 		}
 	})
+	let pools = {};
+	for(let s in new_sets) {
+		let p = new_sets[s].pool;
+		if(!pools.hasOwnProperty(p))
+			pools[p] = [];
+		pools[p].push(s);
+	}
+	for(let p in pools) {
+		pools[p] = pools[p].sort();
+	}
+	fs.writeFile('./lbfiles/pools.json', JSON.stringify(pools, null, 1), (err) => {
+		if(err) {
+			console.log(err);
+		}else{
+			console.log("LackeyBot pool file written.");
+		}
+	})
 	
 	rick.initialize(library);
 	rick.tokenBuilding({
@@ -260,7 +291,8 @@ function processImages(library, trice_names) {
 			si = card.parentSet;
 		if(card.from_lackey)
 			continue;
-		let current = `./files/${si}/${card.cardID}.${FILE_TYPE}`;
+		let pi = library.setData[si].pool;
+		let current = `./files/${pi}/${si}/${card.cardID}.${FILE_TYPE}`;
 		fs.exists(current, (exists) => {
 			if(!exists)
 				return;
@@ -268,14 +300,17 @@ function processImages(library, trice_names) {
 				if(card.shape == "doubleface") {
 					// split this image, then delete this file
 					let b2 = card.typeLine2.match(WIDE_TYPES);
-					splitImage(current, `./files/${si}/`, names, b2);
+					splitImage(current, `./files/${pi}/${si}/`, names, b2);
 				}else{
 					// this file needs duplicated
-					forkImage(current, `./files/${si}/`, names);
+					forkImage(current, `./files/${pi}/${si}/`, names);
 				}
 			}else{
 				// rename this file
-				let dest = `./files/${card.setID}/${windex(names[0])}.${FILE_TYPE}`;
+				let dest = `./files/${pi}/${card.setID}/${windex(names[0])}.${FILE_TYPE}`;
+				// if token, put it in the final token folder instead
+				if(card.setID == "tokens")
+					dest = `./final_xmls/pics/downloadedPics/tokens/${windex(names[0])}.${FILE_TYPE}`;
 				fs.rename(current, dest, (err) => {
 					if(err)
 						console.log(err);
@@ -328,7 +363,7 @@ async function apiPartialLibrary(k) {
 	let format = k.replace(/^--/, "");
 	let body = JSON.stringify({format:format, sets:format_args[k]});
 	
-	let resp = await fetch('https://lackeybot.herokuapp.com/api/library', {
+	let resp = await fetch('https://lackeybot.com/api/library', {
 		method: "POST",
 		headers: {
 		  'Accept': 'application/json',
@@ -367,6 +402,15 @@ async function streamToString(stream) {
   return read();
 }
 
+function relocateCardImages() {
+	for(let s in new_sets) {
+		let pi = new_sets[s].pool;
+		fs.rename(`./files/${pi}/${s}`, `./final_xmls/pics/downloadedPics/${s}`, (err) => {
+			if(err)
+				console.log(err)
+		})
+	}
+}
 process.on('beforeExit', () => {
 	stage++;
 	switch(stage) {
@@ -379,6 +423,10 @@ process.on('beforeExit', () => {
 			}
 			break;
 		case 2:
+			console.log("Moving images to single folder");
+			relocateCardImages();
+			break;
+		case 3:
 			console.log("Finished!");
 			break;
 	}

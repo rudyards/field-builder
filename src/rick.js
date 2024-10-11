@@ -735,7 +735,7 @@ function cardBuilding(flags) {
 		str += "\t\t<set>\r\n";
 		str += `\t\t\t<name>${s}</name>\r\n`;
 		str += `\t\t\t<longname>${library.setData[s].longname}</longname>\r\n`;
-		str += `\t\t\t<settype>Custom</settype>\r\n`;
+		str += `\t\t\t<settype>${library.setData[s].pool}</settype>\r\n`;
 		str += `\t\t\t<releasedate>${library.setData[s].releaseDate}</releasedate>\r\n`;
 		str += "\t\t</set>\r\n";
 	}
@@ -847,6 +847,10 @@ function writeCardBlock(key) {
 		contents += "\t\t\t\t<loyalty>" + card.loyalty + "</loyalty>\r\n";
 	if(card.defense)
 		contents += "\t\t\t\t<defense>" + card.defense + "</defense>\r\n";
+	if(library.setData[card.setID] && library.setData[card.setID].pool) {
+		let trimmed = library.setData[card.setID].pool.replace(/ Pool/i, "").toLowerCase()
+		contents += "\t\t\t\t<format-" + trimmed + ">legal</format>\r\n";
+	}
 	contents += "\t\t\t</prop>\r\n";
 	contents += "\t\t\t<tablerow>"
 	if(mt == "Land") {

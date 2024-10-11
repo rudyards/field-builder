@@ -1,6 +1,6 @@
 ﻿mse version: 2.0.0
 short name: Field Test
-full name: version 0.3
+full name: version 0.4
 position hint: 003
 icon: icon.png
 version: 2018-02-09
@@ -197,14 +197,10 @@ script:
 			+ ( if card.loyalty_cost_8 != "" then "[" + card.loyalty_cost_8 + "]" +": ") +(if card.level_8_text != "" then card.level_8_text+"\\n" else if contains(paragraph_count(card.rule_text_2), match:"~~~") then split_text(match:"\n", card.rule_text_2).3+"\\n")))
 	}
 
-	write_normal:= {"	\{"
+	write_normal:= {
+		"	\{"
 		+ "\"fullName\": \"" + break_cleaner(apos_fix(database_name())) + "\", "
-		+ (
-			if card.alias != "" then
-				"\"cardName\": \"" + break_cleaner(card.alias) + "\", "
-				+ "\"alias\": \"" + break_cleaner(remove_tags(card.name)) + "\", "
-			else "\"cardName\": \"" + break_cleaner(remove_tags(card.name)) + "\", "
-		)
+		+ "\"cardName\": \"" + break_cleaner(remove_tags(card.name)) + "\", "
 		+ "\"manaCost\": \"" + mana_script(card.casting_cost) + "\", "
 		+ "\"typeLine\": \"" + break_cleaner(card.type) + "\", "
 		+ "\"rarityLine\": \"" + lb_rarity_code() + "\", "
@@ -249,9 +245,11 @@ script:
 		+ "\"cardType2\": \"" + type_trim(card.super_type_2) + "\", "
 	}
 
-	write_cards := to_text(for each card in cards do write_normal())
+	write_update := {write_normal()}
+	write_cards := to_text(for each card in cards do write_update())
 	clean_cards := replace@(match:",\n$", replace: "\n")
 		+replace@(match:"’", replace:"'")
+	write_set := "\"meta\":\{\"setID\": \"{fixed_set_code()}\", \"title\": \"{quote_replace(set.title)}\"\},"
 	####################################
 	file_name := {
 		(
@@ -262,4 +260,4 @@ script:
 	}
 	write_images := for each card in cards do write_image_file(card, directory: "{fixed_set_code()}", file:(if token_export() then fixed_set_code() else "") + position(of:card, in:set)+".jpg")
 
-	to_string("[\n"+clean_cards(write_cards) +"]")
+	to_string("\{" + write_set + "\n\"cards\":[\n"+clean_cards(write_cards) +"]\n\}")
