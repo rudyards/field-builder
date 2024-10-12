@@ -1,7 +1,7 @@
 ﻿mse version: 2.0.0
 short name: Field Test
 full name: version 0.4
-position hint: 003
+position hint: 120
 icon: icon.png
 version: 2018-02-09
 installer group: magic/Export/lackeyccg
@@ -103,14 +103,14 @@ script:
 		replace@(match:"\"", replace:"”")
 	quote_replace := replace@(match:"\"", replace:"\\\\\"")
 	break_cleaner := replace@(match:"\n", replace:"")
-	mana_script := 	replace@(match:"(2|H|W|U|B|R|G|S|C)/(W|U|B|R|G|S|C)", replace:{"\{"+_1+"/"+_2+"\}"})+
-		replace@(match:"(X|Y|Z|W|U|B|R|G|S|C)", in_context:"(?<!\{)(?<!/)<match>", replace:{"\{"+_1+"\}"})+
+	mana_script := 	replace@(match:"(2|H|W|U|B|R|G|S|C|I)/(W|U|B|R|G|S|C|I)", replace:{"\{"+_1+"/"+_2+"\}"})+
+		replace@(match:"(X|Y|Z|W|U|B|R|G|S|C|I)", in_context:"(?<!\{)(?<!/)<match>", replace:{"\{"+_1+"\}"})+
 		replace@(match:"([1-9][0-9])", in_context:"(?<!\{)(?<!\\/)<match>", replace:{"\{"+_1+"\}"})+
 		replace@(match:"([0-9])", in_context:"(?<!\{)(?<!\\/)<match>(?!})", replace:{"\{"+_1+"\}"})+
 		replace@(match:"V", replace:{"\{"+v_rep("V")+"\}"})
 
-	lackey_bot_mana_filter := replace@(match:"<sym(-auto)?>([0-9WUBRGCSHEQTXYZEDV/]+)</sym(-auto)?>", replace:{"\{"+_2+"}"})+
-		replace@(match:"([0-9HSCWUBRGXYZEDV/])", in_context:"\{[0-9HSCWUBRGXYZEDV/]*<match>[0-9HSCWUBRGXYZEDV/]*}", replace:{"\{"+v_rep(_1)+"}"})+
+	lackey_bot_mana_filter := replace@(match:"<sym(-auto)?>([0-9WUBRGCSHEQTXYZEDVI/]+)</sym(-auto)?>", replace:{"\{"+_2+"}"})+
+		replace@(match:"([0-9HSCWUBRGXYZEDV/])", in_context:"\{[0-9HSCWUBRGXYZEDVI/]*<match>[0-9HSCWUBRGXYZEDVI/]*}", replace:{"\{"+v_rep(_1)+"}"})+
 		replace@(match:"}\{/}\{", replace:"/")+
 		replace@(match:"\{([0-9])}\{([0-9])}", replace:{"\{"+_1+_2+"}"})+
 		replace@(match:"\{\{", replace:"\{")+
@@ -145,6 +145,12 @@ script:
 		else if cond == "white, red, green" then "\{Red/Green/White\} "
 		else if cond == "white, blue, green" then "\{Green/White/Blue\} "
 		else ""
+	}
+	silver_patch := {
+		is_silver := contains(card.casting_cost, match:"I")
+		if not is_silver then input
+		else if input == "" then "\{Silver\} "
+		else replace(input, match:"\{", replace:"\{Silver/")
 	}
 	trim_zeroes := replace@(match: "^00?", replace: "")+
 		replace@(match: "a?/[0-9b]+", replace: "")
@@ -186,15 +192,32 @@ script:
 		replace@(match:"<i>", replace:"*")+
 		replace@(match:"<i>", replace:"*")+
 		replace@(match:"\\*\\*+", replace:"")
-	walker_text := { lackey_bot_mana_filter(lackey_bot_rule_filter((if card.loyalty_cost_1 != "" then "[" + card.loyalty_cost_1 + "]: ") +(if card.level_1_text != "" then card.level_1_text else split_text(match:"\n", card.rule_text).0)+"\\n"
-			+ "[" + card.loyalty_cost_2 + "]" +(if card.loyalty_cost_2 !="" then ": ") +(if card.level_2_text != "" then card.level_2_text+"\\n" else if contains(paragraph_count(card.rule_text), match:"~") then split_text(match:"\n", card.rule_text).1+"\\n")
-			+ "[" + card.loyalty_cost_3 + "]" +(if card.loyalty_cost_3 !="" then ": ") +(if card.level_3_text != "" then card.level_3_text+"\\n" else if contains(paragraph_count(card.rule_text), match:"~~") then split_text(match:"\n", card.rule_text).2+"\\n")
-			+ ( if card.loyalty_cost_4 != "" then "[" + card.loyalty_cost_4 + "]" +": ") +(if card.level_4_text != "" then card.level_4_text+"\\n" else if contains(paragraph_count(card.rule_text), match:"~~~") then split_text(match:"\n", card.rule_text).3+"\\n")))
+
+	walker_text := {
+			lackey_bot_mana_filter(
+				lackey_bot_rule_filter(
+					  (if card.loyalty_cost_1 != "" then "[" + card.loyalty_cost_1 + "]: ")
+					+ (if card.level_1_text != "" then card.level_1_text else split_text(match:"\n", card.rule_text).0)
+					+ "\\n"
+					+ "[" + card.loyalty_cost_2 + "]" + (if card.loyalty_cost_2 !="" then ": ") + (if card.level_2_text != "" then card.level_2_text+"\\n" else if contains(paragraph_count(card.rule_text), match:"~") then split_text(match:"\n", card.rule_text).1+"\\n")
+					+ "[" + card.loyalty_cost_3 + "]" + (if card.loyalty_cost_3 !="" then ": ") + (if card.level_3_text != "" then card.level_3_text+"\\n" else if contains(paragraph_count(card.rule_text), match:"~~") then split_text(match:"\n", card.rule_text).2+"\\n")
+					+ ( if card.loyalty_cost_4 != "" then "[" + card.loyalty_cost_4 + "]" +": ") + (if card.level_4_text != "" then card.level_4_text+"\\n" else if contains(paragraph_count(card.rule_text), match:"~~~") then split_text(match:"\n", card.rule_text).3+"\\n")
+					+ ( if card.loyalty_cost_5 != "" then "[" + card.loyalty_cost_5 + "]" +": ") + (if card.level_5_text != "" then card.level_5_text+"\\n" else if contains(paragraph_count(card.rule_text), match:"~~~~") then split_text(match:"\n", card.rule_text).4+"\\n")
+					+ ( if card.loyalty_cost_6 != "" then "[" + card.loyalty_cost_6 + "]" +": ") + (if card.level_6_text != "" then card.level_6_text+"\\n" else if contains(paragraph_count(card.rule_text), match:"~~~~") then split_text(match:"\n", card.rule_text).5+"\\n")
+				)
+			)
 	}
-	walker_text_2 := { lackey_bot_mana_filter(lackey_bot_rule_filter((if card.loyalty_cost_5 != "" then "[" + card.loyalty_cost_5 + "]: ") +(if card.loyalty_cost_5 !="" then ": ") +(if card.level_5_text != "" then card.level_5_text+"\\n" else split_text(match:"\n", card.rule_text_2).0)+"\\n"
-			+ "[" + card.loyalty_cost_6 + "]" +(if card.loyalty_cost_6 !="" then ": ") +(if card.level_6_text != "" then card.level_6_text+"\\n" else if contains(paragraph_count(card.rule_text_2), match:"~") then split_text(match:"\n", card.rule_text_2).1+"\\n")
-			+ "[" + card.loyalty_cost_7 + "]" +(if card.loyalty_cost_7 !="" then ": ") +(if card.level_7_text != "" then card.level_7_text+"\\n" else if contains(paragraph_count(card.rule_text_2), match:"~~") then split_text(match:"\n", card.rule_text_2).2+"\\n")
-			+ ( if card.loyalty_cost_8 != "" then "[" + card.loyalty_cost_8 + "]" +": ") +(if card.level_8_text != "" then card.level_8_text+"\\n" else if contains(paragraph_count(card.rule_text_2), match:"~~~") then split_text(match:"\n", card.rule_text_2).3+"\\n")))
+	walker_text_2 := {
+			lackey_bot_mana_filter(
+				lackey_bot_rule_filter(
+					(if card.loyalty_cost_9 != "" then "[" + card.loyalty_cost_9 + "]: ") +(if card.level_9_text != "" then card.level_9_text else split_text(match:"\n", card.rule_text_2).0)+"\\n"
+					+ "[" + card.loyalty_cost_10 + "]" +(if card.loyalty_cost_10 !="" then ": ") +(if card.level_10_text != "" then card.level_10_text+"\\n" else if contains(paragraph_count(card.rule_text_2), match:"~") then split_text(match:"\n", card.rule_text_2).1+"\\n")
+					+ "[" + card.loyalty_cost_11 + "]" +(if card.loyalty_cost_11 !="" then ": ") +(if card.level_11_text != "" then card.level_11_text+"\\n" else if contains(paragraph_count(card.rule_text_2), match:"~~") then split_text(match:"\n", card.rule_text_2).2+"\\n")
+					+ ( if card.loyalty_cost_12 != "" then "[" + card.loyalty_cost_12 + "]" +": ") +(if card.level_12_text != "" then card.level_12_text+"\\n" else if contains(paragraph_count(card.rule_text_2), match:"~~~") then split_text(match:"\n", card.rule_text_2).3+"\\n")
+					+ ( if card.loyalty_cost_13 != "" then "[" + card.loyalty_cost_13 + "]" +": ") +(if card.level_13_text != "" then card.level_13_text+"\\n" else if contains(paragraph_count(card.rule_text_2), match:"~~~~") then split_text(match:"\n", card.rule_text_2).4+"\\n")
+					+ ( if card.loyalty_cost_14 != "" then "[" + card.loyalty_cost_14 + "]" +": ") +(if card.level_14_text != "" then card.level_14_text+"\\n" else if contains(paragraph_count(card.rule_text_2), match:"~~~~") then split_text(match:"\n", card.rule_text_2).5+"\\n")
+				)
+			)
 	}
 
 	write_normal:= {
@@ -209,7 +232,7 @@ script:
 		+ "\"power\": " + (if card.power == "*" then "\"★\"" else if card.power == "" then "\"\"" else if (to_number(card.power) or else false != card.power) then "\"" + card.power + "\"" else card.power) + ", "
 		+ "\"toughness\": " + (if card.toughness == "*" then "\"★\"" else if card.toughness == "" then "\"\"" else if (to_number(card.toughness) or else false != card.toughness) then "\"" + card.toughness + "\"" else card.toughness) + ", "
 		+ "\"loyalty\": " + (if (to_number(card.loyalty) or else false != card.loyalty) then "\"" + card.loyalty + "\""  else card.loyalty) + ", "
-		+ "\"color\": \"" + (if contains(card.super_type, match:"Land") then "" else indicator_color_name(card.card_color)) + "\", "
+		+ "\"color\": \"" + (if contains(card.super_type, match:"Land") then "" else silver_patch(indicator_color_name(card.card_color))) + "\", "
 		+ "\"cmc\": " + cmc(card.casting_cost) + ", "
 		+ "\"cardType\": \"" + type_trim(card.super_type) + "\", "
 		+ (if contains(card.shape, match: "split") or contains(card.shape, match:"double") or contains(card.shape, match:"adventure") or contains(card.shape, match:"aftermath") then secondCard())
@@ -240,7 +263,7 @@ script:
 		+ "\"power2\": " + (if card.power_2 == "*" then "\"★\"" else if card.power_2 == "" then "\"\"" else if (to_number(card.power_2) or else false != card.power_2) then "\"" + card.power_2 + "\"" else card.power_2) + ", "
 		+ "\"toughness2\": " + (if card.toughness_2 == "*" then "\"★\"" else if card.toughness_2 == "" then "\"\"" else if (to_number(card.toughness_2) or else false != card.toughness_2) then "\"" + card.toughness_2 + "\"" else card.toughness_2) + ", "
 		+ "\"loyalty2\": " + (if (to_number(card.loyalty_2) or else false != card.loyalty_2) then "\"" + card.loyalty_2 + "\""  else card.loyalty_2) + ", "
-		+ "\"color2\": \"" + (if contains(card.super_type, match:"Land") then "" else indicator_color_name(card.card_color_2)) + "\", "
+		+ "\"color2\": \"" + (if contains(card.super_type, match:"Land") then "" else silver_patch(indicator_color_name(card.card_color_2))) + "\", "
 		+ "\"cmc2\": " + cmc(card.casting_cost_2) + ", "
 		+ "\"cardType2\": \"" + type_trim(card.super_type_2) + "\", "
 	}

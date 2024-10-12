@@ -1177,6 +1177,11 @@ function tokenNamerSimple(card) {
 function colorTranslate(str, kind) {
 	let tokenColor = "multicolor";
 	let tokenInit = "";
+	let silver = false;
+	if(str.match(/Silver/)) {
+		silver = true;
+		str = str.replace(/\/?Silver\/?/);
+	}
 	switch(str) {
 		case "":
 			tokenColor = "colorless";
@@ -1286,6 +1291,8 @@ function colorTranslate(str, kind) {
 			tokenInit = "WUBRG";
 			break;
 	}
+	if(silver)
+		tokenInit += "I";
 	if(kind == "long")
 		return tokenColor;
 	return tokenInit;
