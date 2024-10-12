@@ -433,8 +433,10 @@ process.on('beforeExit', () => {
 			}
 			break;
 		case 2:
-			console.log("Moving images to single folder");
-			relocateCardImages();
+			if(run_images) {
+				console.log("Moving images to single folder");
+				relocateCardImages();
+			}
 			break;
 		case 3:
 			console.log("Finished!");

@@ -1,6 +1,0 @@
-{"meta":{"setID": "CCR", "title": "Chikyu: Chaos Rains"},
-"cards":[
-	{"fullName": "Creature Catalog", "cardName": "Creature Catalog", "manaCost": "{3}", "typeLine": "Artifact", "rarityLine": "*CCR C*", "rulesText": "{T}: Add one mana of any color.\n{T}: Draw a card, then discard a card. Activate only if you've cast a non-Human creature spell this turn.", "flavorText": "*Its pages hold descriptions of beasts beyond one's wildest imagination.*\n", "power": "", "toughness": "", "loyalty": "", "color": "", "cmc": 3, "cardType": "Artifact", "rarity": "common", "shape": "normal", "setID": "CCR", "cardID": "116", "notes": [], "artist": "Sebastian Reid"},
-	{"fullName": "Treasure", "cardName": "Treasure", "manaCost": "", "typeLine": "Token Artifact — Treasure ", "rarityLine": "*CCR Token*", "rulesText": "{T}, Sacrifice this artifact: Add one mana of any color.", "flavorText": "", "power": "", "toughness": "", "loyalty": "", "color": "", "cmc": 0, "cardType": "Artifact", "rarity": "token", "shape": "normal", "setID": "tokens", "cardID": "CCR199", "parentSet": "CCR", "notes": [], "artist": "Miggs69"}
-]
-}

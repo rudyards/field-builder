@@ -1,9 +1,33 @@
 {
+ "FOE": {
+  "longname": "Frontiers of Eternity",
+  "Design": "",
+  "Link": "",
+  "releaseNo": 1,
+  "releaseDate": "",
+  "Draft": 0,
+  "basics": 0,
+  "pool": "Body Pool",
+  "masterpiece": false,
+  "packSlots": []
+ },
  "CCR": {
   "longname": "Chikyu: Chaos Rains",
   "Design": "",
   "Link": "",
-  "releaseNo": 1,
+  "releaseNo": 2,
+  "releaseDate": "",
+  "Draft": 0,
+  "basics": 0,
+  "pool": "Brain Pool",
+  "masterpiece": false,
+  "packSlots": []
+ },
+ "SHS": {
+  "longname": "",
+  "Design": "",
+  "Link": "",
+  "releaseNo": 3,
   "releaseDate": "",
   "Draft": 0,
   "basics": 0,
@@ -15,7 +39,7 @@
   "longname": "Universes Beyond: Touhou",
   "Design": "",
   "Link": "",
-  "releaseNo": 2,
+  "releaseNo": 4,
   "releaseDate": "",
   "Draft": 0,
   "basics": 0,

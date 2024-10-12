@@ -8,9 +8,9 @@ First, use the magic-field-test exporter on MSE sets to get a folder of images a
 
 Set codes used per set should be unique, as Cockatrice and LackeyBot can't properly tell them apart otherwise. During the formatting step, LackeyBot will add a number to duplicate set codes it finds.
 
-Add all the exported files and folders to the "/files" folder, then run `node field-builder` or `node field-builder --noimages`. file-builder will attempt to crunch the files into LackeyBot and Cockatrice data. If successful, and run without `--noimages`, it will then rename the images to the Cockatrice names and split DFCs.
+Add all the exported files and folders to "/X Pool" folders within the "/files" folder, then run `node field-builder` or `node field-builder --noimages`. file-builder will attempt to crunch the files into LackeyBot and Cockatrice data. If successful, and run without `--noimages`, it will then rename the images to the Cockatrice names and split DFCs.
 
-If successful, field-builder will output `/final_xmls/cards.xml` and `/final_xmls/tokens.xml`, as well as  `/lbfiles/cards.json` and `/lbfiles/setData.json`to be used for LackeyBot. The XMLs are put in a Cockatrice `/data` folder, while the finalized folders in `/files` go in `/data/pics/downloadedPics/`.
+If successful, field-builder will output `cards.xml`, `tokens.xml`, and the `/pics/downloadedPics/` folders to the `final_xmls` folder, so the entire folder can be added to Cockatrice's `/data` folder. It also writes  `cards.json`, `setData.json`, `pools.json` in the `lbfiles` folder to be used for LackeyBot.
 
 ## Pulling extra sets
 MSEM, Revolution, and Canon sets can also be added to the install with command line arguments. These ping the LackeyBot API for set/card data, and don't write images; the Card Sources links should be used for these.
