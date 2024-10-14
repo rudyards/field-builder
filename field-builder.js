@@ -72,36 +72,27 @@ function prepareFiles() {
 			console.log("lbfiles folder created");
 		}
 	});
-	// make sure we have an final_xmls folder
-	fs.mkdir(__dirname + "/final_xmls", (err) => {
+	// make sure we have an final folder
+	fs.mkdir(__dirname + "/final", (err) => {
 		if(err) {
-			console.log("final_xmls folder found");
+			console.log("final folder found");
 		}else{
-			console.log("final_xmls folder created");
+			console.log("final folder created");
 		}
 		// make sure we have our image folders
-		fs.mkdir(__dirname + "/final_xmls/pics", (err) => {
+		fs.mkdir(__dirname + "/final/pics", (err) => {
 			if(err) {
 				console.log("pics folder found");
 			}else{
 				console.log("pics folder created");
 			}
 			// make sure we have our tokens folder
-			fs.mkdir(__dirname + "/final_xmls/pics/downloadedPics", (err) => {
+			fs.mkdir(__dirname + "/final/pics/tokens", (err) => {
 				if(err) {
-					console.log("downloadedPics folder found");
+					console.log("tokens folder found");
 				}else{
-					console.log("downloadedPics folder created");
+					console.log("tokens folder created");
 				}
-				// make sure we have our tokens folder
-				fs.mkdir(__dirname + "/final_xmls/pics/downloadedPics/tokens", (err) => {
-					if(err) {
-						console.log("tokens folder found");
-					}else{
-						console.log("tokens folder created");
-					}
-				});
-
 			});
 
 		});
@@ -274,10 +265,10 @@ async function combineFiles() {
 	
 	rick.initialize(library);
 	rick.tokenBuilding({
-		writeTokens: './final_xmls/tokens.xml'
+		writeTokens: './final/tokens.xml'
 	});
 	rick.cardBuilding({
-		writeCards: './final_xmls/cards.xml'
+		writeCards: './final/cards.xml'
 	});
 	if(run_images) {
 		let trice_names = rick.keysToNames();
@@ -320,7 +311,7 @@ function processImages(library, trice_names) {
 				let dest = `./files/${pi}/${card.setID}/${windex(names[0])}.${FILE_TYPE}`;
 				// if token, put it in the final token folder instead
 				if(card.setID == "tokens")
-					dest = `./final_xmls/pics/downloadedPics/tokens/${windex(names[0])}.${FILE_TYPE}`;
+					dest = `./final/pics/tokens/${windex(names[0])}.${FILE_TYPE}`;
 				fs.rename(current, dest, (err) => {
 					if(err)
 						console.log(err);
@@ -415,7 +406,7 @@ async function streamToString(stream) {
 function relocateCardImages() {
 	for(let s in new_sets) {
 		let pi = new_sets[s].pool;
-		fs.rename(`./files/${pi}/${s}`, `./final_xmls/pics/downloadedPics/${s}`, (err) => {
+		fs.rename(`./files/${pi}/${s}`, `./final/pics/${s}`, (err) => {
 			if(err)
 				console.log(err)
 		})
