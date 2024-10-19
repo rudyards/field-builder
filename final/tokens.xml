@@ -166,26 +166,6 @@
  <reverse-related></reverse-related>
  <reverse-related>Necrofantasia</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>End of Summer</reverse-related>
- <reverse-related>The Deceiver's Folly</reverse-related>
- <reverse-related>Iterative Engineering</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Quest for the Roseblade</reverse-related>
- <reverse-related>The Roseblade Reclaimed</reverse-related>
- <reverse-related>Refractling</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Search for Meaning</reverse-related>
- <reverse-related>Inquirer, Humble Explorer</reverse-related>
- <reverse-related>Arranger of Seasons</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Loyalty's Reward</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Corpse Repurposer</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>The Veil Betwixt</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Yusi, the Sable Crow</reverse-related>
- <reverse-related>Screeching Umbra</reverse-related>
  <reverse-related>Estranged Hermit</reverse-related>
  <reverse-related></reverse-related>
  <reverse-related>Fickle Finger of Fate</reverse-related>
@@ -204,12 +184,32 @@
  <reverse-related></reverse-related>
  <reverse-related>Xiekyn, Wings of Change</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Magniloquent Soulcaller</reverse-related>
- <reverse-related></reverse-related>
  <reverse-related>Old Faces</reverse-related>
  <reverse-related></reverse-related>
  <reverse-related>Trapper's Lean-to</reverse-related>
  <reverse-related></reverse-related>
+ <reverse-related>Arranger of Seasons</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Loyalty's Reward</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Corpse Repurposer</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>The Veil Betwixt</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Yusi, the Sable Crow</reverse-related>
+ <reverse-related>Screeching Umbra</reverse-related>
+ <reverse-related>Magniloquent Soulcaller</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>End of Summer</reverse-related>
+ <reverse-related>The Deceiver's Folly</reverse-related>
+ <reverse-related>Iterative Engineering</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Quest for the Roseblade</reverse-related>
+ <reverse-related>The Roseblade Reclaimed</reverse-related>
+ <reverse-related>Refractling</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Search for Meaning</reverse-related>
+ <reverse-related>Inquirer, Humble Explorer</reverse-related>
  <reverse-related>Copy</reverse-related>
  <reverse-related></reverse-related>
  <reverse-related>Pious Farmer (Token)</reverse-related>
@@ -573,6 +573,470 @@
  <set num="DHW243" rarity="token">tokens</set>
  <reverse-related>Zhed, Land Lover</reverse-related>
  <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Treasure KRK</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Treasure</type>
+ <tablerow>1</tablerow>
+ <text>{T}, Sacrifice this artifact: Add one mana of any color.</text>
+ <token>1</token>
+ <set num="KRK264" rarity="token">tokens</set>
+ <reverse-related>Abandon Ship</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Aelython Renegade</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Alkar of the Floating Horde</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Beachside Barter</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Broker a Deal</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Clumsy Cannoneer</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Crimza Taal Dealer</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Crimza Taal Infiltrator</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Daring Rebuttal</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Deathless Conscription</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Down With the Ship</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Dry Land</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Feline Freebooter</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Gemseeker Grottle</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Gilded Cove</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Grottle Shell-Singer</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Jadon, Who Fells the Mighty</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>M-80, Clockwork Captain</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Malvo's Quartermaster</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>March of the Dreadtide</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Pilferer's Pouch</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Pillager's Flagship</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Poach</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Rapacious Tyrant</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Relic Recoverers</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Run Through</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Rusted Mariner</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Salazar, Glorybound Mate</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Secure the Bounty</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Sunken Spoils</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Sword of Greed and Glory</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Trinket Merchant</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Uncharted Wonders</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Unfair Share</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Copy KRK</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token</type>
+ <tablerow>1</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="KRK292" rarity="token">tokens</set>
+ <reverse-related>Affectionate Mimic</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Firebrand Frigate</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Ghost-Blade Renegade</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Lilith's Duplimancy</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Malvo, Edgeseeker Admiral</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Rallying Captain</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Ria, Master Smith</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>green Shark 33KRK</name>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>3/3</pt>
+ <type>Token Creature — Shark</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="KRK287" rarity="token">tokens</set>
+ <reverse-related>Ancient Megalodon</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>black Pirate 21KRK</name>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/1</pt>
+ <type>Token Creature — Pirate</type>
+ <tablerow>2</tablerow>
+ <text>This creature can't block.</text>
+ <token>1</token>
+ <set num="KRK257" rarity="token">tokens</set>
+ <reverse-related>Audra, Raucous Rallier</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Beachside Barter</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Charismatic Captain</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related count="2">Dreadtide Marauder</reverse-related>
+ <reverse-related count="2"></reverse-related>
+ <reverse-related>Glittering Trove</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Glorybound Knaves</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Hired Hand</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related count="2">Loose Cargo</reverse-related>
+ <reverse-related count="2"></reverse-related>
+ <reverse-related>Tandem Hirelings</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>black Zombie 22KRK</name>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/2</pt>
+ <type>Token Creature — Zombie</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="KRK258" rarity="token">tokens</set>
+ <reverse-related>Azla's Bonecrew</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Dreadtide Deckhands</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>March of the Dreadtide</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Spectral Sloop</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Sunken Casket</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>white Soldier 11KRK</name>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Soldier</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="KRK253" rarity="token">tokens</set>
+ <reverse-related count="2">Captain's Orders</reverse-related>
+ <reverse-related count="2"></reverse-related>
+ <reverse-related count="2">Deft Commodore</reverse-related>
+ <reverse-related count="2"></reverse-related>
+ <reverse-related>Imperial Expeditioner</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Imperial Musketeer</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Marquisian Crackdown</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Marquisian Skyship</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Novice Navigator</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Port Inspector</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Standard-Issue Blade</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>white Spirit 11KRK</name>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Spirit</type>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+ <set num="KRK289" rarity="token">tokens</set>
+ <reverse-related>Conscripted Duelist</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Forsaken Cutthroat</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Spectral Sabers</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>colorless Construct 11KRK</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Artifact Creature — Construct</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="KRK262" rarity="token">tokens</set>
+ <reverse-related>Dawson, Out for Blood</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>M-80, Clockwork Captain</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>blue Drake 11KRK</name>
+ <color>U</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Drake</type>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+ <set num="KRK254" rarity="token">tokens</set>
+ <reverse-related>Familiar's Foil</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related count="2">Lilith, Seafaring Scribe</reverse-related>
+ <reverse-related count="2"></reverse-related>
+ <reverse-related>Storm Coast Drakemaster</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>green Serpent 44KRK</name>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>4/4</pt>
+ <type>Token Creature — Serpent</type>
+ <tablerow>2</tablerow>
+ <text>Trample</text>
+ <token>1</token>
+ <set num="KRK260" rarity="token">tokens</set>
+ <reverse-related count="2">Fleetcrusher Titan</reverse-related>
+ <reverse-related count="2"></reverse-related>
+ <reverse-related>Maelstrom's Maw</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Marquisian Enforcer</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Trenchcaller Acolyte</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>blue Fish 11KRK</name>
+ <color>U</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Fish</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="KRK293" rarity="token">tokens</set>
+ <reverse-related>Flourishing Reef</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>colorless Vehicle KRK</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>★/★</pt>
+ <type>Token Artifact — Vehicle</type>
+ <tablerow>1</tablerow>
+ <text>Crew 1 *(Tap any number of creatures you control with total power 1 or more: This Vehicle becomes an artifact creature until end of turn.)*</text>
+ <token>1</token>
+ <set num="KRK266" rarity="token">tokens</set>
+ <reverse-related>Grand Admiral</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>green Elemental 33KRK</name>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>3/3</pt>
+ <type>Token Creature — Elemental</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="KRK283" rarity="token">tokens</set>
+ <reverse-related>Horizon Communer</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Everywhere KRK</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Land</type>
+ <tablerow>0</tablerow>
+ <text>This land is a Plains, Island, Swamp, Mountain, and Forest. *({T}: Add {W}, {U}, {B}, {R}, or {G}.)*</text>
+ <token>1</token>
+ <set num="KRK282" rarity="token">tokens</set>
+ <reverse-related>Horizon Communer</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Malvo's Quartermaster</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Weapon</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Equipment</type>
+ <tablerow>1</tablerow>
+ <text>Equipped creature gets +1/+1. Equip {2}</text>
+ <token>1</token>
+ <set num="KRK265" rarity="token">tokens</set>
+ <reverse-related>Imperial Armorer</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Imperial Musketeer</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Ironworks Arsenal</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Marquisian Commander</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Novice Navigator</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Quickdraw</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Trade Route Navigator</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>white Scout 11KRK</name>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Scout</type>
+ <tablerow>2</tablerow>
+ <text>Lifelink</text>
+ <token>1</token>
+ <set num="KRK268" rarity="token">tokens</set>
+ <reverse-related>Ingrid Farjalla</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Loyal Deckhand</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>blue Kraken KRK</name>
+ <color>U</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>★/★</pt>
+ <type>Token Creature — Kraken</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="KRK255" rarity="token">tokens</set>
+ <reverse-related>Kelpscale Serpent</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>blue Octopus 88KRK</name>
+ <color>U</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>8/8</pt>
+ <type>Token Creature — Octopus</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="KRK271" rarity="token">tokens</set>
+ <reverse-related>Kiora, Voice of the Deep</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Daring Adventures KRK</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Legendary Artifact</type>
+ <tablerow>1</tablerow>
+ <text>{2}, {T}: Draw a card.</text>
+ <token>1</token>
+ <set num="KRK263" rarity="token">tokens</set>
+ <reverse-related>Lilith, Seafaring Scribe</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>blue Tentacle 11KRK</name>
+ <color>U</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Tentacle</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="KRK256" rarity="token">tokens</set>
+ <reverse-related count="8">Octotyrant</reverse-related>
+ <reverse-related count="8"></reverse-related>
+ <reverse-related>Thalassophobia</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>white Soldier Army 00KRK</name>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>0/0</pt>
+ <type>Token Creature — Soldier Army</type>
+ <tablerow>2</tablerow>
+ <text>This creature gets +1/+1 for each creature you control.</text>
+ <token>1</token>
+ <set num="KRK291" rarity="token">tokens</set>
+ <reverse-related count="X">Restore Order</reverse-related>
+ <reverse-related count="X"></reverse-related>
+</card>
+<card>
+ <name>Equipment</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Equipment</type>
+ <tablerow>1</tablerow>
+ <text>Equipped creature gets +2/+0. Equip {2}</text>
+ <token>1</token>
+ <set num="KND308" rarity="token">tokens</set>
+ <reverse-related>Ria, Master Smith</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Bushland Militant</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Skyknight Armorer</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>red Elemental KRK</name>
+ <color>R</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>★/1</pt>
+ <type>Token Creature — Elemental</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="KRK259" rarity="token">tokens</set>
+ <reverse-related count="2">Ruinous Eruption</reverse-related>
+ <reverse-related count="2"></reverse-related>
 </card>
 <card>
  <name>Mirdrim Cleave FOE</name>
@@ -1626,6 +2090,220 @@
  <reverse-related count="2"></reverse-related>
 </card>
 <card>
+ <name>white and black Student 11ONI</name>
+ <color>W</color>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Student</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="ONI178" rarity="bonus">tokens</set>
+ <reverse-related count="2">Academy Reinforcements</reverse-related>
+ <reverse-related count="2"></reverse-related>
+ <reverse-related>Coerced Betrayal</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Conductor Mechanist</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Honor-Worn Harisen</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related count="X">Hope Blooms Unfettered</reverse-related>
+ <reverse-related count="X"></reverse-related>
+ <reverse-related>Monstruous Studies Teacher</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Serpentine Companion</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Spiritual Connection</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related count="2">Swordsmanship Club Clique</reverse-related>
+ <reverse-related count="2"></reverse-related>
+</card>
+<card>
+ <name>green Squirrel 11HRO</name>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Squirrel</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="HRO279" rarity="token">tokens</set>
+ <reverse-related>Chatterstorm</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Acornbound</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Chatter of the Squirrel</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related count="X">Estranged Hermit</reverse-related>
+ <reverse-related count="X"></reverse-related>
+</card>
+<card>
+ <name>green Elemental Spirit 33ONI</name>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>3/3</pt>
+ <type>Token Creature — Elemental Spirit</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="ONI118" rarity="bonus">tokens</set>
+ <reverse-related count="X">Embodiment of Hebika</reverse-related>
+ <reverse-related count="X"></reverse-related>
+</card>
+<card>
+ <name>black Soldier 22ONI</name>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/2</pt>
+ <type>Token Creature — Soldier</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="ONI291" rarity="bonus">tokens</set>
+ <reverse-related count="X">Final Preparations </reverse-related>
+ <reverse-related count="X"></reverse-related>
+ <reverse-related>Kajiwara's Lieutenants</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>black Shark Spirit ONI</name>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>★/★</pt>
+ <type>Token Creature — Shark Spirit</type>
+ <tablerow>2</tablerow>
+ <text>Decayed</text>
+ <token>1</token>
+ <set num="ONI299" rarity="bonus">tokens</set>
+ <reverse-related>Itakura, Diver's Trainee</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>colorless Spirit 11ONI</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Spirit</type>
+ <tablerow>2</tablerow>
+ <text>Whenever you cast an instant or sorcery spell, put a +1/+1 counter on this creature.</text>
+ <token>1</token>
+ <set num="ONI116" rarity="bonus">tokens</set>
+ <reverse-related count="2">Kaeru, Hebika Pilgrim</reverse-related>
+ <reverse-related count="2"></reverse-related>
+ <reverse-related>Regal Instructor</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Senzao Ascetic</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>colorless Soldier 22ANS</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/2</pt>
+ <type>Token Artifact Creature — Soldier</type>
+ <tablerow>2</tablerow>
+ <text>*(This creature has one of Spark Hunter Kajiwara's loyalty abilities, except it costs +1 to activate.)*</text>
+ <token>1</token>
+ <set num="ANS304" rarity="token">tokens</set>
+ <reverse-related>Kajiwara Ai</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Spark Hunter Kajiwara Ai</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Goggles ONI</name>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>5/5</pt>
+ <type>Legendary Token Creature — Elemental Dragon</type>
+ <tablerow>2</tablerow>
+ <text>Trample, reach Whenever a land you control enters, up to one target creature you control can't be blocked by creatures with power 2 or less this turn.</text>
+ <token>1</token>
+ <set num="ONI225" rarity="bonus">tokens</set>
+ <reverse-related>Korra, Wayward Explorer</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Manifest 2HU</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/2</pt>
+ <type>Creature</type>
+ <tablerow>2</tablerow>
+ <text>You can cover a face-down manifested creature with this reminder card. A manifested creature card can be turned face up any time for its mana cost. A face-down card can also be turned face up for its morph cost.</text>
+ <token>1</token>
+ <set num="2HU277" rarity="token">tokens</set>
+ <reverse-related>Manifestation of Self</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Narumi, Life Giver</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Narumi, Life Giver</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Manifest</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>red Elemental Bird 33ONI</name>
+ <color>R</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>3/3</pt>
+ <type>Token Creature — Elemental Bird</type>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+ <set num="ONI131" rarity="bonus">tokens</set>
+ <reverse-related>Nekaru, Volatile Mentor</reverse-related>
+ <reverse-related>Nekaru's Wild Ride</reverse-related>
+</card>
+<card>
+ <name>white Spirit Samurai 21ONI</name>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/1</pt>
+ <type>Token Creature — Spirit Samurai</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="ONI119" rarity="bonus">tokens</set>
+ <reverse-related count="2">Ryujin of Otherworldly Light</reverse-related>
+ <reverse-related count="2"></reverse-related>
+</card>
+<card>
+ <name>colorless Void Nightmare ONI</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>X/3</pt>
+ <type>Token Creature — Void Nightmare</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="ONI300" rarity="token">tokens</set>
+ <reverse-related>Urenkal, Void Recurrence</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>colorless Void Horror ONI</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>★/★</pt>
+ <type>Token Creature — Void Horror</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="ONI105" rarity="bonus">tokens</set>
+ <reverse-related>Voidfall</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
  <name>white Rebel Soldier 11VRN</name>
  <color>W</color>
  <manacost></manacost>
@@ -1864,684 +2542,6 @@
  <reverse-related></reverse-related>
 </card>
 <card>
- <name>white and black Student 11ONI</name>
- <color>W</color>
- <color>B</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Student</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="ONI178" rarity="bonus">tokens</set>
- <reverse-related count="2">Academy Reinforcements</reverse-related>
- <reverse-related count="2"></reverse-related>
- <reverse-related>Coerced Betrayal</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Conductor Mechanist</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Honor-Worn Harisen</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="X">Hope Blooms Unfettered</reverse-related>
- <reverse-related count="X"></reverse-related>
- <reverse-related>Monstruous Studies Teacher</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Serpentine Companion</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Spiritual Connection</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="2">Swordsmanship Club Clique</reverse-related>
- <reverse-related count="2"></reverse-related>
-</card>
-<card>
- <name>green Squirrel 11HRO</name>
- <color>G</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Squirrel</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="HRO279" rarity="token">tokens</set>
- <reverse-related>Chatterstorm</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Acornbound</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Chatter of the Squirrel</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="X">Estranged Hermit</reverse-related>
- <reverse-related count="X"></reverse-related>
-</card>
-<card>
- <name>green Elemental Spirit 33ONI</name>
- <color>G</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>3/3</pt>
- <type>Token Creature — Elemental Spirit</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="ONI118" rarity="bonus">tokens</set>
- <reverse-related count="X">Embodiment of Hebika</reverse-related>
- <reverse-related count="X"></reverse-related>
-</card>
-<card>
- <name>black Soldier 22ONI</name>
- <color>B</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>2/2</pt>
- <type>Token Creature — Soldier</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="ONI291" rarity="bonus">tokens</set>
- <reverse-related count="X">Final Preparations </reverse-related>
- <reverse-related count="X"></reverse-related>
- <reverse-related>Kajiwara's Lieutenants</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>black Shark Spirit ONI</name>
- <color>B</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>★/★</pt>
- <type>Token Creature — Shark Spirit</type>
- <tablerow>2</tablerow>
- <text>Decayed</text>
- <token>1</token>
- <set num="ONI299" rarity="bonus">tokens</set>
- <reverse-related>Itakura, Diver's Trainee</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>colorless Spirit 11ONI</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Spirit</type>
- <tablerow>2</tablerow>
- <text>Whenever you cast an instant or sorcery spell, put a +1/+1 counter on this creature.</text>
- <token>1</token>
- <set num="ONI116" rarity="bonus">tokens</set>
- <reverse-related count="2">Kaeru, Hebika Pilgrim</reverse-related>
- <reverse-related count="2"></reverse-related>
- <reverse-related>Regal Instructor</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Senzao Ascetic</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>colorless Soldier 22ANS</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>2/2</pt>
- <type>Token Artifact Creature — Soldier</type>
- <tablerow>2</tablerow>
- <text>*(This creature has one of Spark Hunter Kajiwara's loyalty abilities, except it costs +1 to activate.)*</text>
- <token>1</token>
- <set num="ANS305" rarity="token">tokens</set>
- <reverse-related>Kajiwara Ai</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Spark Hunter Kajiwara Ai</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>Goggles ONI</name>
- <color>G</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>5/5</pt>
- <type>Legendary Token Creature — Elemental Dragon</type>
- <tablerow>2</tablerow>
- <text>Trample, reach Whenever a land you control enters, up to one target creature you control can't be blocked by creatures with power 2 or less this turn.</text>
- <token>1</token>
- <set num="ONI225" rarity="bonus">tokens</set>
- <reverse-related>Korra, Wayward Explorer</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>Manifest 2HU</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>2/2</pt>
- <type>Creature</type>
- <tablerow>2</tablerow>
- <text>You can cover a face-down manifested creature with this reminder card. A manifested creature card can be turned face up any time for its mana cost. A face-down card can also be turned face up for its morph cost.</text>
- <token>1</token>
- <set num="2HU277" rarity="token">tokens</set>
- <reverse-related>Manifestation of Self</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Narumi, Life Giver</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Narumi, Life Giver</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Manifest</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>red Elemental Bird 33ONI</name>
- <color>R</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>3/3</pt>
- <type>Token Creature — Elemental Bird</type>
- <tablerow>2</tablerow>
- <text>Flying</text>
- <token>1</token>
- <set num="ONI131" rarity="bonus">tokens</set>
- <reverse-related>Nekaru, Volatile Mentor</reverse-related>
- <reverse-related>Nekaru's Wild Ride</reverse-related>
-</card>
-<card>
- <name>white Spirit Samurai 21ONI</name>
- <color>W</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>2/1</pt>
- <type>Token Creature — Spirit Samurai</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="ONI119" rarity="bonus">tokens</set>
- <reverse-related count="2">Ryujin of Otherworldly Light</reverse-related>
- <reverse-related count="2"></reverse-related>
-</card>
-<card>
- <name>colorless Void Nightmare ONI</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>X/3</pt>
- <type>Token Creature — Void Nightmare</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="ONI300" rarity="token">tokens</set>
- <reverse-related>Urenkal, Void Recurrence</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>colorless Void Horror ONI</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>★/★</pt>
- <type>Token Creature — Void Horror</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="ONI105" rarity="bonus">tokens</set>
- <reverse-related>Voidfall</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>Treasure KRK</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <type>Token Artifact — Treasure</type>
- <tablerow>1</tablerow>
- <text>{T}, Sacrifice this artifact: Add one mana of any color.</text>
- <token>1</token>
- <set num="KRK264" rarity="token">tokens</set>
- <reverse-related>Abandon Ship</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Aelython Renegade</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Alkar of the Floating Horde</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Beachside Barter</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Broker a Deal</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Clumsy Cannoneer</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Crimza Taal Dealer</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Crimza Taal Infiltrator</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Daring Rebuttal</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Deathless Conscription</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Down With the Ship</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Dry Land</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Feline Freebooter</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Gemseeker Grottle</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Gilded Cove</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Grottle Shell-Singer</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Jadon, Who Fells the Mighty</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>M-80, Clockwork Captain</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Malvo's Quartermaster</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>March of the Dreadtide</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Pilferer's Pouch</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Pillager's Flagship</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Poach</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Rapacious Tyrant</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Relic Recoverers</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Run Through</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Rusted Mariner</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Salazar, Glorybound Mate</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Secure the Bounty</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Sunken Spoils</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Sword of Greed and Glory</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Trinket Merchant</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Uncharted Wonders</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Unfair Share</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>Copy KRK</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <type>Token</type>
- <tablerow>1</tablerow>
- <text></text>
- <token>1</token>
- <set num="KRK292" rarity="token">tokens</set>
- <reverse-related>Affectionate Mimic</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Firebrand Frigate</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Ghost-Blade Renegade</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Lilith's Duplimancy</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Malvo, Edgeseeker Admiral</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Rallying Captain</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Ria, Master Smith</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>green Shark 33KRK</name>
- <color>G</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>3/3</pt>
- <type>Token Creature — Shark</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="KRK287" rarity="token">tokens</set>
- <reverse-related>Ancient Megalodon</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>black Pirate 21KRK</name>
- <color>B</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>2/1</pt>
- <type>Token Creature — Pirate</type>
- <tablerow>2</tablerow>
- <text>This creature can't block.</text>
- <token>1</token>
- <set num="KRK257" rarity="token">tokens</set>
- <reverse-related>Audra, Raucous Rallier</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Beachside Barter</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Charismatic Captain</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="2">Dreadtide Marauder</reverse-related>
- <reverse-related count="2"></reverse-related>
- <reverse-related>Glittering Trove</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Glorybound Knaves</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Hired Hand</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="2">Loose Cargo</reverse-related>
- <reverse-related count="2"></reverse-related>
- <reverse-related>Tandem Hirelings</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>black Zombie 22KRK</name>
- <color>B</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>2/2</pt>
- <type>Token Creature — Zombie</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="KRK258" rarity="token">tokens</set>
- <reverse-related>Azla's Bonecrew</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Dreadtide Deckhands</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>March of the Dreadtide</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Spectral Sloop</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Sunken Casket</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>white Soldier 11KRK</name>
- <color>W</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Soldier</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="KRK253" rarity="token">tokens</set>
- <reverse-related count="2">Captain's Orders</reverse-related>
- <reverse-related count="2"></reverse-related>
- <reverse-related count="2">Deft Commodore</reverse-related>
- <reverse-related count="2"></reverse-related>
- <reverse-related>Imperial Expeditioner</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Imperial Musketeer</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Marquisian Crackdown</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Marquisian Skyship</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Novice Navigator</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Port Inspector</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Standard-Issue Blade</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>white Spirit 11KRK</name>
- <color>W</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Spirit</type>
- <tablerow>2</tablerow>
- <text>Flying</text>
- <token>1</token>
- <set num="KRK289" rarity="token">tokens</set>
- <reverse-related>Conscripted Duelist</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Forsaken Cutthroat</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Spectral Sabers</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>colorless Construct 11KRK</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Artifact Creature — Construct</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="KRK262" rarity="token">tokens</set>
- <reverse-related>Dawson, Out for Blood</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>M-80, Clockwork Captain</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>blue Drake 11KRK</name>
- <color>U</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Drake</type>
- <tablerow>2</tablerow>
- <text>Flying</text>
- <token>1</token>
- <set num="KRK254" rarity="token">tokens</set>
- <reverse-related>Familiar's Foil</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="2">Lilith, Seafaring Scribe</reverse-related>
- <reverse-related count="2"></reverse-related>
- <reverse-related>Storm Coast Drakemaster</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>green Serpent 44KRK</name>
- <color>G</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>4/4</pt>
- <type>Token Creature — Serpent</type>
- <tablerow>2</tablerow>
- <text>Trample</text>
- <token>1</token>
- <set num="KRK260" rarity="token">tokens</set>
- <reverse-related count="2">Fleetcrusher Titan</reverse-related>
- <reverse-related count="2"></reverse-related>
- <reverse-related>Maelstrom's Maw</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Marquisian Enforcer</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Trenchcaller Acolyte</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>blue Fish 11KRK</name>
- <color>U</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Fish</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="KRK293" rarity="token">tokens</set>
- <reverse-related>Flourishing Reef</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>colorless Vehicle KRK</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>★/★</pt>
- <type>Token Artifact — Vehicle</type>
- <tablerow>1</tablerow>
- <text>Crew 1 *(Tap any number of creatures you control with total power 1 or more: This Vehicle becomes an artifact creature until end of turn.)*</text>
- <token>1</token>
- <set num="KRK266" rarity="token">tokens</set>
- <reverse-related>Grand Admiral</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>green Elemental 33KRK</name>
- <color>G</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>3/3</pt>
- <type>Token Creature — Elemental</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="KRK283" rarity="token">tokens</set>
- <reverse-related>Horizon Communer</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>Everywhere KRK</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <type>Token Land</type>
- <tablerow>0</tablerow>
- <text>This land is a Plains, Island, Swamp, Mountain, and Forest. *({T}: Add {W}, {U}, {B}, {R}, or {G}.)*</text>
- <token>1</token>
- <set num="KRK282" rarity="token">tokens</set>
- <reverse-related>Horizon Communer</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Malvo's Quartermaster</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>Weapon</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <type>Token Artifact — Equipment</type>
- <tablerow>1</tablerow>
- <text>Equipped creature gets +1/+1. Equip {2}</text>
- <token>1</token>
- <set num="KRK265" rarity="token">tokens</set>
- <reverse-related>Imperial Armorer</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Imperial Musketeer</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Ironworks Arsenal</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Marquisian Commander</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Novice Navigator</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Quickdraw</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Trade Route Navigator</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>white Scout 11KRK</name>
- <color>W</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Scout</type>
- <tablerow>2</tablerow>
- <text>Lifelink</text>
- <token>1</token>
- <set num="KRK268" rarity="token">tokens</set>
- <reverse-related>Ingrid Farjalla</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Loyal Deckhand</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>blue Kraken KRK</name>
- <color>U</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>★/★</pt>
- <type>Token Creature — Kraken</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="KRK255" rarity="token">tokens</set>
- <reverse-related>Kelpscale Serpent</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>blue Octopus 88KRK</name>
- <color>U</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>8/8</pt>
- <type>Token Creature — Octopus</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="KRK271" rarity="token">tokens</set>
- <reverse-related>Kiora, Voice of the Deep</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>Daring Adventures KRK</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <type>Token Legendary Artifact</type>
- <tablerow>1</tablerow>
- <text>{2}, {T}: Draw a card.</text>
- <token>1</token>
- <set num="KRK263" rarity="token">tokens</set>
- <reverse-related>Lilith, Seafaring Scribe</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>blue Tentacle 11KRK</name>
- <color>U</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Tentacle</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="KRK256" rarity="token">tokens</set>
- <reverse-related count="8">Octotyrant</reverse-related>
- <reverse-related count="8"></reverse-related>
- <reverse-related>Thalassophobia</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>white Soldier Army 00KRK</name>
- <color>W</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>0/0</pt>
- <type>Token Creature — Soldier Army</type>
- <tablerow>2</tablerow>
- <text>This creature gets +1/+1 for each creature you control.</text>
- <token>1</token>
- <set num="KRK291" rarity="token">tokens</set>
- <reverse-related count="X">Restore Order</reverse-related>
- <reverse-related count="X"></reverse-related>
-</card>
-<card>
- <name>Equipment</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <type>Token Artifact — Equipment</type>
- <tablerow>1</tablerow>
- <text>Equipped creature gets +1/+0. Equip {1}</text>
- <token>1</token>
- <set num="HRO285" rarity="token">tokens</set>
- <reverse-related>Ria, Master Smith</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Kestrel, Ven'akresh General</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Stocked Armory</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>red Elemental KRK</name>
- <color>R</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>★/1</pt>
- <type>Token Creature — Elemental</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="KRK259" rarity="token">tokens</set>
- <reverse-related count="2">Ruinous Eruption</reverse-related>
- <reverse-related count="2"></reverse-related>
-</card>
-<card>
  <name>colorless Reflection 32ANS</name>
  <manacost></manacost>
  <cmc>0</cmc>
@@ -2550,7 +2550,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="ANS284" rarity="token">tokens</set>
+ <set num="ANS283" rarity="token">tokens</set>
  <reverse-related>Agent of Digitas</reverse-related>
  <reverse-related></reverse-related>
 </card>
@@ -2564,7 +2564,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="ANS290" rarity="token">tokens</set>
+ <set num="ANS289" rarity="token">tokens</set>
  <reverse-related>Blissful Small Talks</reverse-related>
  <reverse-related></reverse-related>
  <reverse-related>Breaker of Promises</reverse-related>
@@ -2627,7 +2627,7 @@
  <tablerow>1</tablerow>
  <text></text>
  <token>1</token>
- <set num="ANS288" rarity="token">tokens</set>
+ <set num="ANS287" rarity="token">tokens</set>
  <reverse-related>Blissful Small Talks</reverse-related>
  <reverse-related></reverse-related>
  <reverse-related>Doomsday Sirens</reverse-related>
@@ -2651,7 +2651,7 @@
  <tablerow>1</tablerow>
  <text>{T}, Sacrifice this artifact: Add one mana of any color.</text>
  <token>1</token>
- <set num="ANS306" rarity="token">tokens</set>
+ <set num="ANS305" rarity="token">tokens</set>
  <reverse-related>Darkside Accountant</reverse-related>
  <reverse-related></reverse-related>
  <reverse-related>Getaway Driver</reverse-related>
@@ -2667,7 +2667,7 @@
  <tablerow>2</tablerow>
  <text>Flying; decayed *(This creature can't block. When it attacks, sacrifice it at end of combat.)*</text>
  <token>1</token>
- <set num="ANS298" rarity="token">tokens</set>
+ <set num="ANS297" rarity="token">tokens</set>
  <reverse-related>Emberfly Mage</reverse-related>
  <reverse-related></reverse-related>
 </card>
@@ -2681,7 +2681,7 @@
  <tablerow>2</tablerow>
  <text>Deathtouch</text>
  <token>1</token>
- <set num="ANS296" rarity="token">tokens</set>
+ <set num="ANS295" rarity="token">tokens</set>
  <reverse-related>Evangel of Metamorphosis</reverse-related>
  <reverse-related></reverse-related>
  <reverse-related>Evans, Soul Salesman</reverse-related>
@@ -2699,7 +2699,7 @@
  <tablerow>2</tablerow>
  <text>Flying</text>
  <token>1</token>
- <set num="ANS293" rarity="token">tokens</set>
+ <set num="ANS292" rarity="token">tokens</set>
  <reverse-related>Forever At the Top</reverse-related>
  <reverse-related></reverse-related>
  <reverse-related>Shiroyuki, the Everygirl</reverse-related>
@@ -2717,7 +2717,7 @@
  <tablerow>2</tablerow>
  <text>Trample</text>
  <token>1</token>
- <set num="ANS299" rarity="token">tokens</set>
+ <set num="ANS298" rarity="token">tokens</set>
  <reverse-related>Genesis Chamber</reverse-related>
  <reverse-related></reverse-related>
  <reverse-related>Serin's Masterwork</reverse-related>
@@ -2733,7 +2733,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="ANS295" rarity="token">tokens</set>
+ <set num="ANS294" rarity="token">tokens</set>
  <reverse-related>Here Without You</reverse-related>
  <reverse-related></reverse-related>
 </card>
@@ -2748,7 +2748,7 @@
  <tablerow>2</tablerow>
  <text>Flying, haste</text>
  <token>1</token>
- <set num="ANS300" rarity="token">tokens</set>
+ <set num="ANS299" rarity="token">tokens</set>
  <reverse-related>Raven Requiems</reverse-related>
  <reverse-related></reverse-related>
 </card>
@@ -2760,7 +2760,7 @@
  <tablerow>1</tablerow>
  <text>{2}, Sacrifice this artifact: Draw a card.</text>
  <token>1</token>
- <set num="ANS303" rarity="token">tokens</set>
+ <set num="ANS302" rarity="token">tokens</set>
  <reverse-related>Ripples of Tomorrow</reverse-related>
  <reverse-related></reverse-related>
 </card>
@@ -3857,257 +3857,6 @@
  <reverse-related></reverse-related>
 </card>
 <card>
- <name>green Frog 11TZR</name>
- <color>G</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Frog</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="TZR249" rarity="token">tokens</set>
- <reverse-related>Alkadur, Paradox of Prosperity</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Guardian of Shinri</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Henmo Lightseeker</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Henmo Tracker</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Laogui Taleteller</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Mistress of the Pond</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>red and white Soldier 11TZR</name>
- <color>R</color>
- <color>W</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Soldier</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="TZR248" rarity="token">tokens</set>
- <reverse-related>Alluring Recruiter</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Battle Sanctifier</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Cheerful Practitioner</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Dan Xiao, Royal Tactician</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Emperor's Forgiveness</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Guo Wei, Tranquil Strategist</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Henmo's Wake</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="2">Honorable Descendant</reverse-related>
- <reverse-related count="2"></reverse-related>
- <reverse-related>Hostile Reunion</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Imperious Maiden</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Inspiring Warlord</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="2">Military Prowess</reverse-related>
- <reverse-related count="2"></reverse-related>
- <reverse-related>Mungwon Sentinel</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Pure-Squad Leader</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="2">Total War</reverse-related>
- <reverse-related count="2"></reverse-related>
- <reverse-related>Visions of Glory</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="2">War Preparations</reverse-related>
- <reverse-related count="2"></reverse-related>
- <reverse-related>Warrior of the Setting Sun</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Weishou, City of Light</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Xianzhi Enlister</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Yan Ren, Beautiful Hieress</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Zhi-Qiang Arena</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Zhi-Qiang Flagbearer</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>black Warrior 11TZR</name>
- <color>B</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Warrior</type>
- <tablerow>2</tablerow>
- <text>When this creature dies, you draw a card and lose 1 life.</text>
- <token>1</token>
- <set num="TZR265" rarity="token">tokens</set>
- <reverse-related>Arkeo Khalimos</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>green Spirit 44TZR</name>
- <color>G</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>4/4</pt>
- <type>Token Creature — Spirit</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="TZR264" rarity="token">tokens</set>
- <reverse-related>Awaken the Land</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>black and red Warrior 32TZR</name>
- <color>B</color>
- <color>R</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>3/2</pt>
- <type>Token Creature — Warrior</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="TZR256" rarity="token">tokens</set>
- <reverse-related>Cursed Conquest</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Demonhand Ravager</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>Treasure TZR</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <type>Token Artifact — Treasure</type>
- <tablerow>1</tablerow>
- <text>{T}, Sacrifice this: Add one mana of any color.</text>
- <token>1</token>
- <set num="TZR255" rarity="token">tokens</set>
- <reverse-related>Festival Vessel</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Jin Guang, Son of Muyang</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Tithetaker's Dagger</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>Food TZR</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <type>Token Artifact — Food</type>
- <tablerow>1</tablerow>
- <text>{2}, {T}, Sacrifice this: You gain 3 life.</text>
- <token>1</token>
- <set num="TZR263" rarity="token">tokens</set>
- <reverse-related>Festival Vessel</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>blue and red Elemental 11TZR</name>
- <color>U</color>
- <color>R</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Elemental</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="TZR259" rarity="token">tokens</set>
- <reverse-related>Festive Lights</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>white and blue Bird 00TZR</name>
- <color>W</color>
- <color>U</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>0/0</pt>
- <type>Token Creature — Bird</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="TZR260" rarity="token">tokens</set>
- <reverse-related>Henmo Battlemage</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Jun De, the Uniter</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Xianzhi Summoner</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>Copy TZR</name>
- <color>B</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Reflection</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="TZR261" rarity="token">tokens</set>
- <reverse-related>Hundred-Year Rage</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Kali of the Eternal Mirror</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Shuigui Invoker</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>blue and black Weird 22TZR</name>
- <color>U</color>
- <color>B</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>2/2</pt>
- <type>Token Creature — Weird</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="TZR266" rarity="token">tokens</set>
- <reverse-related>Mia, Unwanted Visitor</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>Megi'Yharun TZR</name>
- <color>B</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>10/10</pt>
- <type>Legendary Token Creature — Weird</type>
- <tablerow>2</tablerow>
- <text>Flying, indestructible Whenever this creature attacks, exile target permanent.</text>
- <token>1</token>
- <set num="TZR258" rarity="token">tokens</set>
- <reverse-related>Shatter the Heavens</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>blue Spirit 11TZR</name>
- <color>U</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Spirit</type>
- <tablerow>2</tablerow>
- <text>Flying</text>
- <token>1</token>
- <set num="TZR262" rarity="token">tokens</set>
- <reverse-related>Spirit-Lit Baloon</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
  <name>Homunculus Token WAS</name>
  <manacost></manacost>
  <cmc>0</cmc>
@@ -4991,84 +4740,628 @@
  <reverse-related></reverse-related>
 </card>
 <card>
- <name>Treasure MSK</name>
+ <name>green Frog 11TZR</name>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Frog</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="TZR249" rarity="token">tokens</set>
+ <reverse-related>Alkadur, Paradox of Prosperity</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Guardian of Shinri</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Henmo Lightseeker</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Henmo Tracker</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Laogui Taleteller</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Mistress of the Pond</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>red and white Soldier 11TZR</name>
+ <color>R</color>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Soldier</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="TZR248" rarity="token">tokens</set>
+ <reverse-related>Alluring Recruiter</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Battle Sanctifier</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Cheerful Practitioner</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Dan Xiao, Royal Tactician</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Emperor's Forgiveness</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Guo Wei, Tranquil Strategist</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Henmo's Wake</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related count="2">Honorable Descendant</reverse-related>
+ <reverse-related count="2"></reverse-related>
+ <reverse-related>Hostile Reunion</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Imperious Maiden</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Inspiring Warlord</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related count="2">Military Prowess</reverse-related>
+ <reverse-related count="2"></reverse-related>
+ <reverse-related>Mungwon Sentinel</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Pure-Squad Leader</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related count="2">Total War</reverse-related>
+ <reverse-related count="2"></reverse-related>
+ <reverse-related>Visions of Glory</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related count="2">War Preparations</reverse-related>
+ <reverse-related count="2"></reverse-related>
+ <reverse-related>Warrior of the Setting Sun</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Weishou, City of Light</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Xianzhi Enlister</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Yan Ren, Beautiful Hieress</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Zhi-Qiang Arena</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Zhi-Qiang Flagbearer</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>black Warrior 11TZR</name>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Warrior</type>
+ <tablerow>2</tablerow>
+ <text>When this creature dies, you draw a card and lose 1 life.</text>
+ <token>1</token>
+ <set num="TZR265" rarity="token">tokens</set>
+ <reverse-related>Arkeo Khalimos</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>green Spirit 44TZR</name>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>4/4</pt>
+ <type>Token Creature — Spirit</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="TZR264" rarity="token">tokens</set>
+ <reverse-related>Awaken the Land</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>black and red Warrior 32TZR</name>
+ <color>B</color>
+ <color>R</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>3/2</pt>
+ <type>Token Creature — Warrior</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="TZR256" rarity="token">tokens</set>
+ <reverse-related>Cursed Conquest</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Demonhand Ravager</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Treasure TZR</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Treasure</type>
+ <tablerow>1</tablerow>
+ <text>{T}, Sacrifice this: Add one mana of any color.</text>
+ <token>1</token>
+ <set num="TZR255" rarity="token">tokens</set>
+ <reverse-related>Festival Vessel</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Jin Guang, Son of Muyang</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Tithetaker's Dagger</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Food TZR</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Food</type>
+ <tablerow>1</tablerow>
+ <text>{2}, {T}, Sacrifice this: You gain 3 life.</text>
+ <token>1</token>
+ <set num="TZR263" rarity="token">tokens</set>
+ <reverse-related>Festival Vessel</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>blue and red Elemental 11TZR</name>
+ <color>U</color>
+ <color>R</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Elemental</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="TZR259" rarity="token">tokens</set>
+ <reverse-related>Festive Lights</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>white and blue Bird 00TZR</name>
+ <color>W</color>
+ <color>U</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>0/0</pt>
+ <type>Token Creature — Bird</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="TZR260" rarity="token">tokens</set>
+ <reverse-related>Henmo Battlemage</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Jun De, the Uniter</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Xianzhi Summoner</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Copy TZR</name>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Reflection</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="TZR261" rarity="token">tokens</set>
+ <reverse-related>Hundred-Year Rage</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Kali of the Eternal Mirror</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Shuigui Invoker</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>blue and black Weird 22TZR</name>
+ <color>U</color>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/2</pt>
+ <type>Token Creature — Weird</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="TZR266" rarity="token">tokens</set>
+ <reverse-related>Mia, Unwanted Visitor</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Megi'Yharun TZR</name>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>10/10</pt>
+ <type>Legendary Token Creature — Weird</type>
+ <tablerow>2</tablerow>
+ <text>Flying, indestructible Whenever this creature attacks, exile target permanent.</text>
+ <token>1</token>
+ <set num="TZR258" rarity="token">tokens</set>
+ <reverse-related>Shatter the Heavens</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>blue Spirit 11TZR</name>
+ <color>U</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Spirit</type>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+ <set num="TZR262" rarity="token">tokens</set>
+ <reverse-related>Spirit-Lit Baloon</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>white Elemental 11HRO</name>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Elemental</type>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+ <set num="HRO268" rarity="token">tokens</set>
+ <reverse-related>Alven, Stormtouched</reverse-related>
+ <reverse-related>Nameless Wisp</reverse-related>
+ <reverse-related>Capricious Guardians</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Evergale Stormmother</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Spinout</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related count="X">Undaunted Diviner</reverse-related>
+ <reverse-related count="X"></reverse-related>
+ <reverse-related>Ven'atoir, City Under Wing</reverse-related>
+ <reverse-related>Galeplagued City</reverse-related>
+ <reverse-related>Ven'atoir Galemaster</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>white Knight 22HRO</name>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/2</pt>
+ <type>Token Creature — Knight</type>
+ <tablerow>2</tablerow>
+ <text>Flying, first strike</text>
+ <token>1</token>
+ <set num="HRO269" rarity="token">tokens</set>
+ <reverse-related>Anret, Valiant Commander</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>black Noble 11HRO</name>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Noble</type>
+ <tablerow>2</tablerow>
+ <text>When this creature dies, you gain 1 life.</text>
+ <token>1</token>
+ <set num="HRO274" rarity="token">tokens</set>
+ <reverse-related>Camilla, Ancient Aristocrat</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Ignoble Monarchy</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related count="2">Insidious Lineage</reverse-related>
+ <reverse-related count="2"></reverse-related>
+ <reverse-related>Petty Autocrat</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>blue Spirit 12HRO</name>
+ <color>U</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/2</pt>
+ <type>Token Creature — Spirit</type>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+ <set num="HRO271" rarity="token">tokens</set>
+ <reverse-related>Dance with the Spirits</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>red Elemental 21HRO</name>
+ <color>R</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/1</pt>
+ <type>Token Creature — Elemental</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="HRO276" rarity="token">tokens</set>
+ <reverse-related>Elodie, Wandering Songstress</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Growth Undeterred</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Lifesculptor</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Veceslav, Rubblemaker</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Treasure HRO</name>
  <manacost></manacost>
  <cmc>0</cmc>
  <type>Token Artifact — Treasure</type>
  <tablerow>1</tablerow>
  <text>{T}, Sacrifice this artifact: Add one mana of any color.</text>
  <token>1</token>
- <set num="MSK287" rarity="token">tokens</set>
- <reverse-related>Awash in Worldfire</reverse-related>
+ <set num="HRO287" rarity="token">tokens</set>
+ <reverse-related>Emberheart Aspirant</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Beguiling Greed</reverse-related>
+ <reverse-related>Found Family_HRO</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Bridge the Blind Eternities</reverse-related>
- <reverse-related>The Planar Bridge</reverse-related>
- <reverse-related>Covetous Mason</reverse-related>
+ <reverse-related>Shipwreck Salvager</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Excavation Embezzler</reverse-related>
+ <reverse-related>The Honorblaze Sisters</reverse-related>
+ <reverse-related>Emberheart Prodigy</reverse-related>
+ <reverse-related>Ven'adell, the Resurgent Deep</reverse-related>
+ <reverse-related>Palace of the Deep</reverse-related>
+</card>
+<card>
+ <name>green Plant Mutant 00HRO</name>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>0/0</pt>
+ <type>Token Creature — Plant Mutant</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="HRO278" rarity="token">tokens</set>
+ <reverse-related>Evergrowth Channeler</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Gilded Servitor</reverse-related>
+ <reverse-related>Lifesculpting</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Glittering Goliath</reverse-related>
+ <reverse-related>Ranothar, Unrooted Experiment</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Historical Recovery</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Loreto, Chief Archaeologist</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Throne of Gildrang</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Toil the Mines</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Crestfallen Roseblade </reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Liberator of Petals</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Merry Marauder</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Ziel, Season of Endings</reverse-related>
+ <reverse-related count="2">Simul, the Lifesparker</reverse-related>
+ <reverse-related count="2"></reverse-related>
+ <reverse-related>Vel, Imbued Biomancer</reverse-related>
+ <reverse-related>Novice Biomancer</reverse-related>
+</card>
+<card>
+ <name>black and green Insect 11HRO</name>
+ <color>B</color>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Insect</type>
+ <tablerow>2</tablerow>
+ <text>Deathtouch</text>
+ <token>1</token>
+ <set num="HRO281" rarity="token">tokens</set>
+ <reverse-related>Hayat, Faminebringer</reverse-related>
  <reverse-related></reverse-related>
 </card>
 <card>
- <name>Weapon MSK</name>
+ <name>red Soldier 11HRO</name>
+ <color>R</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Soldier</type>
+ <tablerow>2</tablerow>
+ <text>Double strike</text>
+ <token>1</token>
+ <set num="HRO277" rarity="token">tokens</set>
+ <reverse-related>Ignoble Monarchy</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Zagrea, Unbridled Captain</reverse-related>
+ <reverse-related>Arena Champion</reverse-related>
+ <reverse-related>Roaming Vigilantes</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>black Goat 21HRO</name>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/1</pt>
+ <type>Token Creature — Goat</type>
+ <tablerow>2</tablerow>
+ <text>Lifelink</text>
+ <token>1</token>
+ <set num="HRO273" rarity="token">tokens</set>
+ <reverse-related>Innocuous Goatherd</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Equipment HRO</name>
  <manacost></manacost>
  <cmc>0</cmc>
  <type>Token Artifact — Equipment</type>
  <tablerow>1</tablerow>
- <text>Equipped creature gets +1/+1. Equip {2}</text>
+ <text>Equipped creature gets +1/+0. Equip {1}</text>
  <token>1</token>
- <set num="MSK281" rarity="token">tokens</set>
- <reverse-related>Borahm Caldegar</reverse-related>
+ <set num="HRO285" rarity="token">tokens</set>
+ <reverse-related>Kestrel, Ven'akresh General</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Anina, Breath of the Winds</reverse-related>
+ <reverse-related>Stocked Armory</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Custodian of Cycles</reverse-related>
+</card>
+<card>
+ <name>blue and red Elemental 44HRO</name>
+ <color>U</color>
+ <color>R</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>4/4</pt>
+ <type>Token Creature — Elemental</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="HRO280" rarity="token">tokens</set>
+ <reverse-related>Liactru Stormheart</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Deprecate</reverse-related>
+</card>
+<card>
+ <name>black Bird 11HRO</name>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Bird</type>
+ <tablerow>2</tablerow>
+ <text>Flying This creature can't block.</text>
+ <token>1</token>
+ <set num="HRO272" rarity="token">tokens</set>
+ <reverse-related>Pinionbrand Ritual</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Escapade Collector</reverse-related>
+ <reverse-related>Raging Featherstorm</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Faithful Harrier</reverse-related>
+</card>
+<card>
+ <name>colorless Soldier 11HRO</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Artifact Creature — Soldier</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="HRO286" rarity="token">tokens</set>
+ <reverse-related>The Abhorrent</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>From Blood, Blades</reverse-related>
+ <reverse-related count="3">The Stone Army</reverse-related>
+ <reverse-related count="3"></reverse-related>
+</card>
+<card>
+ <name>red Dragon 01HRO</name>
+ <color>R</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>0/1</pt>
+ <type>Token Creature — Dragon</type>
+ <tablerow>2</tablerow>
+ <text>Flying {R}: This creature gets +1/+0 until end of turn.</text>
+ <token>1</token>
+ <set num="HRO275" rarity="token">tokens</set>
+ <reverse-related>The Honorblaze Sisters</reverse-related>
+ <reverse-related>Emberheart Prodigy</reverse-related>
+</card>
+<card>
+ <name>colorless Bat 22HRO</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/2</pt>
+ <type>Token Artifact Creature — Bat</type>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+ <set num="HRO283" rarity="token">tokens</set>
+ <reverse-related count="2">The Stone Army</reverse-related>
+ <reverse-related count="2"></reverse-related>
+</card>
+<card>
+ <name>colorless Dragon 55HRO</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>5/5</pt>
+ <type>Token Artifact Creature — Dragon</type>
+ <tablerow>2</tablerow>
+ <text>Flying, trample</text>
+ <token>1</token>
+ <set num="HRO284" rarity="token">tokens</set>
+ <reverse-related>The Stone Army</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related count="X">From Hope to Action</reverse-related>
+</card>
+<card>
+ <name>black Rogue 32LRH</name>
+ <color>B</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>3/2</pt>
+ <type>Token Creature — Rogue</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="LRH133" rarity="token">tokens</set>
+ <reverse-related>Barter for Bullets</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Break the Law's Back</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Break the Law's Back</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Emerge from the Dust</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Jackle's Gang</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Sudden Altercation</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Bullet</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Artifact — Bullet</type>
+ <tablerow>1</tablerow>
+ <text>{T}, Sacrifice this artifact: It deals 1 damage to any target.</text>
+ <token>1</token>
+ <set num="LRH130" rarity="token">tokens</set>
+ <reverse-related>Barter for Bullets</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Contracted Gunslinger</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related count="X">Jackle the Jackal</reverse-related>
  <reverse-related count="X"></reverse-related>
- <reverse-related>Gregarious Buboh</reverse-related>
+ <reverse-related>Smoking Barrels</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Nasaj</reverse-related>
+</card>
+<card>
+ <name>green Wolf 22LRH</name>
+ <color>G</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/2</pt>
+ <type>Token Creature — Wolf</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="LRH128" rarity="token">tokens</set>
+ <reverse-related>Curious Canines</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Steward of New Horizons</reverse-related>
+ <reverse-related>Haunt the Woods</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Timber Pummeler</reverse-related>
+</card>
+<card>
+ <name>white Hound 22LRH</name>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>2/2</pt>
+ <type>Token Creature — Hound</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="LRH139" rarity="token">tokens</set>
+ <reverse-related count="X">Homestead's Finest</reverse-related>
+ <reverse-related count="X"></reverse-related>
+</card>
+<card>
+ <name>red Soldier 11LRH</name>
+ <color>R</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Soldier</type>
+ <tablerow>2</tablerow>
+ <text>Haste</text>
+ <token>1</token>
+ <set num="LRH126" rarity="token">tokens</set>
+ <reverse-related>Lawman's Posse</reverse-related>
  <reverse-related></reverse-related>
- <reverse-related>Veiled Foreboding</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Warkrei Commander</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Zyklinder Shortcutter</reverse-related>
- <reverse-related></reverse-related>
+ <reverse-related count="2">Marshal Grace</reverse-related>
+ <reverse-related count="2"></reverse-related>
+ <reverse-related count="2">Sudden Altercation</reverse-related>
+ <reverse-related count="2"></reverse-related>
 </card>
 <card>
  <name>Keystone</name>
@@ -5389,20 +5682,6 @@
  <reverse-related></reverse-related>
 </card>
 <card>
- <name>Equipment KND</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <type>Token Artifact — Equipment</type>
- <tablerow>1</tablerow>
- <text>Equipped creature gets +2/+0. Equip {2}</text>
- <token>1</token>
- <set num="KND308" rarity="token">tokens</set>
- <reverse-related>Bushland Militant</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Skyknight Armorer</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
  <name>Jwanga Djitu KND</name>
  <manacost></manacost>
  <cmc>0</cmc>
@@ -5649,275 +5928,6 @@
  <reverse-related></reverse-related>
 </card>
 <card>
- <name>white Elemental 11HRO</name>
- <color>W</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Elemental</type>
- <tablerow>2</tablerow>
- <text>Flying</text>
- <token>1</token>
- <set num="HRO268" rarity="token">tokens</set>
- <reverse-related>Alven, Stormtouched</reverse-related>
- <reverse-related>Nameless Wisp</reverse-related>
- <reverse-related>Capricious Guardians</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Evergale Stormmother</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Spinout</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="X">Undaunted Diviner</reverse-related>
- <reverse-related count="X"></reverse-related>
- <reverse-related>Ven'atoir, City Under Wing</reverse-related>
- <reverse-related>Galeplagued City</reverse-related>
- <reverse-related>Ven'atoir Galemaster</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>white Knight 22HRO</name>
- <color>W</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>2/2</pt>
- <type>Token Creature — Knight</type>
- <tablerow>2</tablerow>
- <text>Flying, first strike</text>
- <token>1</token>
- <set num="HRO269" rarity="token">tokens</set>
- <reverse-related>Anret, Valiant Commander</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>black Noble 11HRO</name>
- <color>B</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Noble</type>
- <tablerow>2</tablerow>
- <text>When this creature dies, you gain 1 life.</text>
- <token>1</token>
- <set num="HRO274" rarity="token">tokens</set>
- <reverse-related>Camilla, Ancient Aristocrat</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Ignoble Monarchy</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="2">Insidious Lineage</reverse-related>
- <reverse-related count="2"></reverse-related>
- <reverse-related>Petty Autocrat</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>blue Spirit 12HRO</name>
- <color>U</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/2</pt>
- <type>Token Creature — Spirit</type>
- <tablerow>2</tablerow>
- <text>Flying</text>
- <token>1</token>
- <set num="HRO271" rarity="token">tokens</set>
- <reverse-related>Dance with the Spirits</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>red Elemental 21HRO</name>
- <color>R</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>2/1</pt>
- <type>Token Creature — Elemental</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="HRO276" rarity="token">tokens</set>
- <reverse-related>Elodie, Wandering Songstress</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Growth Undeterred</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Lifesculptor</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Veceslav, Rubblemaker</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>Treasure HRO</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <type>Token Artifact — Treasure</type>
- <tablerow>1</tablerow>
- <text>{T}, Sacrifice this artifact: Add one mana of any color.</text>
- <token>1</token>
- <set num="HRO287" rarity="token">tokens</set>
- <reverse-related>Emberheart Aspirant</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Found Family_HRO</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Shipwreck Salvager</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>The Honorblaze Sisters</reverse-related>
- <reverse-related>Emberheart Prodigy</reverse-related>
- <reverse-related>Ven'adell, the Resurgent Deep</reverse-related>
- <reverse-related>Palace of the Deep</reverse-related>
-</card>
-<card>
- <name>green Plant Mutant 00HRO</name>
- <color>G</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>0/0</pt>
- <type>Token Creature — Plant Mutant</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="HRO278" rarity="token">tokens</set>
- <reverse-related>Evergrowth Channeler</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Lifesculpting</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Ranothar, Unrooted Experiment</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="2">Simul, the Lifesparker</reverse-related>
- <reverse-related count="2"></reverse-related>
- <reverse-related>Vel, Imbued Biomancer</reverse-related>
- <reverse-related>Novice Biomancer</reverse-related>
-</card>
-<card>
- <name>black and green Insect 11HRO</name>
- <color>B</color>
- <color>G</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Insect</type>
- <tablerow>2</tablerow>
- <text>Deathtouch</text>
- <token>1</token>
- <set num="HRO281" rarity="token">tokens</set>
- <reverse-related>Hayat, Faminebringer</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>red Soldier 11HRO</name>
- <color>R</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Soldier</type>
- <tablerow>2</tablerow>
- <text>Double strike</text>
- <token>1</token>
- <set num="HRO277" rarity="token">tokens</set>
- <reverse-related>Ignoble Monarchy</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Zagrea, Unbridled Captain</reverse-related>
- <reverse-related>Arena Champion</reverse-related>
- <reverse-related>Roaming Vigilantes</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>black Goat 21HRO</name>
- <color>B</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>2/1</pt>
- <type>Token Creature — Goat</type>
- <tablerow>2</tablerow>
- <text>Lifelink</text>
- <token>1</token>
- <set num="HRO273" rarity="token">tokens</set>
- <reverse-related>Innocuous Goatherd</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>blue and red Elemental 44HRO</name>
- <color>U</color>
- <color>R</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>4/4</pt>
- <type>Token Creature — Elemental</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="HRO280" rarity="token">tokens</set>
- <reverse-related>Liactru Stormheart</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>black Bird 11HRO</name>
- <color>B</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Bird</type>
- <tablerow>2</tablerow>
- <text>Flying This creature can't block.</text>
- <token>1</token>
- <set num="HRO272" rarity="token">tokens</set>
- <reverse-related>Pinionbrand Ritual</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Raging Featherstorm</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>colorless Soldier 11HRO</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Artifact Creature — Soldier</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="HRO286" rarity="token">tokens</set>
- <reverse-related>The Abhorrent</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="3">The Stone Army</reverse-related>
- <reverse-related count="3"></reverse-related>
-</card>
-<card>
- <name>red Dragon 01HRO</name>
- <color>R</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>0/1</pt>
- <type>Token Creature — Dragon</type>
- <tablerow>2</tablerow>
- <text>Flying {R}: This creature gets +1/+0 until end of turn.</text>
- <token>1</token>
- <set num="HRO275" rarity="token">tokens</set>
- <reverse-related>The Honorblaze Sisters</reverse-related>
- <reverse-related>Emberheart Prodigy</reverse-related>
-</card>
-<card>
- <name>colorless Bat 22HRO</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>2/2</pt>
- <type>Token Artifact Creature — Bat</type>
- <tablerow>2</tablerow>
- <text>Flying</text>
- <token>1</token>
- <set num="HRO283" rarity="token">tokens</set>
- <reverse-related count="2">The Stone Army</reverse-related>
- <reverse-related count="2"></reverse-related>
-</card>
-<card>
- <name>colorless Dragon 55HRO</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>5/5</pt>
- <type>Token Artifact Creature — Dragon</type>
- <tablerow>2</tablerow>
- <text>Flying, trample</text>
- <token>1</token>
- <set num="HRO284" rarity="token">tokens</set>
- <reverse-related>The Stone Army</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
  <name>white Warrior 21MSK</name>
  <color>W</color>
  <manacost></manacost>
@@ -5942,6 +5952,46 @@
  <reverse-related></reverse-related>
 </card>
 <card>
+ <name>Weapon MSK</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Equipment</type>
+ <tablerow>1</tablerow>
+ <text>Equipped creature gets +1/+1. Equip {2}</text>
+ <token>1</token>
+ <set num="MSK281" rarity="token">tokens</set>
+ <reverse-related>Anina, Breath of the Winds</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Custodian of Cycles</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Deprecate</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Escapade Collector</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Faithful Harrier</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>From Blood, Blades</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related count="X">From Hope to Action</reverse-related>
+ <reverse-related count="X"></reverse-related>
+ <reverse-related>Gregarious Buboh</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Nasaj</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Steward of New Horizons</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Timber Pummeler</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Veiled Foreboding</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Warkrei Commander</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Zyklinder Shortcutter</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Borahm Caldegar</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
  <name>green Avatar MSK</name>
  <color>G</color>
  <manacost></manacost>
@@ -5953,6 +6003,46 @@
  <token>1</token>
  <set num="MSK285" rarity="token">tokens</set>
  <reverse-related>Behold Ruhigwelt</reverse-related>
+ <reverse-related></reverse-related>
+</card>
+<card>
+ <name>Treasure MSK</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Artifact — Treasure</type>
+ <tablerow>1</tablerow>
+ <text>{T}, Sacrifice this artifact: Add one mana of any color.</text>
+ <token>1</token>
+ <set num="MSK287" rarity="token">tokens</set>
+ <reverse-related>Crestfallen Roseblade </reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Liberator of Petals</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Merry Marauder</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Ziel, Season of Endings</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Awash in Worldfire</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Beguiling Greed</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Bridge the Blind Eternities</reverse-related>
+ <reverse-related>The Planar Bridge</reverse-related>
+ <reverse-related>Covetous Mason</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Excavation Embezzler</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Gilded Servitor</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Glittering Goliath</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Historical Recovery</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Loreto, Chief Archaeologist</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Throne of Gildrang</reverse-related>
+ <reverse-related></reverse-related>
+ <reverse-related>Toil the Mines</reverse-related>
  <reverse-related></reverse-related>
 </card>
 <card>
@@ -6020,96 +6110,6 @@
  <reverse-related></reverse-related>
 </card>
 <card>
- <name>black Rogue 32LRH</name>
- <color>B</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>3/2</pt>
- <type>Token Creature — Rogue</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="LRH133" rarity="token">tokens</set>
- <reverse-related>Barter for Bullets</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Break the Law's Back</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Break the Law's Back</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Emerge from the Dust</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Jackle's Gang</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Sudden Altercation</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>Bullet</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <type>Artifact — Bullet</type>
- <tablerow>1</tablerow>
- <text>{T}, Sacrifice this artifact: It deals 1 damage to any target.</text>
- <token>1</token>
- <set num="LRH130" rarity="token">tokens</set>
- <reverse-related>Barter for Bullets</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Contracted Gunslinger</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="X">Jackle the Jackal</reverse-related>
- <reverse-related count="X"></reverse-related>
- <reverse-related>Smoking Barrels</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>green Wolf 22LRH</name>
- <color>G</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>2/2</pt>
- <type>Token Creature — Wolf</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="LRH128" rarity="token">tokens</set>
- <reverse-related>Curious Canines</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related>Haunt the Woods</reverse-related>
- <reverse-related></reverse-related>
-</card>
-<card>
- <name>white Hound 22LRH</name>
- <color>W</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>2/2</pt>
- <type>Token Creature — Hound</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="LRH139" rarity="token">tokens</set>
- <reverse-related count="X">Homestead's Finest</reverse-related>
- <reverse-related count="X"></reverse-related>
-</card>
-<card>
- <name>red Soldier 11LRH</name>
- <color>R</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Soldier</type>
- <tablerow>2</tablerow>
- <text>Haste</text>
- <token>1</token>
- <set num="LRH126" rarity="token">tokens</set>
- <reverse-related>Lawman's Posse</reverse-related>
- <reverse-related></reverse-related>
- <reverse-related count="2">Marshal Grace</reverse-related>
- <reverse-related count="2"></reverse-related>
- <reverse-related count="2">Sudden Altercation</reverse-related>
- <reverse-related count="2"></reverse-related>
-</card>
-<card>
  <name>Macro Cosmos YGM</name>
  <color>B</color>
  <manacost></manacost>
@@ -6147,7 +6147,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="ANS286" rarity="token">tokens</set>
+ <set num="ANS285" rarity="token">tokens</set>
 </card>
 <card>
  <name>All-Mother's Soul KND</name>
@@ -6285,7 +6285,7 @@
  <tablerow>2</tablerow>
  <text>Menace</text>
  <token>1</token>
- <set num="ANS294" rarity="token">tokens</set>
+ <set num="ANS293" rarity="token">tokens</set>
 </card>
 <card>
  <name>Chisel MVX</name>
@@ -6307,7 +6307,7 @@
  <tablerow>2</tablerow>
  <text>Lifelink</text>
  <token>1</token>
- <set num="ANS287" rarity="token">tokens</set>
+ <set num="ANS286" rarity="token">tokens</set>
 </card>
 <card>
  <name>colorless Crab 33FOE</name>
@@ -6411,7 +6411,7 @@
  <tablerow>2</tablerow>
  <text>Flying, haste</text>
  <token>1</token>
- <set num="ANS292" rarity="token">tokens</set>
+ <set num="ANS291" rarity="token">tokens</set>
 </card>
 <card>
  <name>Drone Citizen Token  WAS</name>
@@ -6530,7 +6530,7 @@
  <tablerow>1</tablerow>
  <text>{2}, {T}, Sacrifice this artifact: You gain 3 life.</text>
  <token>1</token>
- <set num="ANS304" rarity="token">tokens</set>
+ <set num="ANS303" rarity="token">tokens</set>
 </card>
 <card>
  <name>colorless Forest Dryad 11VRN</name>
@@ -6587,7 +6587,7 @@
  <tablerow>2</tablerow>
  <text>{T}, Sacrifice this creature: Add {B}.</text>
  <token>1</token>
- <set num="ANS289" rarity="token">tokens</set>
+ <set num="ANS288" rarity="token">tokens</set>
 </card>
 <card>
  <name>Horror Drone Token WAS</name>
@@ -6632,7 +6632,7 @@
  <tablerow>1</tablerow>
  <text>You may play land cards from your graveyard.</text>
  <token>1</token>
- <set num="ANS301" rarity="token">tokens</set>
+ <set num="ANS300" rarity="token">tokens</set>
 </card>
 <card>
  <name>Illuminated Blue FOE</name>
@@ -6742,7 +6742,7 @@
  <tablerow>1</tablerow>
  <text>{T}, Sacrifice this artifact: Target creature gains flying until end of turn.</text>
  <token>1</token>
- <set num="ANS302" rarity="token">tokens</set>
+ <set num="ANS301" rarity="token">tokens</set>
 </card>
 <card>
  <name>Lifelink Counter FOE</name>
@@ -6799,16 +6799,6 @@
  <set num="FOE146" rarity="token">tokens</set>
 </card>
 <card>
- <name>On An Adventure KRK</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <type>Token Reminder</type>
- <tablerow>1</tablerow>
- <text>After an Adventure resolves, you can place the exiled card here. You may cast the creature from exile.</text>
- <token>1</token>
- <set num="KRK261" rarity="token">tokens</set>
-</card>
-<card>
  <name>On An Adventure KDT</name>
  <manacost></manacost>
  <cmc>0</cmc>
@@ -6817,6 +6807,16 @@
  <text>After an Adventure resolves, you can place the exiled card here. You may cast the creature from exile.</text>
  <token>1</token>
  <set num="KDT312" rarity="token">tokens</set>
+</card>
+<card>
+ <name>On An Adventure KRK</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Token Reminder</type>
+ <tablerow>1</tablerow>
+ <text>After an Adventure resolves, you can place the exiled card here. You may cast the creature from exile.</text>
+ <token>1</token>
+ <set num="KRK261" rarity="token">tokens</set>
 </card>
 <card>
  <name>Opus WAS</name>
@@ -6936,7 +6936,7 @@
  <tablerow>1</tablerow>
  <text></text>
  <token>1</token>
- <set num="ANS291" rarity="token">tokens</set>
+ <set num="ANS290" rarity="token">tokens</set>
 </card>
 <card>
  <name>Shiroyuki Emblem ANS</name>
@@ -6946,7 +6946,7 @@
  <tablerow>1</tablerow>
  <text>Spells you cast cost {1} less to cast. You may play an additional land card on each of your turns.</text>
  <token>1</token>
- <set num="ANS285" rarity="token">tokens</set>
+ <set num="ANS284" rarity="token">tokens</set>
 </card>
 <card>
  <name>black Skeleton 22ANS</name>
@@ -6958,7 +6958,7 @@
  <tablerow>2</tablerow>
  <text>*(This is a copy of a creature.)*</text>
  <token>1</token>
- <set num="ANS297" rarity="token">tokens</set>
+ <set num="ANS296" rarity="token">tokens</set>
 </card>
 <card>
  <name>Skywatch Batallion HRO</name>
