@@ -462,6 +462,11 @@ function tokenPuller(c, shout) {
 	if(cleanoracle.match(/^Aurora/)) {
 		tokens.push(["Aurora Reminder", 1, "Keyword: Aurora"]);
 	}
+	if(cleanoracle.match(/Subroutine/) || thisCard.typeLine.match(/Subroutine/)) {
+		tokens.push(["ProgramA", 1]);
+		tokens.push(["ProgramB", 1]);
+		tokens.push(["ProgramC", 1]);
+	}
 
 	// apply tokenscripts overrides
 	if(thisCard.tokenscripts) {
