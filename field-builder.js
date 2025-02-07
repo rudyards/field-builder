@@ -113,6 +113,8 @@ function prepareFiles() {
 					
 					fs.readFile('./files/'+fn1+'/'+fn, 'utf8', (err, data) => {
 						try {
+							console.log("Working on:")
+							console.log(fn)
 							let exported = JSON.parse(data);
 							let cards = {};
 							let meta = {title:""};
@@ -292,6 +294,10 @@ function processImages(library, trice_names) {
 			si = card.parentSet;
 		if(card.from_lackey)
 			continue;
+		if (library.setData[si] == undefined){
+			console.log("The problem child is:")
+			console.log(card)
+		}
 		let pi = library.setData[si].pool;
 		let current = `./files/${pi}/${si}/${card.cardID}.${FILE_TYPE}`;
 		fs.exists(current, (exists) => {
