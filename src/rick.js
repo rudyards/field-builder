@@ -462,6 +462,11 @@ function tokenPuller(c, shout) {
 	if(cleanoracle.match(/^Aurora/)) {
 		tokens.push(["Aurora Reminder", 1, "Keyword: Aurora"]);
 	}
+	if(cleanoracle.match(/Subroutine/) || thisCard.typeLine.match(/Subroutine/)) {
+		tokens.push(["ProgramA", 1]);
+		tokens.push(["ProgramB", 1]);
+		tokens.push(["ProgramC", 1]);
+	}
 
 	// apply tokenscripts overrides
 	if(thisCard.tokenscripts) {
@@ -1047,8 +1052,12 @@ function writeTokenBlock(key) {
 		for(let i in sources) {
 			for(let n in source_names) {
 				contents += " <reverse-related"
-				if(sources[i] != 1)
+				if(sources[i] == "transform") {
+					contents += ` attach="transform"`;
+				}
+				else if(sources[i] != 1) {
 					contents += ` count="${sources[i]}"`
+				}
 				contents += `>${source_names[n]}</reverse-related>\r\n`
 			}
 		}

@@ -243,6 +243,11 @@ function stitchLibraries(lib, newlib) {
 						conj = true;
 						val = ctest[1];
 					}
+					let trans = false;
+					if(val.match(/transform/i)) {
+						val = "1";
+						trans = true;
+					}
 					if(val == "x")
 						val = "X"
 					if(val != "X")
@@ -253,6 +258,8 @@ function stitchLibraries(lib, newlib) {
 						let amount = (val == "X" ? 1 : val);
 						for(let i=0; i<amount; i++)
 							thisCard.spellbook.push(cname);
+					}else if(trans) {
+						thisCard.tokenscripts.r.push([name, "transform", "transform"])
 					}else{
 						thisCard.tokenscripts.r.push([name, val])
 					}
@@ -274,6 +281,11 @@ function stitchLibraries(lib, newlib) {
 						conj = true;
 						val = ctest[1];
 					}
+					let trans = false;
+					if(val.match(/transform/i)) {
+						val = "1";
+						trans = true;
+					}
 					if(val == "x")
 						val = "X"
 					if(val != "X")
@@ -285,6 +297,8 @@ function stitchLibraries(lib, newlib) {
 						let amount = (val == "X" ? 1 : val);
 						for(let i=0; i<amount; i++)
 							thisCard.spellbook.push(cname);
+					}else if(trans) {
+						thisCard.tokenscripts.a.push([name, "transform", "transform"]);
 					}else{
 						thisCard.tokenscripts.a.push([name, val]);
 					}
