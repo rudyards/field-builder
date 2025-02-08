@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cockatrice_carddatabase version="4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://raw.githubusercontent.com/Cockatrice/Cockatrice/master/doc/carddatabase_v4/cards.xsd">
+	<sets>
+		<set>
+			<name>2HU</name>
+			<longname>Universes Beyond: The Touhou Project</longname>
+			<settype>Body Pool</settype>
+			<releasedate></releasedate>
+		</set>
+	</sets>
+	<cards>
+		<card>
+			<name>Ibaraki-Douji</name>
+			<text>Whenever a nontoken creature dies, create a 1/1 black Skeleton creature token with menace.
+[]{G}{W}: Untap target creature an opponent controls. That creature blocks Ibaraki-Douji this turn if able.
+[](Melds with Kasen, Seeking Herself)
+
+---
+Transforms into Ibaraki Kasen, Complete</text>
+			<prop>
+				<side>front</side>
+				<manacost>3BB</manacost>
+				<cmc>5</cmc>
+				<colors>B</colors>
+				<coloridentity>BGW</coloridentity>
+				<layout>transform</layout>
+				<type>Legendary Creature — Demon Mystic</type>
+				<maintype>Creature</maintype>
+				<pt>6/5</pt>
+				<loyalty>4</loyalty>
+				<format-body>legal</format-body>
+			</prop>
+			<tablerow>2</tablerow>
+			<related attach="transform">Ibaraki Kasen, Complete</related>
+			<set num="168a" rarity="mythic rare">2HU</set>
+		</card>
+		<card>
+			<name>Ibaraki Kasen, Complete</name>
+			<text>
+[-1]: Exile target permanent.
+[-13]: Target opponent chooses up to one creature they control, then sacrifices all other nonland permanents they control.
+---
+Transforms from Ibaraki-Douji</text>
+			<prop>
+				<side>back</side>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity>BGW</coloridentity>
+				<layout>transform</layout>
+				<type>Legendary Planeswalker — Kasen</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>8</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<related attach="transform">Ibaraki-Douji</related>
+			<set num="168b" rarity="mythic rare">2HU</set>
+		</card>
+		<card>
+			<name>Kasen, Seeking Herself</name>
+			<text>[+2]: Look at the top five cards of your library. You may reveal a creature card from among them and put it into your hand. Put the rest on the bottom of your library in any order.
+[0]: Kasen deals damage equal to her loyalty to target creature an opponent controls. That creature deals damage equal to its power to Kasen.
+[0]: If you both own and control Kasen, Seeking Herself and a creature named Ibaraki-Douji, exile them, then meld them into Ibaraki Kasen, Complete.
+---
+Transforms into Ibaraki Kasen, Complete</text>
+			<prop>
+				<side>front</side>
+				<manacost>1WBG</manacost>
+				<cmc>4</cmc>
+				<colors>WBG</colors>
+				<coloridentity>WBG</coloridentity>
+				<layout>transform</layout>
+				<type>Legendary Planeswalker — Kasen</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>4</loyalty>
+				<format-body>legal</format-body>
+			</prop>
+			<tablerow>1</tablerow>
+			<related attach="transform">Ibaraki Kasen, Complete</related>
+			<set num="308a" rarity="mythic rare">2HU</set>
+		</card>
+		<card>
+			<name>Ibaraki Kasen, Complete</name>
+			<text>
+[-1]: Exile target permanent.
+[-13]: Target opponent chooses up to one creature they control, then sacrifices all other nonland permanents they control.
+---
+Transforms from Kasen, Seeking Herself</text>
+			<prop>
+				<side>back</side>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity>WBG</coloridentity>
+				<layout>transform</layout>
+				<type>Legendary Planeswalker — Kasen</type>
+				<maintype>Planeswalker</maintype>
+				<loyalty>8</loyalty>
+			</prop>
+			<tablerow>1</tablerow>
+			<related attach="transform">Kasen, Seeking Herself</related>
+			<set num="308b" rarity="mythic rare">2HU</set>
+		</card>
+	</cards>
+</cockatrice_carddatabase>
