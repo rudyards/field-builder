@@ -829,10 +829,16 @@ function writeCardBlock(key) {
 	if(!card)
 		return;
 	let cardNames = sourceNames(card);
-	
-	tracker[cardNames[0]] = key;
-	if(cardNames[1])
-		tracker[cardNames[1]] = key;
+	for(let n in cardNames) {
+		let runner = 2;
+		let main_name = cardNames[n];
+		let test_name = main_name;
+		while(tracker[test_name]) {
+			test_name = `${main_name} (${runner})`
+			runner++;
+		}
+		tracker[test_name] = key;
+	}
 		
 	let mt = mainType(card.typeLine);
 
