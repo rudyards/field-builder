@@ -8,10 +8,11 @@ const toolbox = require('./toolbox.js');
 
 const numbers = ["X", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"];
 const countlines = numbers.join("|") + "|an|a";
-const conjstr = 'conjures? (' + countlines + ')(?: cards? named)? (.+?)(?: and shuffle| then shuffle| into| onto|\. Shuffle|\. Put| and put)';
+const conjstr = 'conjures? (' + countlines + ')(?: cards? named)? (.+?)(?: and shuffle| then shuffle| into| onto| on top|\. Shuffle|\. Put| and put)';
 const conjureRegex = new RegExp(conjstr, 'i');
 const conjureRegexG = new RegExp(conjstr, 'ig');
 const cli = (require.main === module);
+var tag_cache = {};
 
 function escapeRegex(string) {
     return string.replace(/[/\-\\^$*+?.()|[\]{}]/g, '\\$&');
@@ -118,6 +119,15 @@ function stitchLibraries(lib, newlib) {
 				nextNo++;
 				if(newlib.setData[newcards[card].setID])
 					lib.setData[newcards[card].setID] = newlib.setData[newcards[card].setID];
+			}
+		}
+		if(newcards[card].tokenscripts) {
+			let alias = newcards[card].tokenscripts.t;
+			if(alias) {
+				if(!tag_cache[alias]) {
+					tag_cache[alias] = [];
+				}
+				tag_cache[alias].push(card);
 			}
 		}
 	}
@@ -496,11 +506,30 @@ function locateConjuredCard(cname, thisCard, cards) {
 		}else if(cards.hasOwnProperty(cname+"_TKN_LAIR")) {
 			cname += " LAIR";
 		}
-	}else if(cards.hasOwnProperty(cname+"_"+thisCard.setID)) {
+	}
+	else if(cards.hasOwnProperty(cname+"_"+thisCard.setID)) {
 		if(thisCard.notes.includes("reprint"))
 			cname += "_" + thisCard.setID;
-	}else if(cards.hasOwnProperty(cname+"_TKN_"+thisCard.setID)) {
+	}
+	else if(cards.hasOwnProperty(cname+"_TKN_"+thisCard.setID)) {
 		cname += " " + thisCard.setID;
+	}
+	else if(tag_cache[cname]) {
+		console.log(tag_cache[cname]);
+		let useCard = tag_cache[cname][0];
+		if(tag_cache[cname].length > 1) {
+			for(let c in tag_cache[came]) {
+				let ccard = cards[tag_cache[cname][c]];
+				if(ccard.setID != thisCard.setID)
+					continue;
+				useCard = tag_cache[cname][c];
+				break;
+			}
+		}
+		let setID = cards[useCard].setID;
+		if(setID == "tokens")
+			setID = cards[useCard].parentSet;
+		cname = cards[useCard].cardName + " " + setID;
 	}
 	return cname;
 }

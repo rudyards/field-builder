@@ -92,6 +92,9 @@ function tokenRegex(slim) {
 	//let tokenNamed = "( named [^\n.]+)?";
 	//let tokenMoreColors = "( (that's|that is|that are) (all colors|white, [^.]+|blue, [^.]+|black, [^.]+|red, [^.]+|green, [^.]+))?"
 }
+function xmlEscape(str) {
+	return str.replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;")
+}
 
 function countInt(count) {
 	let ar = ["an", "a", "two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen","twenty"];
@@ -835,8 +838,8 @@ function writeCardBlock(key) {
 
 	let contents = "";
 	contents += "\t\t<card>\r\n";
-	contents += "\t\t\t<name>" + cardNames[0] + "</name>\r\n";
-	contents += "\t\t\t<text>" + formatTriceText(card) + "</text>\r\n";
+	contents += "\t\t\t<name>" + xmlEscape(cardNames[0]) + "</name>\r\n";
+	contents += "\t\t\t<text>" + xmlEscape(formatTriceText(card)) + "</text>\r\n";
 	contents += "\t\t\t<prop>\r\n";
 	contents += "\t\t\t\t<side>front</side>\r\n";
 	contents += "\t\t\t\t<manacost>" + card.manaCost.replace(/[{}]/g,"") + "</manacost>\r\n";
@@ -844,7 +847,7 @@ function writeCardBlock(key) {
 	contents += "\t\t\t\t<colors>" + colorTranslate(card.color) + "</colors>\r\n";
 	contents += "\t\t\t\t<coloridentity>" + card.colorIdentity.join("") + "</coloridentity>\r\n";
 	contents += "\t\t\t\t<layout>" + convertLayout(card.shape) + "</layout>\r\n";
-	contents += "\t\t\t\t<type>" + trim(card.typeLine) + "</type>\r\n";
+	contents += "\t\t\t\t<type>" + xmlEscape(trim(card.typeLine)) + "</type>\r\n";
 	contents += "\t\t\t\t<maintype>" + mt + "</maintype>\r\n";
 	if(card.power)
 		contents += "\t\t\t\t<pt>" + card.power + "/" + card.toughness + "</pt>\r\n";
@@ -873,9 +876,9 @@ function writeCardBlock(key) {
 	if(card.rulesText.match(escapeRegex(card.cardName) + " enters tapped"))
 		contents += "\t\t\t<cipt>1</cipt>\r\n";
 	if(cardNames[1])
-		contents += `\t\t\t<related attach="transform">${cardNames[1]}</related>\r\n`;
+		contents += `\t\t\t<related attach="transform">${xmlEscape(cardNames[1])}</related>\r\n`;
 	for(let s in card.spellbook) {
-		contents += `\t\t\t<related persistent="persistent">${card.spellbook[s]}</related>\r\n`;
+		contents += `\t\t\t<related persistent="persistent">${xmlEscape(card.spellbook[s])}</related>\r\n`;
 	}
 	contents += `\t\t\t<set num="${card.cardID}${(card.shape == "doubleface" ? "a" : "")}"`;
 	contents +=	` rarity="${card.rarity}"`;
@@ -890,8 +893,8 @@ function writeCardBlock(key) {
 		let mt2 = mainType(card.typeLine2);
 		let contents2 = "";
 		contents2 += "\t\t<card>\r\n";
-		contents2 += "\t\t\t<name>" + cardNames[1] + "</name>\r\n";
-		contents2 += "\t\t\t<text>" + formatTriceText(card, true) + "</text>\r\n";
+		contents2 += "\t\t\t<name>" + xmlEscape(cardNames[1]) + "</name>\r\n";
+		contents2 += "\t\t\t<text>" + xmlEscape(formatTriceText(card, true)) + "</text>\r\n";
 		contents2 += "\t\t\t<prop>\r\n";
 		contents2 += "\t\t\t\t<side>back</side>\r\n";
 		contents2 += "\t\t\t\t<manacost>" + card.manaCost2.replace(/[{}]/g,"") + "</manacost>\r\n";
@@ -899,7 +902,7 @@ function writeCardBlock(key) {
 		contents2 += "\t\t\t\t<colors>" + colorTranslate(card.color2) + "</colors>\r\n";
 		contents2 += "\t\t\t\t<coloridentity>" + card.colorIdentity.join("") + "</coloridentity>\r\n";
 		contents2 += "\t\t\t\t<layout>" + convertLayout(card.shape) + "</layout>\r\n";
-		contents2 += "\t\t\t\t<type>" + trim(card.typeLine2) + "</type>\r\n";
+		contents2 += "\t\t\t\t<type>" + xmlEscape(trim(card.typeLine2)) + "</type>\r\n";
 		contents2 += "\t\t\t\t<maintype>" + mt2 + "</maintype>\r\n";
 		if(card.power2)
 			contents2 += "\t\t\t\t<pt>" + card.power2 + "/" + card.toughness2 + "</pt>\r\n";
@@ -923,9 +926,9 @@ function writeCardBlock(key) {
 			contents2 += "\t\t\t<cipt>1</cipt>\r\n";
 		if(card.rulesText2.match(escapeRegex(card.cardName2) + " enters tapped"))
 			contents2 += "\t\t\t<cipt>1</cipt>\r\n";
-		contents2 += `\t\t\t<related attach="transform">${cardNames[0]}</related>\r\n`;
+		contents2 += `\t\t\t<related attach="transform">${xmlEscape(cardNames[0])}</related>\r\n`;
 		for(let s in card.spellbook) {
-			contents2 += `\t\t\t<related persistent="persistent">${card.spellbook[s]}</related>\r\n`;
+			contents2 += `\t\t\t<related persistent="persistent">${xmlEscape(card.spellbook[s])}</related>\r\n`;
 		}
 		contents2 += `\t\t\t<set num="${card.cardID}b" rarity="${card.rarity}"`;
 		if(card.scryID)
@@ -933,7 +936,7 @@ function writeCardBlock(key) {
 		contents2 += `>${card.setID}</set>\r\n`;
 		contents2 += "\t\t</card>\r\n";
 		if(cardNames[3])
-			contents2 = contents2 + contents2.replace(cardNames[0], cardNames[2]).replace(cardNames[1], cardNames[3]);
+			contents2 = contents2 + contents2.replace(xmlEscape(cardNames[0]), xmlEscape(cardNames[2])).replace(xmlEscape(cardNames[1]), xmlEscape(cardNames[3]));
 		
 		contents += contents2;
 	}
@@ -1015,7 +1018,7 @@ function writeTokenBlock(key) {
 		ticker++;
 	}
 	tracker[token_name] = key;
-	contents += " <name>"+token_name+"</name>\r\n";
+	contents += " <name>"+xmlEscape(token_name)+"</name>\r\n";
 
 	let cardColors = colorTranslate(card.color);
 	for(let i=0;i<cardColors.length;i++) {
@@ -1028,7 +1031,7 @@ function writeTokenBlock(key) {
 	if(card.power !== "") {
 		contents += " <pt>" + card.power + "/" + card.toughness+"</pt>\r\n";
 	}
-	contents += " <type>"+card.typeLine.replace(/ $/,"")+"</type>\r\n";
+	contents += " <type>"+xmlEscape(card.typeLine.replace(/ $/,""))+"</type>\r\n";
 	contents += " <tablerow>";
 	if(card.cardType.match(/(Instant|Sorcery)/)) {
 		contents += "3";
@@ -1040,17 +1043,22 @@ function writeTokenBlock(key) {
 		contents += "1";
 	}
 	contents += "</tablerow>\r\n";
-	contents += " <text>"+card.rulesText.replace(/\n/g," ")+"</text>\r\n";
+	contents += " <text>"+xmlEscape(card.rulesText.replace(/\n/g," "))+"</text>\r\n";
 	contents += " <token>1</token>\r\n";
 	contents += " <set num=\"" + card.cardID + "\" rarity=\"" + card.rarity + "\">" + card.setID + "</set>\r\n"
 	if(card.rulesText.match(/enters (the battlefield )?tapped./))
 		contents += " <cipt>1</cipt>\r\n";
 	
+	for(let s in card.spellbook) {
+		contents += `\t\t\t<related persistent="persistent">${xmlEscape(card.spellbook[s])}</related>\r\n`;
+	}
 	for(let c in card_sources) {
 		let sources = card_sources[c];
 		let source_names = sourceNames(library.cards[c]);
 		for(let i in sources) {
 			for(let n in source_names) {
+				if(source_names[n] == "")
+					continue;
 				contents += " <reverse-related"
 				if(sources[i] == "transform") {
 					contents += ` attach="transform"`;
@@ -1058,7 +1066,7 @@ function writeTokenBlock(key) {
 				else if(sources[i] != 1) {
 					contents += ` count="${sources[i]}"`
 				}
-				contents += `>${source_names[n]}</reverse-related>\r\n`
+				contents += `>${xmlEscape(source_names[n])}</reverse-related>\r\n`
 			}
 		}
 	}
