@@ -6531,10 +6531,8 @@ Jump-start (You may cast this card from your graveyard by discarding a card in a
 				<format-alexandria>legal</format-alexandria>
 			</prop>
 			<tablerow>2</tablerow>
-			<related persistent="persistent">Bifurcated Cynosure</related>
-			<related persistent="persistent">Bifurcated Cynosure</related>
-			<related persistent="persistent">Cynosure</related>
-			<related persistent="persistent">Cynosure</related>
+			<related persistent="persistent">Bifurcated Cynosure INK</related>
+			<related persistent="persistent">Bifurcated Cynosure INK</related>
 			<set num="122" rarity="uncommon">INK</set>
 		</card>
 		<card>
@@ -6633,7 +6631,7 @@ When Caritallin Hybrids dies, conjure a card named Caritallin Hybrids into your 
 				<format-alexandria>legal</format-alexandria>
 			</prop>
 			<tablerow>2</tablerow>
-			<related persistent="persistent">Caritallin Hybrids</related>
+			<related persistent="persistent">Caritallin Hybrids INK</related>
 			<related persistent="persistent">Hybrids</related>
 			<set num="135" rarity="common">INK</set>
 		</card>
@@ -7422,6 +7420,9 @@ When Ink Sea Silencer enters or is turned face up, exile up to one target spell.
 			</prop>
 			<tablerow>2</tablerow>
 			<related persistent="persistent">Sea Cache INK</related>
+			<related persistent="persistent">Sea Cache INK</related>
+			<related persistent="persistent">Sea Cache INK</related>
+			<related persistent="persistent">Sea Cache INK</related>
 			<set num="103" rarity="common">INK</set>
 		</card>
 		<card>
@@ -7515,12 +7516,9 @@ Whenever you cast another spell that shares a name with Jenna Wilder, draw two c
 				<format-alexandria>legal</format-alexandria>
 			</prop>
 			<tablerow>2</tablerow>
-			<related persistent="persistent">Jenna Wilder, Timewinder</related>
-			<related persistent="persistent">Jenna Wilder, Timewinder</related>
-			<related persistent="persistent">Jenna Wilder, Timewinder</related>
-			<related persistent="persistent">Wilder</related>
-			<related persistent="persistent">Wilder</related>
-			<related persistent="persistent">Wilder</related>
+			<related persistent="persistent">Jenna Wilder, Timewinder INK</related>
+			<related persistent="persistent">Jenna Wilder, Timewinder INK</related>
+			<related persistent="persistent">Jenna Wilder, Timewinder INK</related>
 			<set num="0" rarity="uncommon">INK</set>
 		</card>
 		<card>
@@ -7714,6 +7712,9 @@ Search your hand and/or library for any number of cards named Meteor Strike and 
 			</prop>
 			<tablerow>2</tablerow>
 			<related persistent="persistent">Fiery Embrace INK</related>
+			<related persistent="persistent">Fiery Embrace INK</related>
+			<related persistent="persistent">Fiery Embrace INK</related>
+			<related persistent="persistent">Fiery Embrace INK</related>
 			<set num="31" rarity="common">INK</set>
 		</card>
 		<card>
@@ -7807,9 +7808,7 @@ Whenever you discard a card, put a +1/+1 counter on Oddity Collector.</text>
 				<format-alexandria>legal</format-alexandria>
 			</prop>
 			<tablerow>1</tablerow>
-			<related persistent="persistent">Solar Flare INK</related>
-			<related persistent="persistent">or more cards, conjure a duplicate of one of those cards</related>
-			<related persistent="persistent">Solar</related>
+			<related persistent="persistent">Solar Flare INK 2</related>
 			<set num="11" rarity="uncommon">INK</set>
 		</card>
 		<card>
@@ -8467,13 +8466,12 @@ When Shrieking Swarm enters or is turned face up, conjure a card named Bloodcurd
 				<format-alexandria>legal</format-alexandria>
 			</prop>
 			<tablerow>1</tablerow>
-			<related persistent="persistent">of those cards</related>
-			<related persistent="persistent">Helix</related>
-			<related persistent="persistent">Flare</related>
-			<related persistent="persistent">Excise</related>
-			<related persistent="persistent">Eclipse</related>
-			<related persistent="persistent">Indulgence</related>
-			<related persistent="persistent">Blood</related>
+			<related persistent="persistent">Lighting Helix INK</related>
+			<related persistent="persistent">Solar Flare INK</related>
+			<related persistent="persistent">Excise Faith INK</related>
+			<related persistent="persistent">Eclipse Life INK</related>
+			<related persistent="persistent">Grisly Indulgence INK</related>
+			<related persistent="persistent">Drown in Blood INK</related>
 			<set num="140" rarity="uncommon">INK</set>
 		</card>
 		<card>
@@ -8737,7 +8735,7 @@ Equip {2}</text>
 				<format-alexandria>legal</format-alexandria>
 			</prop>
 			<tablerow>2</tablerow>
-			<related persistent="persistent">Traveler's Amulet on top of their library. *(It's an artifact that costs {1} with “{1}, Sacrifice Traveler's Amulet: Search your library for a basic land card, reveal it</related>
+			<related persistent="persistent">Traveler's Amulet INK</related>
 			<set num="80" rarity="uncommon">INK</set>
 		</card>
 		<card>
@@ -21566,7 +21564,7 @@ Conceptualize {B} (You may cast this card from your graveyard for its conceptual
 			<set num="195" rarity="rare">PBA</set>
 		</card>
 		<card>
-			<name>Deadly Curses & You Vol. II</name>
+			<name>Deadly Curses and You Vol. II</name>
 			<text>(Gain the next level as a sorcery to add its ability.)
 Whenever an opponent loses life, create a 1/1 blue Wizard creature token. This ability triggers only once each turn.
 {2}{B} Level 2
@@ -23579,7 +23577,7 @@ When Mechanized Monstrosity enters, search your library for a Forest card, revea
 			<set num="95" rarity="common">PBA</set>
 		</card>
 		<card>
-			<name>Medicine & Herbology</name>
+			<name>Medicine and Herbology</name>
 			<text>(Gain the next level as a sorcery to add its ability.)
 At the beginning of your upkeep, look at the top card of your library. If it's a land card, you may reveal it and put it into your hand. Otherwise, you may mill a card. 
 {2}{G}: Level 2
@@ -41811,23 +41809,6 @@ You may have this spell deals 3 damage to each other creature if there are five 
 			</prop>
 			<tablerow>1</tablerow>
 			<set num="26" rarity="rare">ITD</set>
-		</card>
-		<card>
-			<name></name>
-			<text></text>
-			<prop>
-				<side>front</side>
-				<manacost></manacost>
-				<cmc>0</cmc>
-				<colors></colors>
-				<coloridentity></coloridentity>
-				<layout>normal</layout>
-				<type></type>
-				<maintype></maintype>
-				<format-eidolon>legal</format-eidolon>
-			</prop>
-			<tablerow>1</tablerow>
-			<set num="267" rarity="basic land">AUR</set>
 		</card>
 		<card>
 			<name>A Calm Rage Simmers</name>
@@ -95237,12 +95218,12 @@ Whenever you draw a card except for the first card you have drawn this turn, put
 			<set num="150" rarity="uncommon">ONI</set>
 		</card>
 		<card>
-			<name>Amatsu & Oda, Old Guard</name>
+			<name>Amatsu and Oda, Old Guard</name>
 			<text>Transcend (Activate as a sorcery to gain the next type and a +1/+1 counter.)
 Trample, haste
-Amatsu & Oda enters with X +1/+1 counters on it.
+Amatsu and Oda enters with X +1/+1 counters on it.
 {X}{U}: Monk
-You draw X cards. X can't be greater than Amatsu & Oda's power.
+You draw X cards. X can't be greater than Amatsu and Oda's power.
 {X}{X}{G}: Noble
 For each of up to X target permanents you control, double the number of each kind of counter on it.</text>
 			<prop>
