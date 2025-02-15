@@ -8,15 +8,6 @@
   "PBA",
   "SHF"
  ],
- "Legend Pool": [
-  "EOR",
-  "ERR",
-  "HEL",
-  "KDT",
-  "NFL",
-  "ONI",
-  "PTXX"
- ],
  "Eidolon Pool": [
   "2HU",
   "AUR",
@@ -25,5 +16,14 @@
   "SHS",
   "SOV",
   "WAW"
+ ],
+ "Legend Pool": [
+  "EOR",
+  "ERR",
+  "HEL",
+  "KDT",
+  "NFL",
+  "ONI",
+  "PTXX"
  ]
 }
