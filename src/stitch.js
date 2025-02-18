@@ -862,7 +862,7 @@ function arrayExpand(ar) {
 		}
 		if(cards.hasOwnProperty(cn+tag)) {
 			console.log("screwed entry");
-			consoe.log(entry);
+			console.log(entry);
 		}
 		cards[cn+tag] = entry;
 	}
