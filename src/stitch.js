@@ -241,6 +241,7 @@ function stitchLibraries(lib, newlib) {
 			if(thisCard.tokenscripts.rr) {
 				// format replace script
 				thisCard.tokenscripts.r = [];
+				let spellreset = false;
 				let names = thisCard.tokenscripts.rr.split(";");
 				for(let n=0; n<names.length; n+=2) {
 					let name = names[n];
@@ -263,7 +264,10 @@ function stitchLibraries(lib, newlib) {
 					if(val != "X")
 						val = parseInt(val);
 					if(conj) {
-						thisCard.spellbook = [];
+						if(!thisCard.hasOwnProperty("spellbook") || !spellreset) {
+							thisCard.spellbook = [];
+							spellreset = true;
+						}
 						let cname = locateConjuredCard(name, thisCard, cards);
 						let amount = (val == "X" ? 1 : val);
 						for(let i=0; i<amount; i++)
@@ -301,7 +305,7 @@ function stitchLibraries(lib, newlib) {
 					if(val != "X")
 						val = parseInt(val);
 					if(conj) {
-						if(!thisCard.spellbook)
+						if(!thisCard.hasOwnProperty("spellbook"))
 							thisCard.spellbook = [];
 						let cname = locateConjuredCard(name, thisCard, cards);
 						let amount = (val == "X" ? 1 : val);
@@ -515,7 +519,6 @@ function locateConjuredCard(cname, thisCard, cards) {
 		cname += " " + thisCard.setID;
 	}
 	else if(tag_cache[cname]) {
-		console.log(tag_cache[cname]);
 		let useCard = tag_cache[cname][0];
 		if(tag_cache[cname].length > 1) {
 			for(let c in tag_cache[came]) {
