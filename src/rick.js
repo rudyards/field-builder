@@ -465,6 +465,9 @@ function tokenPuller(c, shout) {
 	if(cleanoracle.match(/^Aurora/)) {
 		tokens.push(["Aurora Reminder", 1, "Keyword: Aurora"]);
 	}
+	if(cleanoracle.match(/builds? hype/)) {
+		tokens.push(["3/2 red Fan creature", 1, "Keyword: build hype"]);
+	}
 	if(cleanoracle.match(/Subroutine/) || thisCard.typeLine.match(/Subroutine/)) {
 		tokens.push(["ProgramA", 1]);
 		tokens.push(["ProgramB", 1]);

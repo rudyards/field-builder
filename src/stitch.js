@@ -734,9 +734,9 @@ function colorFixer(card) {						//adds colors to 3+c cards since MSE has troubl
 		}
 		if(pris) {
 			card.pris = pris;
-		}
-		if(cards[card].pris != pris)
+		}else{
 			delete card.pris;
+		}
 	}
 }
 let designerOverule = {
