@@ -12,6 +12,8 @@ const conjstr = 'conjures? (' + countlines + ')(?: cards? named)? (.+?)(?: and s
 const conjureRegex = new RegExp(conjstr, 'i');
 const conjureRegexG = new RegExp(conjstr, 'ig');
 const cli = (require.main === module);
+var tag_cache = {};
+
 
 function escapeRegex(string) {
     return string.replace(/[/\-\\^$*+?.()|[\]{}]/g, '\\$&');

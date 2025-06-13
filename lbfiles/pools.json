@@ -1,29 +1,28 @@
 {
- "Alexandria Pool": [
-  "AKT",
-  "INK",
-  "INM",
-  "ITD",
-  "MSK",
-  "PBA",
-  "SHF"
- ],
- "Eidolon Pool": [
-  "2HU",
-  "AUR",
-  "EPS",
-  "PRISM",
-  "SHS",
-  "SOV",
-  "WAW"
- ],
- "Legend Pool": [
+ "Bears Pool": [
+  "AVA",
   "EOR",
-  "ERR",
-  "HEL",
-  "KDT",
-  "NFL",
+  "HEX",
+  "PBA",
+  "POP2",
+  "TGS"
+ ],
+ "Lions Pool": [
+  "AEK",
+  "F2HU",
+  "HQZ",
+  "HWEL",
+  "IID",
   "ONI",
-  "PTXX"
+  "WTS"
+ ],
+ "Tigers Pool": [
+  "DCO",
+  "DES",
+  "KEC",
+  "SOL",
+  "TRO",
+  "UCB",
+  "VRN"
  ]
 }
