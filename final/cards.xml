@@ -38807,7 +38807,7 @@ Transforms from Meryel of Two Realities</text>
 			<set num="66b" rarity="uncommon">POP2</set>
 		</card>
 		<card>
-			<name>Mia Mia & Vic Villain</name>
+			<name>Mia Mia and Vic Villain</name>
 			<text>Whenever a creature dies, each opponent loses 1 life and you gain 1 life.
 ---
 Transforms into "Hepollo Selemis"</text>
@@ -38831,7 +38831,7 @@ Transforms into "Hepollo Selemis"</text>
 			<name>"Hepollo Selemis"</name>
 			<text>(You may cast a legendary sorcery only if you control a legendary creature or planeswalker.)\nAs an additional cost to cast this spell, sacrifice one or two creatures.\nChoose target creature for each creature sacrificed to cast this spell. Exile those creatures.
 ---
-Transforms from Mia Mia & Vic Villain</text>
+Transforms from Mia Mia and Vic Villain</text>
 			<prop>
 				<side>back</side>
 				<manacost>W/BW/B</manacost>
@@ -38843,7 +38843,7 @@ Transforms from Mia Mia & Vic Villain</text>
 				<maintype>Sorcery</maintype>
 			</prop>
 			<tablerow>3</tablerow>
-			<related attach="transform">Mia Mia & Vic Villain</related>
+			<related attach="transform">Mia Mia and Vic Villain</related>
 			<set num="95b" rarity="uncommon">POP2</set>
 		</card>
 		<card>
@@ -55763,9 +55763,9 @@ This creature can't be blocked by creatures with power 2 or less.</text>
 			<set num="22" rarity="uncommon">ONI</set>
 		</card>
 		<card>
-			<name>Ryo & Oda, Unlikely Duo</name>
+			<name>Ryo and Oda, Unlikely Duo</name>
 			<text>Prowess, haste
-Valiant — Whenever Ryo & Oda becomes the target of a spell or ability you control for the first time each turn, reveal the top card of your library and put that card into your hand. You lose life equal to its mana value.</text>
+Valiant — Whenever Ryo and Oda becomes the target of a spell or ability you control for the first time each turn, reveal the top card of your library and put that card into your hand. You lose life equal to its mana value.</text>
 			<prop>
 				<side>front</side>
 				<manacost>BR</manacost>
@@ -98685,7 +98685,7 @@ Transforms from Singshore Crossing</text>
 			<set num="212" rarity="rare">TRO</set>
 		</card>
 		<card>
-			<name>Sisters of Rain & River</name>
+			<name>Sisters of Rain and River</name>
 			<text>At the beginning of your upkeep, create a Hunt battle token an opponent protects with 2 defense and “When this battle is defeated, draw a card.”\nAt the beginning of combat on your turn, create a token that's a copy of another target creature you control, except it's a 1/1 with haste.\nAt the beginning of your end step, each opponent sacrifices a creature if a creature died under your control this turn.</text>
 			<prop>
 				<side>front</side>
