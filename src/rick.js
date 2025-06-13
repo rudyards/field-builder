@@ -462,6 +462,9 @@ function tokenPuller(c, shout) {
 	if(cleanoracle.match(/^Aurora/)) {
 		tokens.push(["Aurora Reminder", 1, "Keyword: Aurora"]);
 	}
+	if(cleanoracle.match(/builds? hype/)) {
+		tokens.push(["3/2 red Fan creature", 1, "Keyword: build hype"]);
+	}
 	if(cleanoracle.match(/Subroutine/) || thisCard.typeLine.match(/Subroutine/)) {
 		tokens.push(["ProgramA", 1]);
 		tokens.push(["ProgramB", 1]);
@@ -643,7 +646,7 @@ function tokenBuilding(flags) {
 	if(flags.writeTokens) {
 		writeTokensFile(flags.writeTokens);
 	}
-	
+
 	let resp = "";
 	if(flags.reportTokens) {
 		let chunks = [];
@@ -1104,6 +1107,11 @@ function sourceNames(card) {
 		if(cardNames[1])
 			cardNames[1] += `_${card.setID}`;
 	}
+	else if(card.setID == "tokens") {
+		cardNames[0] += ` ${card.parentSet}`
+		if(cardNames[1])
+			cardNames[1] += ` ${card.parentSet}`
+	}
 	
 	if(tracker.hasOwnProperty(cardNames[0])) {
 		cardNames[0] += " " + card.cardID;
@@ -1497,7 +1505,7 @@ function testTokens(data) {
 if(require.main === module && process.argv[2] != undefined) {
 	initialize(process.argv[2]);
 	tokenBuilding({writeTokens:'./triceFiles/tokens.xml'});
-	//cardDebugger("Automated Overwatch_MSL");
+	//cardDebugger("Collector's Vault_TKN_INK");
 	//console.log(tokenNamer(library.cards["Scout_TKN_MPS_MSE"]))
 }
 

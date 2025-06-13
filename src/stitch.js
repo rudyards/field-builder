@@ -231,6 +231,7 @@ function stitchLibraries(lib, newlib) {
 			if(thisCard.tokenscripts.rr) {
 				// format replace script
 				thisCard.tokenscripts.r = [];
+				let spellreset = false;
 				let names = thisCard.tokenscripts.rr.split(";");
 				for(let n=0; n<names.length; n+=2) {
 					let name = names[n];
@@ -253,7 +254,10 @@ function stitchLibraries(lib, newlib) {
 					if(val != "X")
 						val = parseInt(val);
 					if(conj) {
-						thisCard.spellbook = [];
+						if(!thisCard.hasOwnProperty("spellbook") || !spellreset) {
+							thisCard.spellbook = [];
+							spellreset = true;
+						}
 						let cname = locateConjuredCard(name, thisCard, cards);
 						let amount = (val == "X" ? 1 : val);
 						for(let i=0; i<amount; i++)
@@ -291,7 +295,7 @@ function stitchLibraries(lib, newlib) {
 					if(val != "X")
 						val = parseInt(val);
 					if(conj) {
-						if(!thisCard.spellbook)
+						if(!thisCard.hasOwnProperty("spellbook"))
 							thisCard.spellbook = [];
 						let cname = locateConjuredCard(name, thisCard, cards);
 						let amount = (val == "X" ? 1 : val);
@@ -502,6 +506,22 @@ function locateConjuredCard(cname, thisCard, cards) {
 	}else if(cards.hasOwnProperty(cname+"_TKN_"+thisCard.setID)) {
 		cname += " " + thisCard.setID;
 	}
+	else if(tag_cache[cname]) {
+		let useCard = tag_cache[cname][0];
+		if(tag_cache[cname].length > 1) {
+			for(let c in tag_cache[came]) {
+				let ccard = cards[tag_cache[cname][c]];
+				if(ccard.setID != thisCard.setID)
+					continue;
+				useCard = tag_cache[cname][c];
+				break;
+			}
+		}
+		let setID = cards[useCard].setID;
+		if(setID == "tokens")
+			setID = cards[useCard].parentSet;
+		cname = cards[useCard].cardName + " " + setID;
+	}
 	return cname;
 }
 function majorChange(base, comp) {
@@ -702,8 +722,7 @@ function colorFixer(card) {						//adds colors to 3+c cards since MSE has troubl
 		}
 		if(pris) {
 			card.pris = pris;
-		}
-		if(cards[card].pris != pris){
+		}else{
 			delete card.pris;
 		}
 	}
@@ -831,7 +850,7 @@ function arrayExpand(ar) {
 		}
 		if(cards.hasOwnProperty(cn+tag)) {
 			console.log("screwed entry");
-			consoe.log(entry);
+			console.log(entry);
 		}
 		cards[cn+tag] = entry;
 	}
