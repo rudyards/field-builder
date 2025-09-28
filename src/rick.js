@@ -108,6 +108,7 @@ function countInt(count) {
 function longformTokenization(str) {
 	let charaMatch = str.match(/[^\n]*creates? an? (.*) token for each of the chosen characteristics[^\n]*/i);
 	let basicsMatch = str.match(/Plains token, Island token, Swamp token, Mountain token, or Forest token/)
+	let counterMatch = str.match(/creature counter/, "creature token");
 	if(charaMatch) {
 		str = str.replace(charaMatch[0], "");
 		let tokenType = charaMatch[1];
@@ -120,6 +121,8 @@ function longformTokenization(str) {
 	if(basicsMatch) {
 		str = str.replace(basicsMatch[0], "Plains token, or create an Island token, or create a Swamp token, or create a Mountain token, or create a Forest token");
 	}
+	if(counterMatch)
+		str = str.replace(/([^ ]+ [0-9X]+\/[0-9X]+ [^.]+) creature counter/g, "create $1 creature token");
 	return str;
 }
 function tokenPuller(c, shout) {
@@ -132,6 +135,7 @@ function tokenPuller(c, shout) {
 	let cleanoracle = oracle.replace(new RegExp(escapeRegex(thisCard.cardName), 'i'), "~")
 	if(thisCard.cardName2)
 		cleanoracle = cleanoracle.replace(new RegExp(escapeRegex(thisCard.cardName2), 'i'), "~")
+	
 
 	let bigMatch = oracle.match(/creates? [^.]+/ig);
 	let tokens = [];
@@ -467,6 +471,9 @@ function tokenPuller(c, shout) {
 	}
 	if(cleanoracle.match(/builds? hype/)) {
 		tokens.push(["3/2 red Fan creature", 1, "Keyword: build hype"]);
+	}
+	if(cleanoracle.match(/magnetize/i)) {
+		tokens.push(["1/1 colorless Servo artifact creature", 1, {source:"Keyword: magnetize"}]);
 	}
 	if(cleanoracle.match(/Subroutine/) || thisCard.typeLine.match(/Subroutine/)) {
 		tokens.push(["ProgramA", 1]);
