@@ -475,6 +475,9 @@ function tokenPuller(c, shout) {
 	if(cleanoracle.match(/magnetize/i)) {
 		tokens.push(["1/1 colorless Servo artifact creature", 1, {source:"Keyword: magnetize"}]);
 	}
+	if(cleanoracle.match(/network/i)) {
+		tokens.push(["Favors", 1, "Keyword: Favor"])
+	}
 	if(cleanoracle.match(/Subroutine/) || thisCard.typeLine.match(/Subroutine/)) {
 		tokens.push(["ProgramA", 1]);
 		tokens.push(["ProgramB", 1]);
