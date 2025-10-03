@@ -1,5 +1,38 @@
 {
- "Body Pool": [
-  "2HU"
+ "Fall Pool": [
+  "EOR",
+  "GOD",
+  "IVP",
+  "ORC",
+  "UND",
+  "VLR",
+  "VYI"
+ ],
+ "Summer Pool": [
+  "2HU",
+  "F2HU",
+  "IWH",
+  "OPZ",
+  "RNF",
+  "RPGM",
+  "WOO"
+ ],
+ "Spring Pool": [
+  "AEK",
+  "APH",
+  "DCO",
+  "DRP",
+  "ELV",
+  "WCD",
+  "WDW"
+ ],
+ "Winter Pool": [
+  "LIP",
+  "ORD",
+  "POP2",
+  "PRK",
+  "SGP",
+  "SOL",
+  "TGS"
  ]
 }

@@ -9,6 +9,6 @@
   "author": "Cajun",
   "license": "ISC",
   "dependencies": {
-    "jimp": "^0.3.5"
+    "jimp": "^0.3.11"
   }
 }
