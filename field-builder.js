@@ -351,9 +351,9 @@ function forkImage(fn, dir, names) {
 			console.log(err);
 		}else{
 			for(let n = 1; n < names.length; n++) {
-				img.clone().write(dir+windex(names[n])+">"+FILE_TYPE);
+				img.clone().write(dir+windex(names[n])+"."+FILE_TYPE);
 			}
-			fs.rename(fn, dir+windex(names[0])+">"+FILE_TYPE, (er) => {
+			fs.rename(fn, dir+windex(names[0])+"."+FILE_TYPE, (er) => {
 				if(er)
 					console.log(er);
 			})
