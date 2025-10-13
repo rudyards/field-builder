@@ -8,15 +8,6 @@
   "VLR",
   "VYI"
  ],
- "Summer Pool": [
-  "2HU",
-  "F2HU",
-  "IWH",
-  "OPZ",
-  "RNF",
-  "RPGM",
-  "WOO"
- ],
  "Spring Pool": [
   "AEK",
   "APH",
@@ -25,6 +16,15 @@
   "ELV",
   "WCD",
   "WDW"
+ ],
+ "Summer Pool": [
+  "2HU",
+  "F2HU",
+  "IWH",
+  "OPZ",
+  "RNF",
+  "RPGM",
+  "WOO"
  ],
  "Winter Pool": [
   "LIP",
