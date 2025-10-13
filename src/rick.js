@@ -843,6 +843,8 @@ function writeCardBlock(key) {
 		return;
 	let cardNames = sourceNames(card);
 	for(let n in cardNames) {
+		if(cardNames[n] == "")
+			continue;
 		let runner = 2;
 		let main_name = cardNames[n];
 		let test_name = main_name;
