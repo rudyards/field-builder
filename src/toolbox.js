@@ -2,11 +2,13 @@
 function JSONfriendly(obj) {
 	let out = "";
 	for(let k in obj) {
-		out += `"${k}": ${JSON.stringify(obj[k])},\n`;
+		out += `"${escapify(k)}": ${JSON.stringify(obj[k])},\n`;
 	}
 	return `{\n${out.replace(/,\n$/, "\n}")}`;
 }
-
+function escapify(str) {
+	str.replace(/"/g, '\\"');
+}
 //returns array of duplicate elements between two arrays
 function arrayDuplicates(array1, array2) {
 	let shortArray = [];
