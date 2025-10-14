@@ -199,21 +199,8 @@ script:
 	flavor_script := { if input == "<i-flavor></i-flavor>" then ""
 			else replace(italic_filter(input), match:"\n", replace:"\\n") + "\n"
 	}
-	italic_filter := replace@(match:"<i-flavor>", replace:"*")+
-		replace@(match:" *</i-flavor>", replace:"*")+
-		replace@(match:" </i>", replace:"* ")+
-		replace@(match:" </i>", replace:"* ")+
-		replace@(match:" </i>", replace:"* ")+
-		replace@(match:"</i>", replace:"*")+
-		replace@(match:"</i>", replace:"*")+
-		replace@(match:"</i>", replace:"*")+
-		replace@(match:"<i> ", replace:" *")+
-		replace@(match:"<i> ", replace:" *")+
-		replace@(match:"<i> ", replace:" *")+
-		replace@(match:"<i>", replace:"*")+
-		replace@(match:"<i>", replace:"*")+
-		replace@(match:"<i>", replace:"*")+
-		replace@(match:"\\*\\*+", replace:"")
+	italic_filter := replace@(match:"<i(?:-flavor|-auto)?>( )?(.*?)( )?</i(?:-flavor|-auto)?>", replace:"\\1*\\2*\\3")
+		
 
 	walker_text := {
 			lackey_bot_mana_filter(

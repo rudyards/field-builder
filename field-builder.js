@@ -284,12 +284,11 @@ async function combineFiles() {
 	})
 	
 	rick.initialize(library);
-	rick.tokenBuilding({
-		writeTokens: './final/tokens.xml'
-	});
+	rick.tokenBuilding();
 	rick.cardBuilding({
 		writeCards: './final/cards.xml'
 	});
+	rick.writeTokensFile('./final/tokens.xml');
 	if(run_images) {
 		let trice_names = rick.keysToNames();
 		processImages(library, trice_names);

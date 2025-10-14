@@ -381,6 +381,7 @@ function stitchLibraries(lib, newlib) {
 		
 		if(si == "tokens") {
 			delete thisCard.sdn;
+			thisCard.firstPrint = "";
 		}else if(thisCard.sdn === undefined) {
 			sdnMax++;
 			thisCard.sdn = sdnMax;
@@ -392,7 +393,8 @@ function stitchLibraries(lib, newlib) {
 			let rpInd = thisCard.notes.indexOf("reprint");
 			if(rpInd)
 				thisCard.notes.splice(rpInd, 1);
-		}else if(thisCard.firstPrint != "" || thisCard.notes.includes("reprint")) {
+		}
+		else if(thisCard.firstPrint != "" && !thisCard.notes.includes("reprint")) {
 			// otherwise we need to make sure we have it
 			thisCard.notes.push("reprint");
 		}
