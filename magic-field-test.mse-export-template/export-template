@@ -199,7 +199,8 @@ script:
 	flavor_script := { if input == "<i-flavor></i-flavor>" then ""
 			else replace(italic_filter(input), match:"\n", replace:"\\n") + "\n"
 	}
-	italic_filter := replace@(match:"<i(?:-flavor|-auto)?>( )?(.*?)( )?</i(?:-flavor|-auto)?>", replace:"\\1*\\2*\\3")
+	italic_filter := replace@(match:"<i(?:-flavor|-auto)?>( )?(.*?)( )?</i(?:-flavor|-auto)?>", replace:"\\1*\\2*\\3") +
+		replace@(match:"\\*\\*+", replace:"")
 		
 
 	walker_text := {
