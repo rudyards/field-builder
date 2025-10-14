@@ -367,10 +367,12 @@ function splitImage(fn, dir, names, b2) {
 			
 			img.clone().crop(shape.LEFT_WIDTH_OFFSET, shape.LEFT_HEIGHT_OFFSET, shape.LEFT_WIDTH, shape.LEFT_HEIGHT).write(dir+windex(names[0])+"."+FILE_TYPE);
 			img.crop(shape.RIGHT_WIDTH_OFFSET, shape.RIGHT_HEIGHT_OFFSET, shape.RIGHT_WIDTH, shape.RIGHT_HEIGHT).write(dir+windex(names[1])+"."+FILE_TYPE);
-			fs.unlink(fn, (er) => {
-				if(er)
-					console.log(er)
-			})
+			if(clean_images) {
+				fs.unlink(fn, (er) => {
+					if(er)
+						console.log(er)
+				})
+			}
 		}
 	})
 }
@@ -390,21 +392,6 @@ function forkImage(fn, dir, names) {
 				console.log(er);
 		})
 	}
-}
-function forkImage2(fn, dir, names) {
-	Jimp.read(fn, (err, img) => {
-		if(err) {
-			console.log(err);
-		}else{
-			for(let n = 1; n < names.length; n++) {
-				img.clone().write(dir+windex(names[n])+"."+FILE_TYPE);
-			}
-			fs.rename(fn, dir+windex(names[0])+"."+FILE_TYPE, (er) => {
-				if(er)
-					console.log(er);
-			})
-		}
-	})
 }
 async function apiPartialLibrary(k) {
 	let format = k.replace(/^--/, "");
@@ -512,4 +499,10 @@ for(let k in format_args) {
 delete format_args["--rev"];
 delete format_args["--canon"];
 
-prepareFiles();
+if(run_images) {
+	fs.rm("./final/pics", {recursive:true, force:true}, (er) => {
+		prepareFiles();
+	});
+}else{
+	prepareFiles();
+}
