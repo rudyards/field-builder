@@ -100,7 +100,7 @@ function countInt(count) {
 	let ar = ["an", "a", "two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen","twenty"];
 	let v = ar.indexOf(count);
 	if(v < 0)
-		return "X";
+		return "x";
 	if(v == 0)
 		return 1;
 	return v;
@@ -462,7 +462,7 @@ function tokenPuller(c, shout) {
 		tokens.push(["Embraced Representative", 1, "Keyword: Embrace"]);
 	}
 	if(cleanoracle.match(/equalise [^.,]+ X times/i)) {
-		tokens.push(["Equalised Dragon", "X", "Keyword: Equalise"]);
+		tokens.push(["Equalised Dragon", "x", "Keyword: Equalise"]);
 	}else if(cleanoracle.match(/equalise/i)) {
 		tokens.push(["Equalised Dragon", 1, "Keyword: Equalise"]);
 	}
