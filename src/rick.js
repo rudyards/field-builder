@@ -1075,7 +1075,7 @@ function writeTokenBlock(key) {
 	}
 	for(let c in card_sources) {
 		let sources = card_sources[c];
-		let source_names = sourceNames(library.cards[c]);
+		let source_names = library.cards[c].sourceNames;
 		for(let i in sources) {
 			for(let n in source_names) {
 				if(source_names[n] == "")
@@ -1174,7 +1174,9 @@ function sourceNames(card) {
 			}
 		}
 	}
-
+	if(!card.sourceNames)
+		card.sourceNames = [];
+	card.sourceNames = card.sourceNames.concat(cardNames);
 	return cardNames;
 }
 function tokenNamerSimple(card) {
