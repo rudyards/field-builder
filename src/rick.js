@@ -483,6 +483,10 @@ function tokenPuller(c, shout) {
 		tokens.push(["ProgramB", 1]);
 		tokens.push(["ProgramC", 1]);
 	}
+	if(cleanoracle.match(/call the beast/i)) {
+		tokens.push(["Call The Beast Emblem", 1]);
+		tokens.push(["The Beast", 1]);
+	}
 
 	// apply tokenscripts overrides
 	if(thisCard.tokenscripts) {
