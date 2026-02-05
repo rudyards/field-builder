@@ -487,6 +487,9 @@ function tokenPuller(c, shout) {
 		tokens.push(["Call The Beast Emblem", 1]);
 		tokens.push(["The Beast", 1]);
 	}
+	if(cleanoracle.match(/^Ascend/) && !cleanoracle.match(/^Ascend [{]/)) {
+		tokens.push(["The City's Blessing", 1]);
+	}
 
 	// apply tokenscripts overrides
 	if(thisCard.tokenscripts) {
