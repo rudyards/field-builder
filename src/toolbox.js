@@ -7,7 +7,7 @@ function JSONfriendly(obj) {
 	return `{\n${out.replace(/,\n$/, "\n}")}`;
 }
 function escapify(str) {
-	str.replace(/"/g, '\\"');
+	return str.replace(/"/g, '\\"');
 }
 //returns array of duplicate elements between two arrays
 function arrayDuplicates(array1, array2) {
