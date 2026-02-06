@@ -1,6 +1,6 @@
 ﻿mse version: 2.0.0
 short name: Field Test
-full name: version 0.6
+full name: version 0.7
 position hint: 120
 icon: icon.png
 version: 2018-02-09
@@ -74,6 +74,10 @@ script:
 			then remove_tags(card.name) + "//" + remove_tags(card.name_2)
 		else remove_tags(card.name)		
 	}
+	rename_filter := filter_text@(match:"!renameof [^\n!]+")
+	rename_grabber := replace@(match:"!renameof ", replace:"")
+	filter_rename := { rename_grabber(rename_filter(card.notes)) }
+
 
 	# process type
 	token_export := {contains(card.shape, match:"token") or contains(card.shape, match:"emblem") or contains(card.shape, match:"rulestip")}
@@ -195,21 +199,9 @@ script:
 	flavor_script := { if input == "<i-flavor></i-flavor>" then ""
 			else replace(italic_filter(input), match:"\n", replace:"\\n") + "\n"
 	}
-	italic_filter := replace@(match:"<i-flavor>", replace:"*")+
-		replace@(match:" *</i-flavor>", replace:"*")+
-		replace@(match:" </i>", replace:"* ")+
-		replace@(match:" </i>", replace:"* ")+
-		replace@(match:" </i>", replace:"* ")+
-		replace@(match:"</i>", replace:"*")+
-		replace@(match:"</i>", replace:"*")+
-		replace@(match:"</i>", replace:"*")+
-		replace@(match:"<i> ", replace:" *")+
-		replace@(match:"<i> ", replace:" *")+
-		replace@(match:"<i> ", replace:" *")+
-		replace@(match:"<i>", replace:"*")+
-		replace@(match:"<i>", replace:"*")+
-		replace@(match:"<i>", replace:"*")+
+	italic_filter := replace@(match:"<i(?:-flavor|-auto)?>( )?(.*?)( )?</i(?:-flavor|-auto)?>", replace:"\\1*\\2*\\3") +
 		replace@(match:"\\*\\*+", replace:"")
+		
 
 	walker_text := {
 			lackey_bot_mana_filter(
@@ -260,6 +252,7 @@ script:
 		+ "\"cardID\": \"" + (if token_export() then fixed_set_code() else "") + position(of:card, in:set) + "\", "
 		+ (if token_export() then "\"parentSet\": \"" + fixed_set_code() + "\", " else "")
 		+ "\"notes\": " + card_note_array() + ", "
+		+ (if filter_rename() != "" then "\"rename\": \"" + filter_rename() + "\", " else "")
 		+ token_scripts()
 		+ "\"artist\": \"" + sanitize(card.illustrator)
 		+ (if contains(card.shape, match: "split") or contains(card.shape, match:"double") and card.illustrator != card.illustrator_2 and card.illustrator_2 != "" then

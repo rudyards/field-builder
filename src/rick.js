@@ -586,7 +586,7 @@ function tokenBuilding(flags) {
 		if(prede_check) {
 			let prede = prede_check[1];
 			if(!predef.includes(prede)) {
-				console.log(`Found predefined token "${prede}"`);
+				//console.log(`Found predefined token "${prede}"`);
 				predef.push(prede);
 			}
 			
@@ -777,7 +777,7 @@ function cardBuilding(flags) {
 		fs.writeFile(flags.writeCards, str.replace(/’/g, "'"), (err) => {
 			if(err)
 				throw err;
-			console.log("Cards written");
+			console.log("Cards XML written");
 		})
 	}
 }
@@ -801,7 +801,7 @@ function writeTokensFile(dest) {
 	contents += "</cards>\r\n</cockatrice_carddatabase>";
 	fs.writeFile(dest, contents.replace(/’/g, "'"), (err) => {
 		if (err) throw err;
-		console.log("Tokens written");
+		console.log("Tokens XML written");
 	});
 }
 function keysToNames() {
@@ -1540,3 +1540,4 @@ exports.initialize = initialize;
 exports.tokenBuilding = tokenBuilding;
 exports.cardBuilding = cardBuilding;
 exports.testTokens = testTokens;
+exports.writeTokensFile = writeTokensFile;

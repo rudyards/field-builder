@@ -56,6 +56,7 @@ const CROP_VALS = {
 
 let new_sets = {};
 let run_images = true;
+let clean_images = false;
 let msem_sets = [];
 let rev_sets = [];
 let mtg_sets = [];
@@ -148,19 +149,23 @@ function prepareFiles() {
 								}
 								sc = test_sc;
 							}
+							for(let c in cards) {
+								if(cards[c].setID == "tokens" && !cards[c].parentSet)
+									cards[c].parentSet = sc;
+							}
 							new_sets[sc] = {
 								cards: cards,
 								longname: meta.title,
 								pool: fn1
 							};
-							let folder_name = fn.replace(/(-field-test)?.txt/, "");
+							let folder_name = fn.replace(/.txt/, "");
 							if(!fns.includes(folder_name))
 								folder_name += "-files";
 							if(!fns.includes(folder_name))
 								throw `File ${fn} does not have a matching image folder.`;
 							
 							if(fn != sc+".txt") {
-							fs.rename(`./files/${fn1}/${fn}`, `./files/${fn1}/${sc}.txt`, (err) => {
+								fs.rename(`./files/${fn1}/${fn}`, `./files/${fn1}/${sc}.txt`, (err) => {
 									if(err)
 										throw err;
 									console.log(`Renamed ${fn} to ${sc}.txt`);
@@ -171,6 +176,19 @@ function prepareFiles() {
 									if(err)
 										throw err;
 									console.log(`Renamed ${folder_name} to ${sc}`);
+								});
+							}
+							if(run_images && !clean_images) {
+								fs.exists(`./final/pics/${sc}`, (exists) => {
+									if(exists)
+										return;
+									fs.mkdir(__dirname + `/final/pics/${sc}`, (err) => {
+										if(err) {
+											console.log(`Unable to create final/pics/${sc}`);
+											console.log(err);
+											error_count++;
+										}
+									});
 								});
 							}
 						}catch(e) {
@@ -190,7 +208,9 @@ async function combineFiles() {
 	let cards = {};
 	let setData = {};
 	let nextNo = 1;
-	for(let s in new_sets) {
+	let keys = Object.keys(new_sets).sort();
+	for(let k in keys) {
+		let s = keys[k];
 		for(let c in new_sets[s].cards) {
 			cards[c] = new_sets[s].cards[c];
 		}
@@ -264,12 +284,11 @@ async function combineFiles() {
 	})
 	
 	rick.initialize(library);
-	rick.tokenBuilding({
-		writeTokens: './final/tokens.xml'
-	});
+	rick.tokenBuilding();
 	rick.cardBuilding({
 		writeCards: './final/cards.xml'
 	});
+	rick.writeTokensFile('./final/tokens.xml');
 	if(run_images) {
 		let trice_names = rick.keysToNames();
 		processImages(library, trice_names);
@@ -294,19 +313,25 @@ function processImages(library, trice_names) {
 			continue;
 		let pi = library.setData[si].pool;
 		let current = `./files/${pi}/${si}/${card.cardID}.${FILE_TYPE}`;
+		let outdir = `./final/pics/${card.setID}/`;
+		if(clean_images)
+			outdir = `./files/${pi}/${si}/`;
 		fs.exists(current, (exists) => {
-			if(!exists)
+			if(!exists) {
+				console.log(`Couldn't find ${current}`);
 				return;
+			}
 			if(names.length > 1) {
 				if(card.shape == "doubleface") {
 					// split this image, then delete this file
 					let b2 = card.typeLine2.match(WIDE_TYPES);
-					splitImage(current, `./files/${pi}/${si}/`, names, b2);
+					splitImage(current, outdir, names, b2);
 				}else{
 					// this file needs duplicated
-					forkImage(current, `./files/${pi}/${si}/`, names);
+					forkImage(current, outdir, names);
 				}
-			}else{
+			}
+			else if(clean_images) {
 				// rename this file
 				let dest = `./files/${pi}/${card.setID}/${windex(names[0])}.${FILE_TYPE}`;
 				// if token, put it in the final token folder instead
@@ -316,6 +341,10 @@ function processImages(library, trice_names) {
 					if(err)
 						console.log(err);
 				});
+			}
+			else{
+				// clone this file
+				forkImage(current, outdir, names);
 			}
 		})
 	}
@@ -338,27 +367,31 @@ function splitImage(fn, dir, names, b2) {
 			
 			img.clone().crop(shape.LEFT_WIDTH_OFFSET, shape.LEFT_HEIGHT_OFFSET, shape.LEFT_WIDTH, shape.LEFT_HEIGHT).write(dir+windex(names[0])+"."+FILE_TYPE);
 			img.crop(shape.RIGHT_WIDTH_OFFSET, shape.RIGHT_HEIGHT_OFFSET, shape.RIGHT_WIDTH, shape.RIGHT_HEIGHT).write(dir+windex(names[1])+"."+FILE_TYPE);
-			fs.unlink(fn, (er) => {
-				if(er)
-					console.log(er)
-			})
+			if(clean_images) {
+				fs.unlink(fn, (er) => {
+					if(er)
+						console.log(er)
+				})
+			}
 		}
 	})
 }
 function forkImage(fn, dir, names) {
-	Jimp.read(fn, (err, img) => {
-		if(err) {
-			console.log(err);
-		}else{
-			for(let n = 1; n < names.length; n++) {
-				img.clone().write(dir+windex(names[n])+"."+FILE_TYPE);
-			}
-			fs.rename(fn, dir+windex(names[0])+"."+FILE_TYPE, (er) => {
-				if(er)
-					console.log(er);
-			})
-		}
-	})
+	let n = 0;
+	if(clean_images)
+		n++;
+	for(n; n<names.length; n++) {
+		fs.copyFile(fn, dir+windex(names[n])+"."+FILE_TYPE, (err) => {
+			if(err)
+				console.log(err);
+		})
+	}
+	if(clean_images) {
+		fs.rename(fn, dir+windex(names[0])+"."+FILE_TYPE, (er) => {
+			if(er)
+				console.log(er);
+		})
+	}
 }
 async function apiPartialLibrary(k) {
 	let format = k.replace(/^--/, "");
@@ -404,6 +437,8 @@ async function streamToString(stream) {
 }
 
 function relocateCardImages() {
+	if(!run_images || !clean_images)
+		return;
 	for(let s in new_sets) {
 		let pi = new_sets[s].pool;
 		fs.rename(`./files/${pi}/${s}`, `./final/pics/${s}`, (err) => {
@@ -424,10 +459,9 @@ process.on('beforeExit', () => {
 			}
 			break;
 		case 2:
-			if(run_images) {
+			if(run_images && clean_images)
 				console.log("Moving images to single folder");
-				relocateCardImages();
-			}
+			relocateCardImages();
 			break;
 		case 3:
 			console.log("Finished!");
@@ -437,6 +471,10 @@ process.on('beforeExit', () => {
 
 if(process.argv.includes("--noimages")) {
 	run_images = false;
+}
+
+if(process.argv.includes("--clean")) {
+	clean_images = true;
 }
 
 // grab sets from command line
@@ -461,4 +499,10 @@ for(let k in format_args) {
 delete format_args["--rev"];
 delete format_args["--canon"];
 
-prepareFiles();
+if(run_images) {
+	fs.rm("./final/pics", {recursive:true, force:true}, (er) => {
+		prepareFiles();
+	});
+}else{
+	prepareFiles();
+}
