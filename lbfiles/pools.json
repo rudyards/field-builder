@@ -8,15 +8,6 @@
   "SGP",
   "VTK"
  ],
- "Swords Pool": [
-  "MOV",
-  "ONI",
-  "OPZ",
-  "ORD",
-  "POP2",
-  "SHU",
-  "VLR"
- ],
  "Pentacles Pool": [
   "ELV",
   "ICO",
@@ -25,6 +16,15 @@
   "TVN",
   "WGJ",
   "WOO"
+ ],
+ "Swords Pool": [
+  "MOV",
+  "ONI",
+  "OPZ",
+  "ORD",
+  "POP2",
+  "SHU",
+  "VLR"
  ],
  "Wands Pool": [
   "DHW",
