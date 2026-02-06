@@ -1,38 +1,38 @@
 {
- "Fall Pool": [
-  "EOR",
-  "GOD",
-  "IVP",
-  "ORC",
-  "UND",
-  "VLR",
-  "VYI"
+ "Cups Pool": [
+  "ABY",
+  "BLV",
+  "CYO",
+  "EDR",
+  "MVX",
+  "SGP",
+  "VTK"
  ],
- "Spring Pool": [
-  "AEK",
-  "APH",
-  "DCO",
-  "DRP",
-  "ELV",
-  "WCD",
-  "WDW"
- ],
- "Summer Pool": [
-  "2HU",
-  "F2HU",
-  "IWH",
+ "Swords Pool": [
+  "MOV",
+  "ONI",
   "OPZ",
-  "RNF",
-  "RPGM",
-  "WOO"
- ],
- "Winter Pool": [
-  "LIP",
   "ORD",
   "POP2",
-  "PRK",
-  "SGP",
-  "SOL",
-  "TGS"
+  "SHU",
+  "VLR"
+ ],
+ "Pentacles Pool": [
+  "ELV",
+  "ICO",
+  "IWH",
+  "KRK",
+  "TVN",
+  "WGJ",
+  "WOO"
+ ],
+ "Wands Pool": [
+  "DHW",
+  "F2HU",
+  "HFB",
+  "LDT",
+  "NOT",
+  "RPGM",
+  "WLG"
  ]
 }
