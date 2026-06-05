@@ -1,38 +1,31 @@
 {
- "Cups Pool": [
-  "ABY",
-  "BLV",
-  "CYO",
-  "EDR",
-  "MVX",
-  "SGP",
-  "VTK"
- ],
- "Pentacles Pool": [
-  "ELV",
-  "ICO",
-  "IWH",
-  "KRK",
-  "TVN",
-  "WGJ",
-  "WOO"
- ],
- "Swords Pool": [
-  "MOV",
-  "ONI",
-  "OPZ",
-  "ORD",
-  "POP2",
-  "SHU",
-  "VLR"
- ],
- "Wands Pool": [
-  "DHW",
+ "Alvin Pool": [
+  "2MC",
+  "ASM",
+  "COD",
   "F2HU",
-  "HFB",
-  "LDT",
-  "NOT",
-  "RPGM",
-  "WLG"
+  "ONI",
+  "RNF",
+  "WDW"
+ ],
+ "Theodore Pool": [
+  "AJY",
+  "BLD",
+  "CLE",
+  "HWK",
+  "KLB",
+  "MOX",
+  "POP2",
+  "SGP"
+ ],
+ "Simon Pool": [
+  "BRE",
+  "EOR",
+  "FRT",
+  "ORD",
+  "SMB",
+  "TBC",
+  "TOTL",
+  "VTK"
  ]
 }
