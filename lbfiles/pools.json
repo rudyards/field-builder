@@ -8,16 +8,6 @@
   "RNF",
   "WDW"
  ],
- "Theodore Pool": [
-  "AJY",
-  "BLD",
-  "CLE",
-  "HWK",
-  "KLB",
-  "MOX",
-  "POP2",
-  "SGP"
- ],
  "Simon Pool": [
   "BRE",
   "EOR",
@@ -27,5 +17,15 @@
   "TBC",
   "TOTL",
   "VTK"
+ ],
+ "Theodore Pool": [
+  "AJY",
+  "BLD",
+  "CLE",
+  "HWK",
+  "KLB",
+  "MOX",
+  "POP2",
+  "SGP"
  ]
 }

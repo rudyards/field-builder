@@ -199,7 +199,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="AJY276" rarity="token">tokens</set>
+ <set num="AJY275" rarity="token">tokens</set>
  <reverse-related>A Change in Fate</reverse-related>
  <reverse-related>Staraë, Lost Companion</reverse-related>
  <reverse-related>Bounty of Bantrel</reverse-related>
@@ -216,7 +216,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="AJY298" rarity="token">tokens</set>
+ <set num="AJY297" rarity="token">tokens</set>
  <reverse-related>A Star is Born</reverse-related>
  <reverse-related>Ageless Veteran</reverse-related>
  <reverse-related>Alder Jane, Talewright</reverse-related>
@@ -226,7 +226,8 @@
  <reverse-related>Decadent Scriptwriter</reverse-related>
  <reverse-related>Fae Bladesinger</reverse-related>
  <reverse-related>Glamorous Herald</reverse-related>
- <reverse-related>Hurried Edit</reverse-related>
+ <reverse-related>Greyvale Prodigy</reverse-related>
+ <reverse-related>Hurried Redaction</reverse-related>
  <reverse-related>Iridium Muse</reverse-related>
  <reverse-related>Meeting the Mentor</reverse-related>
  <reverse-related>Myth of Awakening</reverse-related>
@@ -258,7 +259,7 @@
  <tablerow>1</tablerow>
  <text></text>
  <token>1</token>
- <set num="AJY324" rarity="token">tokens</set>
+ <set num="AJY323" rarity="token">tokens</set>
  <reverse-related>Alder Jane, Talewright</reverse-related>
  <reverse-related>Alder Jane, Talewright</reverse-related>
 </card>
@@ -271,7 +272,7 @@
  <tablerow>1</tablerow>
  <text></text>
  <token>1</token>
- <set num="AJY325" rarity="token">tokens</set>
+ <set num="AJY324" rarity="token">tokens</set>
  <reverse-related>Alder Jane, Talewright</reverse-related>
  <reverse-related>Alder Jane, Talewright</reverse-related>
 </card>
@@ -283,7 +284,7 @@
  <tablerow>1</tablerow>
  <text>*(This token can be used to represent a token that's a copy of a permanent.)*</text>
  <token>1</token>
- <set num="SMB287" rarity="token">tokens</set>
+ <set num="SMB281" rarity="token">tokens</set>
  <reverse-related>Andi and Rove, Old Hands</reverse-related>
  <reverse-related>Archetype of Unendings</reverse-related>
  <reverse-related>Astrotechnics</reverse-related>
@@ -363,6 +364,7 @@
  <reverse-related>Petrasian Derby Team</reverse-related>
  <reverse-related>Containment Breach</reverse-related>
  <reverse-related>Gulistan, Master Biomancer</reverse-related>
+ <reverse-related>Judith, the Bloody Deluge</reverse-related>
  <reverse-related>Replicating Abomination</reverse-related>
  <reverse-related>Vannifar, Voice of the Combine</reverse-related>
  <reverse-related>Woodwraith Behemoth</reverse-related>
@@ -391,6 +393,7 @@
  <reverse-related>Munitions Scavenger</reverse-related>
  <reverse-related>Nitrogen Narcosis</reverse-related>
  <reverse-related>Pearl, the Last Pirate</reverse-related>
+ <reverse-related>Sessile Superstructure</reverse-related>
  <reverse-related>Spawning Salmon</reverse-related>
 </card>
 <card>
@@ -403,7 +406,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="AJY303" rarity="token">tokens</set>
+ <set num="AJY302" rarity="token">tokens</set>
  <reverse-related>Autumn Devours the Sunmaster</reverse-related>
 </card>
 <card>
@@ -414,7 +417,7 @@
  <tablerow>1</tablerow>
  <text>{T}: Each opponent loses 3 life unless they sacrifice a permanent with mana value 3 or greater.</text>
  <token>1</token>
- <set num="AJY305" rarity="token">tokens</set>
+ <set num="AJY304" rarity="token">tokens</set>
  <reverse-related>Bringer of a New Autumn</reverse-related>
 </card>
 <card>
@@ -425,7 +428,7 @@
  <tablerow>1</tablerow>
  <text>{T}: Add three mana of any one color.</text>
  <token>1</token>
- <set num="AJY307" rarity="token">tokens</set>
+ <set num="AJY306" rarity="token">tokens</set>
  <reverse-related>Bringer of a New Spring</reverse-related>
 </card>
 <card>
@@ -436,7 +439,7 @@
  <tablerow>1</tablerow>
  <text>{T}: Exile the top three cards of target player's library. You may play one of them this turn.</text>
  <token>1</token>
- <set num="AJY308" rarity="token">tokens</set>
+ <set num="AJY307" rarity="token">tokens</set>
  <reverse-related>Bringer of a New Summer</reverse-related>
 </card>
 <card>
@@ -447,7 +450,7 @@
  <tablerow>1</tablerow>
  <text>{T}: Copy target noncreature spell you control with mana value 3 or less. You may choose new targets for the copy.</text>
  <token>1</token>
- <set num="AJY306" rarity="token">tokens</set>
+ <set num="AJY305" rarity="token">tokens</set>
  <reverse-related>Bringer of a New Winter</reverse-related>
 </card>
 <card>
@@ -458,7 +461,7 @@
  <tablerow>1</tablerow>
  <text>{T}: Target creature gets +3/+3 and gains lifelink until end of turn.</text>
  <token>1</token>
- <set num="AJY296" rarity="token">tokens</set>
+ <set num="AJY295" rarity="token">tokens</set>
  <reverse-related>Bringer of a New World</reverse-related>
 </card>
 <card>
@@ -472,7 +475,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="AJY278" rarity="token">tokens</set>
+ <set num="AJY277" rarity="token">tokens</set>
  <reverse-related>Cindrel Gloamspeaker</reverse-related>
 </card>
 <card>
@@ -484,7 +487,7 @@
  <tablerow>1</tablerow>
  <text>Enchant creature you control Enchanted creature gets +1/+1. If two or more Auras are attached to it, it has double strike.</text>
  <token>1</token>
- <set num="AJY318" rarity="token">tokens</set>
+ <set num="AJY317" rarity="token">tokens</set>
  <reverse-related>Elca, Chancellor's Daughter</reverse-related>
 </card>
 <card>
@@ -497,20 +500,20 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="AJY299" rarity="token">tokens</set>
+ <set num="AJY298" rarity="token">tokens</set>
  <reverse-related count="2">Endless Day of Dominion</reverse-related>
 </card>
 <card>
- <name>white Treefolk Soldier 22AJY</name>
+ <name>white Treefolk Soldier 00AJY</name>
  <color>W</color>
  <manacost></manacost>
  <cmc>0</cmc>
- <pt>2/2</pt>
+ <pt>0/0</pt>
  <type>Token Creature — Treefolk Soldier</type>
  <tablerow>2</tablerow>
- <text>This creature gets +1/+1 for each other Treefolk you control.</text>
+ <text>This creature gets +1/+1 for each Treefolk you control. *(Including itself.)*</text>
  <token>1</token>
- <set num="AJY297" rarity="token">tokens</set>
+ <set num="AJY296" rarity="token">tokens</set>
  <reverse-related count="x">Endless Day of Dominion</reverse-related>
 </card>
 <card>
@@ -521,7 +524,7 @@
  <tablerow>1</tablerow>
  <text>Artifacts you control have indestructible. Creatures you control get +2/+2.</text>
  <token>1</token>
- <set num="AJY328" rarity="token">tokens</set>
+ <set num="AJY327" rarity="token">tokens</set>
  <reverse-related>Eni, Alabaster Paragon</reverse-related>
  <reverse-related>Eni, Alabaster Paragon</reverse-related>
 </card>
@@ -535,7 +538,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="AJY295" rarity="token">tokens</set>
+ <set num="AJY294" rarity="token">tokens</set>
  <reverse-related count="x">Glassgazer</reverse-related>
 </card>
 <card>
@@ -546,9 +549,9 @@
  <pt>2/2</pt>
  <type>Token Creature — Wraith</type>
  <tablerow>2</tablerow>
- <text>This creature can't attack planeswalkers.</text>
+ <text>This creature can't attack planeswalkers or block creatures attacking planeswalkers.</text>
  <token>1</token>
- <set num="AJY274" rarity="token">tokens</set>
+ <set num="AJY273" rarity="token">tokens</set>
  <reverse-related>Hollow Autumn</reverse-related>
 </card>
 <card>
@@ -561,7 +564,7 @@
  <tablerow>2</tablerow>
  <text>Whenever this creature attacks, target nontoken creature can't be blocked this turn.</text>
  <token>1</token>
- <set num="AJY304" rarity="token">tokens</set>
+ <set num="AJY303" rarity="token">tokens</set>
  <reverse-related>Inquisitor Tacen Flint</reverse-related>
 </card>
 <card>
@@ -572,7 +575,7 @@
  <tablerow>1</tablerow>
  <text>Equipped creature gets +1/+1 for each counter on this Equipment. Equip {2} *({2}: Attach to target creature you control. Equip only as a sorcery.)*</text>
  <token>1</token>
- <set num="AJY310" rarity="token">tokens</set>
+ <set num="AJY309" rarity="token">tokens</set>
  <reverse-related>Jane's Opus</reverse-related>
 </card>
 <card>
@@ -582,9 +585,9 @@
  <cmc>0</cmc>
  <type>Token Artifact</type>
  <tablerow>1</tablerow>
- <text>{2}, Sacrifice this artifact: It deals 1 damage to each opponent. Draw a card.</text>
+ <text>Lifelink {2}, Sacrifice this artifact: It deals 1 damage to each opponent. Draw a card.</text>
  <token>1</token>
- <set num="AJY275" rarity="token">tokens</set>
+ <set num="AJY274" rarity="token">tokens</set>
  <reverse-related count="2">Kniles, Chancellor of Thorns</reverse-related>
 </card>
 <card>
@@ -595,7 +598,7 @@
  <tablerow>1</tablerow>
  <text>{T}, Sacrifice this token: Add one mana of any color.</text>
  <token>1</token>
- <set num="AJY323" rarity="token">tokens</set>
+ <set num="AJY322" rarity="token">tokens</set>
  <reverse-related>Light-Eater Servant</reverse-related>
 </card>
 <card>
@@ -608,7 +611,7 @@
  <tablerow>2</tablerow>
  <text>Flying</text>
  <token>1</token>
- <set num="AJY284" rarity="token">tokens</set>
+ <set num="AJY283" rarity="token">tokens</set>
  <reverse-related>Marie, Rookery's Daughter</reverse-related>
 </card>
 <card>
@@ -622,7 +625,7 @@
  <tablerow>2</tablerow>
  <text>Menace</text>
  <token>1</token>
- <set num="AJY280" rarity="token">tokens</set>
+ <set num="AJY279" rarity="token">tokens</set>
  <reverse-related>Meismos, Thundergaunt</reverse-related>
  <reverse-related>The Court's Last Hunt</reverse-related>
 </card>
@@ -637,7 +640,7 @@
  <tablerow>2</tablerow>
  <text>Vigilance This creature gets +1/+1 for each card you've drawn this turn.</text>
  <token>1</token>
- <set num="AJY279" rarity="token">tokens</set>
+ <set num="AJY278" rarity="token">tokens</set>
  <reverse-related>Relics of the Future</reverse-related>
 </card>
 <card>
@@ -650,7 +653,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="AJY314" rarity="token">tokens</set>
+ <set num="AJY313" rarity="token">tokens</set>
  <reverse-related count="2">Spring Conquers the Cavalcade</reverse-related>
 </card>
 <card>
@@ -663,7 +666,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="AJY326" rarity="token">tokens</set>
+ <set num="AJY325" rarity="token">tokens</set>
  <reverse-related>Summer Outshines the Godmind</reverse-related>
 </card>
 <card>
@@ -676,7 +679,7 @@
  <tablerow>2</tablerow>
  <text>Reach, lifelink</text>
  <token>1</token>
- <set num="AJY273" rarity="token">tokens</set>
+ <set num="AJY272" rarity="token">tokens</set>
  <reverse-related>The Hallowing of Bantrel Grove</reverse-related>
 </card>
 <card>
@@ -689,7 +692,7 @@
  <tablerow>2</tablerow>
  <text>This creature can't attack or block unless you pay {2}.</text>
  <token>1</token>
- <set num="AJY311" rarity="token">tokens</set>
+ <set num="AJY310" rarity="token">tokens</set>
  <reverse-related count="x">Theyna, Magistrate of Salabraxas</reverse-related>
 </card>
 <card>
@@ -702,7 +705,7 @@
  <tablerow>2</tablerow>
  <text>Reach, deathtouch</text>
  <token>1</token>
- <set num="AJY327" rarity="token">tokens</set>
+ <set num="AJY326" rarity="token">tokens</set>
  <reverse-related>Vile Spring</reverse-related>
 </card>
 <card>
@@ -715,7 +718,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="AJY322" rarity="token">tokens</set>
+ <set num="AJY321" rarity="token">tokens</set>
  <reverse-related>Winter Quiets the Soulsinger</reverse-related>
 </card>
 <card>
@@ -1523,6 +1526,7 @@
  <reverse-related>Ancient Observer</reverse-related>
  <reverse-related>Daudaka Warsteed</reverse-related>
  <reverse-related>Dawn-Caste Armiger</reverse-related>
+ <reverse-related count="2">Dreaming-Pearl Dancer</reverse-related>
  <reverse-related>Flamestaff Innovator</reverse-related>
  <reverse-related>Immaculate Weaponmaster</reverse-related>
  <reverse-related>Leaping Steelblood</reverse-related>
@@ -1699,15 +1703,16 @@
  <set num="EOR237" rarity="bonus">tokens</set>
  <reverse-related>A Hero of Light</reverse-related>
  <reverse-related>Coultenet, Tested Mercy</reverse-related>
+ <reverse-related count="x">Free Trial</reverse-related>
  <reverse-related>Hildibrand, Extraordinaire</reverse-related>
- <reverse-related>Repurposed Cultivator</reverse-related>
  <reverse-related count="3">Scion Gathering</reverse-related>
  <reverse-related>Senna, Seedseer Matron</reverse-related>
- <reverse-related count="x">Shadowlands Refuge</reverse-related>
  <reverse-related>Sharlayan Specialist</reverse-related>
  <reverse-related>Star Calling</reverse-related>
  <reverse-related>Stillglade Initiate</reverse-related>
- <reverse-related>Wondrous Tales</reverse-related>
+ <reverse-related>Techne Makre</reverse-related>
+ <reverse-related>Tupsimati</reverse-related>
+ <reverse-related>Umbral Era</reverse-related>
 </card>
 <card>
  <name>Aether</name>
@@ -1722,7 +1727,6 @@
  <reverse-related>Aetheric Disruption</reverse-related>
  <reverse-related>Basalt Amalgam</reverse-related>
  <reverse-related count="x">Devastating Blow</reverse-related>
- <reverse-related>Dreadwyrm Essence</reverse-related>
  <reverse-related>G'raha, Allagan Heir</reverse-related>
  <reverse-related>Gathering Power</reverse-related>
  <reverse-related>Imperfect Gentleman</reverse-related>
@@ -1734,7 +1738,17 @@
  <reverse-related>Unstable Nucleus</reverse-related>
  <reverse-related>War Panther</reverse-related>
  <reverse-related>Waterfall Sprites</reverse-related>
- <reverse-related>Whalaqee Gambit</reverse-related>
+</card>
+<card>
+ <name>Ajani, in a Strange Land EOR</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type>Emblem — Ajani</type>
+ <tablerow>1</tablerow>
+ <text>Each creature you control gets +1/+1 for each counter on it.</text>
+ <token>1</token>
+ <set num="EOR261" rarity="bonus">tokens</set>
+ <reverse-related>Ajani, in a Strange Land</reverse-related>
 </card>
 <card>
  <name>black Army 00EOR</name>
@@ -1748,6 +1762,7 @@
  <token>1</token>
  <set num="EOR235" rarity="bonus">tokens</set>
  <reverse-related>Alliance Raid // Operation Archon</reverse-related>
+ <reverse-related>Ascian Lahabrea</reverse-related>
  <reverse-related>Awaiting Orders</reverse-related>
  <reverse-related>Carteneau Flats // Supply Camp</reverse-related>
  <reverse-related>Company Recruitment</reverse-related>
@@ -1761,6 +1776,7 @@
  <reverse-related>Nero, Scaevan Hammer</reverse-related>
  <reverse-related>New Alliances</reverse-related>
  <reverse-related>Praefectus Executioner</reverse-related>
+ <reverse-related>Repurposed Cultivator</reverse-related>
 </card>
 <card>
  <name>green Bird 22EOR</name>
@@ -1774,7 +1790,7 @@
  <token>1</token>
  <set num="EOR236" rarity="bonus">tokens</set>
  <reverse-related>Auspice of Rebirth</reverse-related>
- <reverse-related>Chocobo Nest // Collateral Damage</reverse-related>
+ <reverse-related>Chocobo Nest // Crimson Comet</reverse-related>
  <reverse-related count="2">Crossroads Caravan</reverse-related>
  <reverse-related>Desert Racetrack // Hairpin Turn</reverse-related>
  <reverse-related>Feathered Heritage</reverse-related>
@@ -1795,6 +1811,7 @@
  <reverse-related>Marilye, Veiled Deceiver</reverse-related>
  <reverse-related>Memories of Home</reverse-related>
  <reverse-related>Syrcus Tower // Allagan Records</reverse-related>
+ <reverse-related>Unholy Matrimony</reverse-related>
 </card>
 <card>
  <name>Marilye, Veiled Deceiver EOR</name>
@@ -1804,7 +1821,7 @@
  <tablerow>1</tablerow>
  <text>Whenever you activate a nonmana ability, copy that ability. You may choose new targets for the copy.</text>
  <token>1</token>
- <set num="EOR240" rarity="token">tokens</set>
+ <set num="EOR240" rarity="bonus">tokens</set>
  <reverse-related>Marilye, Veiled Deceiver</reverse-related>
 </card>
 <card>
@@ -1837,7 +1854,6 @@
  <name>Vial</name>
  <manacost></manacost>
  <cmc>0</cmc>
- <pt>1/1</pt>
  <type>Token Artifact — Vial</type>
  <tablerow>1</tablerow>
  <text>{1}, Sacrifice this and another permanent: Draw a card. Activate only during your turn.</text>
@@ -1855,6 +1871,7 @@
  <token>1</token>
  <set num="F2HU322" rarity="token">tokens</set>
  <reverse-related>Apple Girlington</reverse-related>
+ <reverse-related>Dorothy, Hardworking Bee</reverse-related>
  <reverse-related>Nanahiyakumi, Song Saint</reverse-related>
  <reverse-related>Noah, Sugar-Spun</reverse-related>
  <reverse-related>Withered Bounty</reverse-related>
@@ -2457,7 +2474,6 @@
  <reverse-related>Magister of True Worth</reverse-related>
  <reverse-related>Procession into Dusk</reverse-related>
  <reverse-related>Regulate the Spheres</reverse-related>
- <reverse-related>Servile Summons</reverse-related>
  <reverse-related>Shennao, Empress of Sun</reverse-related>
  <reverse-related>Sun Bao, Cinnabar Flame</reverse-related>
  <reverse-related>Swifthammer Leigong</reverse-related>
@@ -2481,6 +2497,7 @@
  <reverse-related>Mortal-Strand Stitcher</reverse-related>
  <reverse-related count="2">Mortal Furor</reverse-related>
  <reverse-related>Over the Ramparts</reverse-related>
+ <reverse-related count="x">Rule by Resolve</reverse-related>
  <reverse-related count="4">Steward of Estates</reverse-related>
  <reverse-related count="4">Storming Caolun Plains</reverse-related>
  <reverse-related>Tense Negotiations</reverse-related>
@@ -2508,7 +2525,6 @@
  <reverse-related>Sun Enraptured</reverse-related>
  <reverse-related>Sun Navigator</reverse-related>
  <reverse-related>Unfazed Maozi</reverse-related>
- <reverse-related>Yin Tuan, Improdigal Son</reverse-related>
 </card>
 <card>
  <name>Elixir HWK</name>
@@ -2737,6 +2753,7 @@
  <set num="KLB307" rarity="token">tokens</set>
  <reverse-related count="3">Corrupted Wanderer</reverse-related>
  <reverse-related>Geisha of the Koto</reverse-related>
+ <reverse-related>Legions Upon Legions</reverse-related>
  <reverse-related>Macabre Collector</reverse-related>
  <reverse-related>Relic Seeker</reverse-related>
  <reverse-related>Shigane Inspector</reverse-related>
@@ -3568,7 +3585,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="POP2276" rarity="token">tokens</set>
+ <set num="POP2275" rarity="token">tokens</set>
  <reverse-related>Amped-Up Acrobats</reverse-related>
  <reverse-related>Amped-Up Acrobats</reverse-related>
  <reverse-related>BXB Fessy</reverse-related>
@@ -3630,7 +3647,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="POP2273" rarity="token">tokens</set>
+ <set num="POP2272" rarity="token">tokens</set>
  <reverse-related count="3">Automated Backup</reverse-related>
 </card>
 <card>
@@ -3641,7 +3658,7 @@
  <tablerow>1</tablerow>
  <text>{T}, Sacrifice this artifact: Add one mana of any color</text>
  <token>1</token>
- <set num="POP2281" rarity="token">tokens</set>
+ <set num="POP2280" rarity="token">tokens</set>
  <reverse-related>Baril, Static Selector</reverse-related>
  <reverse-related>"Blow Out The Speakers"</reverse-related>
  <reverse-related>Clear the Stage</reverse-related>
@@ -3659,7 +3676,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="POP2278" rarity="token">tokens</set>
+ <set num="POP2277" rarity="token">tokens</set>
  <reverse-related count="2">Boma, Miss Worldwide</reverse-related>
  <reverse-related count="2">"Rave Across The World"</reverse-related>
 </card>
@@ -3673,7 +3690,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="POP2271" rarity="token">tokens</set>
+ <set num="POP2270" rarity="token">tokens</set>
  <reverse-related>Broadcast Executive</reverse-related>
  <reverse-related count="2">Festival Kickoff</reverse-related>
  <reverse-related count="2">Flash Mob</reverse-related>
@@ -3695,7 +3712,7 @@
  <tablerow>0</tablerow>
  <text>This land is a Plains, Island, Swamp, Mountain, and Forest. *({T}: Add {W}, {U}, {B}, {R}, or {G}.)*</text>
  <token>1</token>
- <set num="POP2280" rarity="token">tokens</set>
+ <set num="POP2279" rarity="token">tokens</set>
  <reverse-related>Fansite Maven</reverse-related>
  <reverse-related>Resonant Cove</reverse-related>
  <reverse-related>Resonant Crag</reverse-related>
@@ -3719,7 +3736,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="POP2282" rarity="token">tokens</set>
+ <set num="POP2281" rarity="token">tokens</set>
  <reverse-related>Holocrafter</reverse-related>
  <reverse-related>Mykian, Planetrotter</reverse-related>
  <reverse-related>"The Wild Side"</reverse-related>
@@ -3734,7 +3751,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="POP2277" rarity="token">tokens</set>
+ <set num="POP2276" rarity="token">tokens</set>
  <reverse-related>Mashup Machine</reverse-related>
 </card>
 <card>
@@ -3747,7 +3764,7 @@
  <tablerow>2</tablerow>
  <text>Menace</text>
  <token>1</token>
- <set num="POP2285" rarity="token">tokens</set>
+ <set num="POP2284" rarity="token">tokens</set>
  <reverse-related>Otto Mollusco</reverse-related>
  <reverse-related>"Nautical Nonsense"</reverse-related>
 </card>
@@ -4059,7 +4076,7 @@
  <cmc>0</cmc>
  <type>Emblem</type>
  <tablerow>1</tablerow>
- <text>At the beginning of each upkeep, create three tokens that are copies of target permanent.</text>
+ <text>Whenever a permanent you control becomes the target of a spell or ability you control, create a token that's a copy of it.</text>
  <token>1</token>
  <set num="RNF296" rarity="token">tokens</set>
  <reverse-related>Vannifar, Voice of the Combine</reverse-related>
@@ -4172,7 +4189,19 @@
  <reverse-related>Forgotten Fableweaver</reverse-related>
  <reverse-related>Speakeasy Brokers</reverse-related>
  <reverse-related>Stylla, Opulent Paragon</reverse-related>
- <reverse-related>Stylla, Opulent Paragon</reverse-related>
+</card>
+<card>
+ <name>colorless Eldrazi 32SGP</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>3/2</pt>
+ <type>Token Creature — Eldrazi</type>
+ <tablerow>2</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="SGP287" rarity="token">tokens</set>
+ <reverse-related>Burgeoning Amalgam</reverse-related>
+ <reverse-related>Overzealous Recon</reverse-related>
 </card>
 <card>
  <name>black Warlock 21SGP</name>
@@ -4321,18 +4350,6 @@
  <reverse-related>Lightwire Swarm</reverse-related>
 </card>
 <card>
- <name>colorless Eldrazi 32SGP</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>3/2</pt>
- <type>Token Creature — Eldrazi</type>
- <tablerow>2</tablerow>
- <text></text>
- <token>1</token>
- <set num="SGP287" rarity="token">tokens</set>
- <reverse-related>Overzealous Recon</reverse-related>
-</card>
-<card>
  <name>colorless Golem 44SGP</name>
  <manacost></manacost>
  <cmc>0</cmc>
@@ -4352,10 +4369,11 @@
  <tablerow>1</tablerow>
  <text>{T}, Sacrifice this token: Add one mana of any color.</text>
  <token>1</token>
- <set num="SMB227" rarity="token">tokens</set>
+ <set num="SMB222" rarity="token">tokens</set>
  <reverse-related>Aggressive Maw-Ray</reverse-related>
  <reverse-related>Big Baby Yoshi</reverse-related>
  <reverse-related>Bowser Tug o' War</reverse-related>
+ <reverse-related>Captain Syrup, Black Sugar Bandit</reverse-related>
  <reverse-related>Captain Toad, Treasure Tracker</reverse-related>
  <reverse-related count="x">Coin Coffer</reverse-related>
  <reverse-related>Coin Rush</reverse-related>
@@ -4391,7 +4409,7 @@
  <reverse-related count="x">The Majesty of Space</reverse-related>
  <reverse-related>Tropical Wiggler</reverse-related>
  <reverse-related>Waluigi, Rude Racer</reverse-related>
- <reverse-related count="x">Wario, Greedy Antihero</reverse-related>
+ <reverse-related>Wario, Greedy Antihero</reverse-related>
  <reverse-related>Warp Cannons</reverse-related>
  <reverse-related>Yoshi Steed</reverse-related>
 </card>
@@ -4403,7 +4421,7 @@
  <tablerow>1</tablerow>
  <text>​</text>
  <token>1</token>
- <set num="SMB228" rarity="token">tokens</set>
+ <set num="SMB223" rarity="token">tokens</set>
  <reverse-related>Aggressive Maw-Ray</reverse-related>
  <reverse-related>Captain Toad, Treasure Tracker</reverse-related>
  <reverse-related>Courier's Pets</reverse-related>
@@ -4435,7 +4453,7 @@
  <tablerow>2</tablerow>
  <text>This token can't block.</text>
  <token>1</token>
- <set num="SMB221" rarity="token">tokens</set>
+ <set num="SMB216" rarity="token">tokens</set>
  <reverse-related>Beanie Swarm</reverse-related>
  <reverse-related>Biddybuggy</reverse-related>
  <reverse-related>Blooper Nanny</reverse-related>
@@ -4461,7 +4479,7 @@
  <tablerow>2</tablerow>
  <text>This token can't block.</text>
  <token>1</token>
- <set num="SMB222" rarity="token">tokens</set>
+ <set num="SMB217" rarity="token">tokens</set>
  <reverse-related count="2">Boom Boom, Henchturtle</reverse-related>
  <reverse-related>Crushing Whomp</reverse-related>
  <reverse-related>Koopa Troopa</reverse-related>
@@ -4480,7 +4498,7 @@
  <tablerow>1</tablerow>
  <text>Flying Crew 2 *(Tap any number of creatures you control with total power 2 or more: This Vehicle becomes an artifact creature until end of turn.)*</text>
  <token>1</token>
- <set num="SMB220" rarity="token">tokens</set>
+ <set num="SMB215" rarity="token">tokens</set>
  <reverse-related>Bowser's Clown Car</reverse-related>
 </card>
 <card>
@@ -4493,7 +4511,7 @@
  <tablerow>2</tablerow>
  <text>This token can't block.</text>
  <token>1</token>
- <set num="SMB223" rarity="token">tokens</set>
+ <set num="SMB218" rarity="token">tokens</set>
  <reverse-related count="2">Bowser's Kingdom</reverse-related>
  <reverse-related>Towering Pokey</reverse-related>
 </card>
@@ -4507,7 +4525,7 @@
  <tablerow>2</tablerow>
  <text>Flying At the beginning of your end step, sacrifice this token.</text>
  <token>1</token>
- <set num="SMB289" rarity="token">tokens</set>
+ <set num="SMB283" rarity="token">tokens</set>
  <reverse-related>Bullet Bill Blaster</reverse-related>
 </card>
 <card>
@@ -4520,7 +4538,7 @@
  <tablerow>2</tablerow>
  <text>Vigilance</text>
  <token>1</token>
- <set num="SMB284" rarity="token">tokens</set>
+ <set num="SMB278" rarity="token">tokens</set>
  <reverse-related>Cat Mario</reverse-related>
 </card>
 <card>
@@ -4531,7 +4549,7 @@
  <tablerow>1</tablerow>
  <text>Enchant creature Enchanted creature gets +1/+1.</text>
  <token>1</token>
- <set num="SMB286" rarity="token">tokens</set>
+ <set num="SMB280" rarity="token">tokens</set>
  <reverse-related>Firebrand Mario</reverse-related>
  <reverse-related>Garlic Breath</reverse-related>
  <reverse-related>I Spyglass</reverse-related>
@@ -4551,7 +4569,7 @@
  <tablerow>2</tablerow>
  <text>This token can't block.</text>
  <token>1</token>
- <set num="SMB229" rarity="token">tokens</set>
+ <set num="SMB224" rarity="token">tokens</set>
  <reverse-related>Gobblegut Gargantua</reverse-related>
 </card>
 <card>
@@ -4564,7 +4582,7 @@
  <tablerow>2</tablerow>
  <text>Flying This token can't block.</text>
  <token>1</token>
- <set num="SMB225" rarity="token">tokens</set>
+ <set num="SMB220" rarity="token">tokens</set>
  <reverse-related count="x">King Boo</reverse-related>
 </card>
 <card>
@@ -4577,7 +4595,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="SMB224" rarity="token">tokens</set>
+ <set num="SMB219" rarity="token">tokens</set>
  <reverse-related>King Bowser, the Mighty</reverse-related>
 </card>
 <card>
@@ -4588,7 +4606,7 @@
  <tablerow>1</tablerow>
  <text>{T}: This token deals 1 damage to each opponent.</text>
  <token>1</token>
- <set num="SMB290" rarity="token">tokens</set>
+ <set num="SMB284" rarity="token">tokens</set>
  <reverse-related>Ludwig Von Koopa, Composer</reverse-related>
 </card>
 <card>
@@ -4601,7 +4619,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="SMB291" rarity="token">tokens</set>
+ <set num="SMB285" rarity="token">tokens</set>
  <reverse-related>Pauline, New Donk Mayor</reverse-related>
 </card>
 <card>
@@ -4614,7 +4632,7 @@
  <tablerow>2</tablerow>
  <text>This token can't block.</text>
  <token>1</token>
- <set num="SMB292" rarity="token">tokens</set>
+ <set num="SMB286" rarity="token">tokens</set>
  <reverse-related>Princess Shroob, the Younger</reverse-related>
 </card>
 <card>
@@ -4626,22 +4644,9 @@
  <tablerow>2</tablerow>
  <text>Flying</text>
  <token>1</token>
- <set num="SMB293" rarity="token">tokens</set>
+ <set num="SMB287" rarity="token">tokens</set>
  <reverse-related>Rosalina, Cosmic Guardian</reverse-related>
  <reverse-related>Rosalina's Storybook</reverse-related>
-</card>
-<card>
- <name>white Insect 11SMB</name>
- <color>W</color>
- <manacost></manacost>
- <cmc>0</cmc>
- <pt>1/1</pt>
- <type>Token Creature — Insect</type>
- <tablerow>2</tablerow>
- <text>Flying</text>
- <token>1</token>
- <set num="SMB285" rarity="token">tokens</set>
- <reverse-related>The Honey Queen</reverse-related>
 </card>
 <card>
  <name>white Fungus Citizen 11SMB</name>
@@ -4653,7 +4658,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="SMB294" rarity="token">tokens</set>
+ <set num="SMB288" rarity="token">tokens</set>
  <reverse-related>Toadette, Princess's Favored</reverse-related>
 </card>
 <card>
@@ -4666,7 +4671,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="SMB295" rarity="token">tokens</set>
+ <set num="SMB289" rarity="token">tokens</set>
  <reverse-related>Tutankoopa, Pyramid Wizard</reverse-related>
 </card>
 <card>
@@ -4677,7 +4682,7 @@
  <tablerow>1</tablerow>
  <text>{2}, {T}, Sacrifice this token: You gain 3 life.</text>
  <token>1</token>
- <set num="SMB288" rarity="token">tokens</set>
+ <set num="SMB282" rarity="token">tokens</set>
  <reverse-related>Wart, Subcon Tyrant</reverse-related>
 </card>
 <card>
@@ -4908,33 +4913,6 @@
  <reverse-related>Ambassador Oukijo</reverse-related>
 </card>
 <card>
- <name>The City's Blessing TOTL</name>
- <manacost></manacost>
- <cmc>0</cmc>
- <type></type>
- <tablerow>1</tablerow>
- <text></text>
- <token>1</token>
- <set num="TOTL255" rarity="token">tokens</set>
- <reverse-related>Ambassador Oukijo</reverse-related>
- <reverse-related>Ambitious Phlebotomist</reverse-related>
- <reverse-related>Ascended Giganform</reverse-related>
- <reverse-related>Daring Acrobatics</reverse-related>
- <reverse-related>Follow the Crowd</reverse-related>
- <reverse-related>Haak Gaai Dealer</reverse-related>
- <reverse-related>Hei Foon Nei</reverse-related>
- <reverse-related>Heung Street Tagger</reverse-related>
- <reverse-related>Kanpai!</reverse-related>
- <reverse-related>Neon Gaze</reverse-related>
- <reverse-related>Obviate</reverse-related>
- <reverse-related>Return of the Ninth Dragon</reverse-related>
- <reverse-related>Salaried Seraph</reverse-related>
- <reverse-related>Skyscrape</reverse-related>
- <reverse-related>Skyward Vista</reverse-related>
- <reverse-related>Tetrad Shotcaller</reverse-related>
- <reverse-related>Zenith of Exuberance</reverse-related>
-</card>
-<card>
  <name>green Citizen 11TOTL</name>
  <color>G</color>
  <manacost></manacost>
@@ -4950,7 +4928,6 @@
  <reverse-related>Citysight Guide</reverse-related>
  <reverse-related>Kaigun Quarter Everyman</reverse-related>
  <reverse-related>Lowrise Line Cook</reverse-related>
- <reverse-related>The Girl Who Ate an Angel</reverse-related>
  <reverse-related count="2">Tiger Mother</reverse-related>
 </card>
 <card>
@@ -5292,6 +5269,7 @@
  <reverse-related>Encroaching Glaciation</reverse-related>
  <reverse-related>Esoteric Experiment</reverse-related>
  <reverse-related>Extreme Caution</reverse-related>
+ <reverse-related>Eye-Eater Parasitoids</reverse-related>
  <reverse-related>Favor of the Waves</reverse-related>
  <reverse-related>Fifth-Generation Rover</reverse-related>
  <reverse-related>Fragile Floodwall</reverse-related>
@@ -5351,7 +5329,6 @@
  <set num="WDW243" rarity="token">tokens</set>
  <reverse-related>Bioprobe</reverse-related>
  <reverse-related>Electrofishery</reverse-related>
- <reverse-related count="2">Mole Frog</reverse-related>
  <reverse-related>Pheremone Eel</reverse-related>
  <reverse-related count="2">Schooling</reverse-related>
 </card>
@@ -5433,7 +5410,6 @@
  <set num="WDW238" rarity="token">tokens</set>
  <reverse-related>Descending into Heaven</reverse-related>
  <reverse-related>Generational Decay</reverse-related>
- <reverse-related>Heaven's Wreck</reverse-related>
  <reverse-related>Minefield Navigation</reverse-related>
 </card>
 <card>
@@ -5517,6 +5493,16 @@
  <text>Whenever the second card is put into your graveyard on each of your turns, if your breakdown is at 4 or less, decrease your breakdown by 1. You reach rock bottom at 0. This ability triggers only once each turn.</text>
  <token>1</token>
  <set num="TBC290" rarity="token">tokens</set>
+</card>
+<card>
+ <name>City's Blessing TOTL</name>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <type></type>
+ <tablerow>1</tablerow>
+ <text></text>
+ <token>1</token>
+ <set num="TOTL255" rarity="token">tokens</set>
 </card>
 <card>
  <name>Clearingsong CLE</name>
@@ -5626,7 +5612,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="POP2275" rarity="token">tokens</set>
+ <set num="POP2274" rarity="token">tokens</set>
 </card>
 <card>
  <name>red Fan 32POP2 3</name>
@@ -5638,7 +5624,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="POP2274" rarity="token">tokens</set>
+ <set num="POP2273" rarity="token">tokens</set>
 </card>
 <card>
  <name>red Fan 32POP2 4</name>
@@ -5650,7 +5636,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="POP2270" rarity="token">tokens</set>
+ <set num="POP2269" rarity="token">tokens</set>
 </card>
 <card>
  <name>Food KLB</name>
@@ -5696,7 +5682,19 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="POP2279" rarity="token">tokens</set>
+ <set num="POP2278" rarity="token">tokens</set>
+</card>
+<card>
+ <name>white Insect 11SMB</name>
+ <color>W</color>
+ <manacost></manacost>
+ <cmc>0</cmc>
+ <pt>1/1</pt>
+ <type>Token Creature — Insect</type>
+ <tablerow>2</tablerow>
+ <text>Flying</text>
+ <token>1</token>
+ <set num="SMB279" rarity="token">tokens</set>
 </card>
 <card>
  <name>black Noble 21POP2</name>
@@ -5708,7 +5706,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="POP2272" rarity="token">tokens</set>
+ <set num="POP2271" rarity="token">tokens</set>
 </card>
 <card>
  <name>green Ooze SGP 2</name>
@@ -5733,7 +5731,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="AJY283" rarity="token">tokens</set>
+ <set num="AJY282" rarity="token">tokens</set>
 </card>
 <card>
  <name>black Skeleton 21RNF</name>
@@ -5810,7 +5808,7 @@
  <tablerow>1</tablerow>
  <text>Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.</text>
  <token>1</token>
- <set num="POP2283" rarity="token">tokens</set>
+ <set num="POP2282" rarity="token">tokens</set>
 </card>
 <card>
  <name>The Truth Pick CLE</name>
@@ -5840,7 +5838,7 @@
  <tablerow>1</tablerow>
  <text>{T}, Sacrifice this token: Add one mana of any color.</text>
  <token>1</token>
- <set num="SMB226" rarity="token">tokens</set>
+ <set num="SMB221" rarity="token">tokens</set>
 </card>
 <card>
  <name>Treasure MOX</name>
@@ -5916,7 +5914,7 @@
  <tablerow>2</tablerow>
  <text></text>
  <token>1</token>
- <set num="AJY301" rarity="token">tokens</set>
+ <set num="AJY300" rarity="token">tokens</set>
 </card>
 <card>
  <name>black and red Youkai 112MC 2</name>
