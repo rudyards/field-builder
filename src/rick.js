@@ -508,7 +508,15 @@ function tokenPuller(c, shout) {
 	if(cleanoracle.match(/^Sunken/) || cleanoracle.match(/Trench/)) {
 		tokens.push(["colorless Trench land with some other stuff", 1, "Keyword: Sunken"]);
 	}
-
+	if(cleanoracle.match(/examine/i)) {
+		tokens.push(["Examine", 1, "Keyword: Examine"]);
+	}
+	if(cleanoracle.match(/follow the path/i)) {
+		tokens.push(["Follow the Path", 1, "Keyword: Examine"]);
+	}
+	if(cleanoracle.match(/pool of research/)) {
+		tokens.push(["Pool of Research", 1, "Keyword: Pool of Research"]);
+	}
 	// apply tokenscripts overrides
 	if(thisCard.tokenscripts) {
 		let ts = thisCard.tokenscripts;
