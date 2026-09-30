@@ -218,10 +218,10 @@ function tokenPuller(c, shout) {
 					let tokenWith, tokenNamed, tokenExtraColors;
 					if(tokenExtra) {
 						let bits = tokenExtra.split(/(with|named|that's|that is|that are|attached|and has|that can't block)/);
-						let opts = ["with","named","that's","that is","that are","that’s","and has", "that can't block"];
+						let opts = ["with","named","that's","that is","that are","that’s","and has", "that can't block", "attached"];
 						for(let i=0; i<bits.length; i++) {
 							if(opts.includes(bits[i])) {
-								if(bits[i] == "with" || bits[i] == "and has" || bits[i] == "that can't block") {
+								if(bits[i] == "with" || bits[i] == "and has" || bits[i] == "that can't block" || bits[i] == "attached") {
 									tokenWith = "with some other stuff";
 									let test = "with" + bits[i+1];
 									// pt define
@@ -341,6 +341,9 @@ function tokenPuller(c, shout) {
 						tokens.push(["colorless Swamp Forest land", tokens[t][1]]);
 						tokens.push(["colorless Mountain Plains land", tokens[t][1]]);
 						tokens.push(["colorless Forest Island land", tokens[t][1]]);
+						break;
+					case "Hunted Aura":
+						tokens[t][0] = "Hunted";
 						break;
 				}
 			}
