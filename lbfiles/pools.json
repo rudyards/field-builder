@@ -1,31 +1,39 @@
 {
- "Alvin Pool": [
-  "2MC",
-  "ASM",
-  "COD",
-  "F2HU",
-  "ONI",
-  "RNF",
-  "WDW"
- ],
- "Simon Pool": [
-  "BRE",
-  "EOR",
-  "FRT",
-  "ORD",
-  "SMB",
-  "TBC",
-  "TOTL",
-  "VTK"
- ],
- "Theodore Pool": [
+ "Death Pool": [
   "AJY",
-  "BLD",
-  "CLE",
-  "HWK",
-  "KLB",
-  "MOX",
-  "POP2",
-  "SGP"
+  "BLV",
+  "DRM",
+  "EOR",
+  "EVO",
+  "FIM",
+  "ORE",
+  "TOTL"
+ ],
+ "Pestilence Pool": [
+  "AWA",
+  "EAJ",
+  "M6D",
+  "RAW",
+  "SPX",
+  "TEL",
+  "TLB"
+ ],
+ "War Pool": [
+  "2MC",
+  "F2HU",
+  "HEX",
+  "MST",
+  "SSC",
+  "WHL",
+  "XCX"
+ ],
+ "Famine Pool": [
+  "ECB",
+  "FRT",
+  "MVX",
+  "TEX",
+  "TFF",
+  "TVN",
+  "WBY"
  ]
 }
