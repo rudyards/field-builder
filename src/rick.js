@@ -218,10 +218,10 @@ function tokenPuller(c, shout) {
 					let tokenWith, tokenNamed, tokenExtraColors;
 					if(tokenExtra) {
 						let bits = tokenExtra.split(/(with|named|that's|that is|that are|attached|and has|that can't block)/);
-						let opts = ["with","named","that's","that is","that are","that’s","and has", "that can't block"];
+						let opts = ["with","named","that's","that is","that are","that’s","and has", "that can't block", "attached"];
 						for(let i=0; i<bits.length; i++) {
 							if(opts.includes(bits[i])) {
-								if(bits[i] == "with" || bits[i] == "and has" || bits[i] == "that can't block") {
+								if(bits[i] == "with" || bits[i] == "and has" || bits[i] == "that can't block" || bits[i] == "attached") {
 									tokenWith = "with some other stuff";
 									let test = "with" + bits[i+1];
 									// pt define
@@ -314,6 +314,13 @@ function tokenPuller(c, shout) {
 							tokens.push([token_base_name, tN, token_with_name]);
 					}
 				}
+				else{
+					// a Tarmogoyf token
+					let matcher = groups[g].match(/(an|a|X|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty) ([A-Z][a-z]+([-, ]+([A-Z][a-z]+|and|an|as|at|a|but|by|for|into|in|of|or|on|the|this|to|with))*) tokens?/);
+					if(matcher) {
+						tokens.push([matcher[2], countInt(matcher[1])])
+					}
+				}
 			}
 			// manual corrections
 			for(let t in tokens) {
@@ -334,6 +341,9 @@ function tokenPuller(c, shout) {
 						tokens.push(["colorless Swamp Forest land", tokens[t][1]]);
 						tokens.push(["colorless Mountain Plains land", tokens[t][1]]);
 						tokens.push(["colorless Forest Island land", tokens[t][1]]);
+						break;
+					case "Hunted Aura":
+						tokens[t][0] = "Hunted";
 						break;
 				}
 			}
@@ -457,16 +467,12 @@ function tokenPuller(c, shout) {
 		tokens.push(["colorless Saga enchantment with some other stuff", 1, "Keyword: Compose"]);
 	
 	// field test
-	if(cleanoracle.match(/Embrace/i)) {
-		tokens.push(["Embraced Cards", 1, "Keyword: Embrace"]);
-		tokens.push(["Embraced Representative", 1, "Keyword: Embrace"]);
-	}
 	if(cleanoracle.match(/equalise [^.,]+ X times/i)) {
 		tokens.push(["Equalised Dragon", "x", "Keyword: Equalise"]);
 	}else if(cleanoracle.match(/equalise/i)) {
 		tokens.push(["Equalised Dragon", 1, "Keyword: Equalise"]);
 	}
-	if(cleanoracle.match(/^Aurora/)) {
+	if(cleanoracle.match(/^Aurora/m)) {
 		tokens.push(["Aurora Reminder", 1, "Keyword: Aurora"]);
 	}
 	if(cleanoracle.match(/builds? hype/)) {
@@ -487,13 +493,33 @@ function tokenPuller(c, shout) {
 		tokens.push(["Call The Beast Emblem", 1]);
 		tokens.push(["The Beast", 1]);
 	}
-	if(cleanoracle.match(/^Ascend/) && !cleanoracle.match(/^Ascend [{]/)) {
+	if(cleanoracle.match(/^Ascend/m) && !cleanoracle.match(/^Ascend [{]/m)) {
 		tokens.push(["The City's Blessing", 1]);
+	}
+	if(cleanoracle.match(/^Compete/m)) {
+		tokens.push(["Chest of Desires", 1]);
+		tokens.push(["Sigil of Conquest", 1]);
+		tokens.push(["Sword of Victory", 1]);
+		tokens.push(["Trophy Reminder", 1]);
+	}
+	if(cleanoracle.match(/prepare/) && thisCard.hasOwnProperty("typeLine2")) {
+		// check if we prepare a permanent
+		if(thisCard.typeLine2.match(/Creature|Artifact|Enchantment|Battle|Token|Planeswalker/)) {
+			tokens.push([thisCard.cardName2, 1, "Prepared permanent spell"]);
+		}
 	}
 	if(cleanoracle.match(/^Sunken/) || cleanoracle.match(/Trench/)) {
 		tokens.push(["colorless Trench land with some other stuff", 1, "Keyword: Sunken"]);
 	}
-
+	if(cleanoracle.match(/examine/i)) {
+		tokens.push(["Examine", 1, "Keyword: Examine"]);
+	}
+	if(cleanoracle.match(/follow the path/i)) {
+		tokens.push(["Follow the Path", 1, "Keyword: Examine"]);
+	}
+	if(cleanoracle.match(/pool of research/)) {
+		tokens.push(["Pool of Research", 1, "Keyword: Pool of Research"]);
+	}
 	// apply tokenscripts overrides
 	if(thisCard.tokenscripts) {
 		let ts = thisCard.tokenscripts;
@@ -592,7 +618,7 @@ function tokenBuilding(flags) {
 		if(library.cards[c].setID == "tokens")
 			continue;
 		let card = library.cards[c];
-		let prede_check = card.rulesText.match(/[Cc]reate (?:an|a|X|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty) ([A-Z][a-z]+([- ][A-Z][a-z]+)?) tokens?/);
+		let prede_check = card.rulesText.match(/[Cc]reate (?:an|a|X|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty) ([A-Z][a-z]+([-, ]+([A-Z][a-z]+|and|an|as|at|a|but|by|for|into|in|of|or|on|the|this|to|with))*) tokens?/);
 		if(prede_check) {
 			let prede = prede_check[1];
 			if(!predef.includes(prede)) {
