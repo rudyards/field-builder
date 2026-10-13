@@ -515,7 +515,7 @@ function tokenPuller(c, shout) {
 		tokens.push(["Examine", 1, "Keyword: Examine"]);
 	}
 	if(cleanoracle.match(/follow the path/i)) {
-		tokens.push(["Follow the Path", 1, "Keyword: Examine"]);
+		tokens.push(["The Path", 1, "Keyword: Follow the Path"]);
 	}
 	if(cleanoracle.match(/pool of research/)) {
 		tokens.push(["Pool of Research", 1, "Keyword: Pool of Research"]);
