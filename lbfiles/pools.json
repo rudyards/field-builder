@@ -1,16 +1,16 @@
 {
- "Death Pool": [
-  "AJY",
-  "BLV",
-  "DRM",
-  "EOR",
-  "EVO",
-  "FIM",
-  "ORE",
-  "TOTL"
+ "Famine Pool": [
+  "ECB",
+  "FRT",
+  "MVX",
+  "TEX",
+  "TFF",
+  "TVN",
+  "WBY"
  ],
  "Pestilence Pool": [
   "AWA",
+  "AWA1",
   "EAJ",
   "M6D",
   "RAW",
@@ -27,13 +27,14 @@
   "WHL",
   "XCX"
  ],
- "Famine Pool": [
-  "ECB",
-  "FRT",
-  "MVX",
-  "TEX",
-  "TFF",
-  "TVN",
-  "WBY"
+ "Death Pool": [
+  "AJY",
+  "BLV",
+  "DRM",
+  "EOR",
+  "EVO",
+  "FIM",
+  "ORE",
+  "TOTL"
  ]
 }
