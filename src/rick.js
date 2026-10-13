@@ -499,7 +499,7 @@ function tokenPuller(c, shout) {
 	if(cleanoracle.match(/^Compete/m)) {
 		tokens.push(["Chest of Desires", 1]);
 		tokens.push(["Sigil of Conquest", 1]);
-		tokens.push(["Sword of Victory", 1]);
+		tokens.push(["Mind of Matters", 1]);
 		tokens.push(["Trophy Reminder", 1]);
 	}
 	if(cleanoracle.match(/prepare/) && thisCard.hasOwnProperty("typeLine2")) {
